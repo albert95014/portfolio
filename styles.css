@@ -190,6 +190,7 @@ footer {
         position: absolute;
             top: 110px;
             left: 5%;
+        font-size: 0.7em;
     }
     
     #content {
