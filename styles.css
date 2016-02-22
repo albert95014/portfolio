@@ -27,7 +27,7 @@ h1 {
     width: 8%;
     height: auto;
     padding: 5px;
-    position: absolute;
+    position: fixed;
         top: 20px;
         left: 17%;
     border: 1px solid black;
