@@ -1,3 +1,10 @@
+#constructionnotice {
+    width: 100vw;
+    height: 100vh;
+    font-size: 10pt;
+    font-family: Roboto, sans-serif;
+}
+
 html, body {
     height: 100%;
 }
