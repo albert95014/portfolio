@@ -1,93 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
-    <title>Albert Yang | Cherry Pick</title>
+    <meta charset="UTF-8">
+    <title>Albert Yang</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i|Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,700,700i" rel="stylesheet">
 </head>
 
 <body>
-    <div class="titlebanner">
-        <p><b>Cherry Pick</b>
-            <br>
-            <i>Design Research</i>
-            <br>
-            <i>User Experience</i>
-            <br>
-            <br>
-            <a href="index.html">Back</a>
-        </p>
+    <div id="name">
+        <a href="index.html">
+            <h1>
+                <p>Albert Yang</p>
+            </h1>
+        </a>
     </div>
     
-    <div class="projectcontent">
-        <p><b>Overview</b>
+    <div id="projectinfo">
+        <p class="projecttitle"><b>Cherry Pick</b>
             <br>
-            By conducting several weeks of research on people's grocery shopping habits using a variety of methods, Ji Tae Kim, Jasper Tom, and I applied what we had learned and created Cherry Pick - an app that connects people through their shopping lists.
+            <i>User Research, Visual Design</i>
         </p>
         
-        <hr>
+        <p>Cherry Pick is a visual prototype of an app designed by myself, <a href="http://www.josephkims.com">Ji Tae Kim</a>, and <a href="http://www.jasper-tom.squarespace.com">Jasper Tom</a>. Faced with the task of improving grocery shopping experiences, we employed a variety of research methods to guide our design decisions.</p> 
         
-        <p><b>Deep Hanging Out</b>
-            <br>
-            The first method of research we employed was <a href="Portfolio/deephangingout.pdf" target="_blank">taking notes (PDF)</a> while immersing ourselves, or "deep hanging out," at a local grocery store. Our goals from this were to notice and understand the space as well as people's interactions with their surrounding environment. 
-            <br>
-            <br>
-            By deep hanging out, we noticed that people almost never interact with those they didn't know, even if other people were in their way of an item or just clogging up the aisle. The place with most social interaction was the butcher section, where the clerks were very playful with their customers. The experience there seemed much more personal and friendly in comparison to the isolated vibe in the rest of the store.
-        </p>
-        
-        <p><b>Cultural Probe (MarKit) &mdash; <i>pictured below</i></b>
-            <br>
-            Additionally, we sent out cultural probes (titled "MarKit") to five university students &mdash; some undergraduate, some graduate. Each probe consisted of five activities ranging from sending food-related Snapchats to us to writing down their shopping lists and comparing them to their final receipts. These activities were designed specifically for us gain insight on people's thoughts on their shopping experiences, as well as to look closer into their (un)intentional shopping habits. A week after sending them out, we got the probes back and began to analyze the results.
-        </p>
-        
-        <img class="smallimage" src="Portfolio/markitclosed.JPG" alt="Markit Probe Unopened">
-        
-        <img class="smallimage" src="Portfolio/markitopen.JPG" alt="Markit Probe Opened">
-        
-        <img class="largeimage" src="Portfolio/markitactivities.jpeg" alt="Markit Probe Activities">
-        
-        <p><b>Generative Workshop &mdash; <i>pictured below</i></b>
-            <br>
-            Following the cultural probe activities, we held a generative workshop with three other students to gauge a sense of what they prioritize while shopping. Our activities included having them choose from a list of grocery items given a limited budget, and writing down their "routine" before, during, and after the act of grocery shopping.
-        </p>
-        
-        <img class="largeimage" src="Portfolio/generativeworkshop.JPG" alt="Generative Workshop Activity">
-        
-        <p><b>Affinity Clustering &mdash; <i>pictured below</i></b>
-            <br>
-            Based on the results from the cultural probes, we wrote down quick notes of each completed activity and then grouped them together in clusters to take note of any patterns we noticed. From our affinity clustering, we noticed that the stores people had more favorable experiences in had much more natural and personal environments (i.e. Trader Joe's, Whole Foods). From there, we decided to explore the idea of creating a personal experience for shoppers more through the creation of our app.
-        </p>
-        
-        <img class="largeimage" src="Portfolio/affinityclustering.jpg" alt="Affinity Clustering">
-        
-        <p><b>Rapid Prototyping &mdash; <i>pictured below</i></b>
-            <br>
-            We created some lo-fi mockups of app screens and tested them with different users. Our initial ideas involved having people interact with an animated shopping cart to simulate the act of physically shopping in a store, but eventually felt that this was not personal enough to the users. From there, we took a step back and decided to explore how to create a more social experience for shoppers.
-        </p>
-        
-        <img class="smallimage" src="Portfolio/rapidprototyping1.JPG" alt="Rapid Prototyping 1">
-        
-        <img class="smallimage" src="Portfolio/rapidprototyping2.JPG" alt="Rapid Prototyping 2">
-        
-        <p><b>Cherry Pick App Development</b>
-            <br>
-            We agreed to focus on creating a personalized experience for the user to make them feel more comfortable with the idea of grocery shopping. Part of our mission was also to introduce the idea of having grocery shopping be a social activity rather than an individual one. 
-            <br>
-            <br>
-            Cherry Pick allows people to create shopping lists for each and every occasion, such as fancy Friday nights or extravagant birthday parties. Shopping lists are viewable by one's friends, who can then choose to create their own lists by "cherry picking" items that they notice. This creates a more organized experience for one's own grocery shopping, while also allowing for shopping and event inspiration from one's social circles. 
-        </p>
-        
-        <img class="largeimage" src="Portfolio/cherrypickhifiwireframes.png" alt="Cherry Pick App Hifi Wireframes">
-        
-        <iframe src="https://player.vimeo.com/video/157507319" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <p>Our methods included sending out a cultural probe, affinity clustering, and hosting a generative workshop to understand people's shopping habits.</p>
     </div>
+    
+    <div id="nav">
+        <h2><a href="index.html"><border>Work</border></a> // <a href="resume.pdf">Resume (PDF)</a></h2>
+    </div>
+    
+    <ul id="projectpage">
+        
+        <li>
+            <img src="cherrypick/markitopen.jpg" id="projectimage">
+        </li>
+        
+        <p class="photoinfo"><b>Cultural Probes &mdash;</b></p>
+        
+        <p class="photoinfo">We sent out cultural probes (titled “MarKit”) to five university students &mdash; some undergraduate, some graduate. Each probe consisted of five activities ranging from sending food-related Snapchats to us to writing down their shopping lists and comparing them to their final receipts. These activities were designed specifically for us gain insight on people’s thoughts on their shopping experiences, as well as to look closer into their (un)intentional shopping habits. A week after sending them out, we got the probes back and began to analyze the results.</p>
+        
+        <li>
+            <img src="cherrypick/markitactivities.jpg" id="projectimage">
+        </li>
+        
+        <p class="photoinfo"><b>Generative Workshop &mdash;</b></p>
+        
+        <p class="photoinfo">Following the cultural probe activities, we held a generative workshop with three other students to gauge a sense of what they prioritize while shopping. Our activities included having them choose from a list of grocery items given a limited budget, and writing down their “routine” before, during, and after the act of grocery shopping. </p>
+        
+        <li>
+            <img src="cherrypick/generativeworkshop.jpg" id="projectimage">
+        </li>
+        
+        <p class="photoinfo"><b>Affinity Clustering &mdash;</b></p>
+        
+        <p class="photoinfo">Based on the results from the cultural probes and generative workshop, we wrote down quick notes of each completed activity and then grouped them together in clusters to take note of any patterns we noticed. From our affinity clustering, we noticed that the stores people had more favorable experiences in had much more natural and personal environments (i.e. Trader Joe’s, Whole Foods). From there, we decided to explore the idea of creating a personal experience for shoppers more through the creation of our app.</p>
+        
+        <li>
+            <img src="cherrypick/affinityclustering.jpg" id="projectimage">
+        </li>
+        
+        <p class="photoinfo"><b>Visual Development &mdash;</b></p>
+
+        <p class="photoinfo">We agreed to focus on creating a personalized experience for the user to make them feel more comfortable with the idea of grocery shopping. Part of our mission was also to introduce the idea of having grocery shopping be a social activity rather than an individual one. 
+            <br>
+            <br>
+        Cherry Pick allows people to create shopping lists for each and every occasion, such as fancy Friday nights or extravagant birthday parties. Shopping lists are viewable by one's friends, who can then choose to create their own lists by “cherry picking” items that they notice. This creates a more organized experience for one’s own grocery shopping, while also allowing for shopping and event inspiration from one’s social circles. </p>
+        <li>
+            <img src="cherrypick/cherrypickhifiwireframes.png" id="projectimage">
+        </li>
+         
+    </ul>
     
     <footer>
-        <p>&copy; Albert Yang 2016</p>
+        <p class="backbutton"><a href="index.html">Back to Home</a></p>
+        &copy; Albert Yang 2017
     </footer>
-    
 </body>
     
 </html>
