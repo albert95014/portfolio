@@ -85,7 +85,7 @@ nav div:hover, nav div:hover a {
 
 #thumbnail {
     width: 100%;
-    min-width: 300px;
+    min-width: 0px;
     height: auto;
     display: inline-block;
     transition: 0.10s all linear;
@@ -325,6 +325,11 @@ iframe {
 
 /*1024px width*/
 @media only screen and (max-width: 1024px) {
+    body {
+        margin-left: 0px;
+        margin-top: 72px;
+    }
+    
     #name {
         width: 70%;
         font-size: 2.5em;
@@ -355,7 +360,7 @@ iframe {
     
     #thumbnail {
         display: block;
-        margin: 0 auto;
+        margin: 12px auto;
     }
     
     #projects li {
@@ -386,7 +391,7 @@ iframe {
 /*768px width*/
 @media only screen and (max-width: 768px) {
     body {
-        margin-left: 0px;
+        margin: 0px;
         margin-top: 72px;
     }
     
