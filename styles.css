@@ -157,7 +157,6 @@ small {
     position: fixed;
         bottom: 2%;
         left: 2%;
-        
 }
 
 #projectinfo {
@@ -330,7 +329,7 @@ iframe {
         width: 70%;
         font-size: 2.5em;
         margin: 0 auto;
-        margin-bottom: 1.5em;
+        margin-bottom: 1.0em;
         display: block;
     }
     
@@ -345,9 +344,8 @@ iframe {
         width: 70%;
         font-size: 0.9em;
         display: block;
-        margin: 0 auto;
-        margin-top: 3.0em;
-        display: none;
+        margin: 1.0em auto;
+        display: block;
     }
     
     #projects {
@@ -385,4 +383,15 @@ iframe {
     }
 }
 
+/*768px width*/
+@media only screen and (max-width: 768px) {
+    body {
+        margin-left: 6px;
+        margin-top: 72px;
+    }
+    
+    #thumbnail {
+        margin-bottom: 12px;
+    }
+}
 
