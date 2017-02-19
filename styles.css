@@ -81,6 +81,7 @@ nav div:hover, nav div:hover a {
     width: 45.5%;
     display: inline-block;
     margin: 1%;
+    overflow: hidden;
 }
 
 #thumbnail {
@@ -88,12 +89,13 @@ nav div:hover, nav div:hover a {
     min-width: 0px;
     height: auto;
     display: inline-block;
-    transition: 0.10s all linear;
+    transition: all 0.10s linear;
+    transform: scale(1.0);
 }
 
 #thumbnail:hover {
-    box-shadow: 0px 0px 8px gray;
-    transition: 0.10s all linear;
+    transform: scale(1.05);
+    transition: all 0.10s linear
 }
 
 footer {
