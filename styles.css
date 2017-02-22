@@ -5,23 +5,11 @@ body {
     font-size: 11pt;
 }
 
-nav {
-    width: 16.666667vw;
-    height: 100vh;
-    padding-right: 4%;
-    display: flex;
-    
-}
-
-nav div:hover, nav div:hover a {
-    color: black;
-    
-}
-
 #name {
-    width: 16.666667%;
+    width: 33.333333%;
     height: auto;
     margin-left: 16.666667%;
+    margin-bottom: 3%;
     display: inline-block;
     vertical-align: top;
     
@@ -58,12 +46,13 @@ nav div:hover, nav div:hover a {
 }
 
 #nav {
-    width: 16.666667%;
+    width: 32.1%;
     height: auto;
     display: inline-block;
-    margin-left: 16.666667%;
-    margin-top: -2.25em;
+    margin-top: 1.4%;
+    margin-bottom: 3%;
     vertical-align: top;
+    text-align: right;
     
     font-family: 'Lora', serif;
     font-size: 1.05em;
@@ -256,6 +245,8 @@ small {
     padding-left: 5px;
     border-left: 2px solid black;
     box-sizing: content-box;
+    font-size: 1.8em;
+    line-height: 1.2em;
 }
 
 
@@ -291,12 +282,19 @@ small {
 .photoinfo {
     width: 47%;
     height: auto;
-    margin-left:49%;
-    margin-bottom: 1%;
-    display: inline-block;
+    margin-left: 1%;
+    margin-bottom:  1.4em;
+    display: block;
     
     font-family: 'Lora', serif;
-    font-size: 0.9em;
+    font-size: 1.0em;
+    line-height: 1.5em;
+}
+
+.subheader {
+    font-size: 2.0em;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .photoinfosmall {
@@ -307,7 +305,8 @@ small {
     vertical-align: bottom;
     
     font-family: 'Lora', serif;
-    font-size: 0.9em;
+    font-size: 1.0em;
+    line-height: 1.5em;
 }
 
 iframe {
@@ -356,7 +355,8 @@ iframe {
         font-size: 0.9em;
         display: block;
         margin: 1.0em auto;
-        display: block;
+        margin-bottom: 5%;
+        text-align: left;
     }
     
     #projects {
