@@ -386,11 +386,20 @@ iframe {
         width: 100%;
     }
     
+    
+    
     .photoinfo, .photoinfosmall {
         font-size: 0.9em;
-        width: 100%;
+        width: 97%;
         display: block;
-        margin: 1.2em auto;
+        margin: 1.2em 1%;
+        line-height: 1.6em;
+    }
+    
+    .subheader {
+        font-size: 1.6em;
+        margin-top: 1%;
+        margin-bottom: -1%;
     }
 }
 
