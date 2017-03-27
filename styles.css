@@ -13,10 +13,10 @@ body {
     display: inline-block;
     vertical-align: top;
     
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
     letter-spacing: 1px;
-    font-size: 3.0em;
+    font-size: 1.8em;
     line-height: 1.0em;
 }
 
@@ -27,7 +27,8 @@ body {
     display: inline-block;
     vertical-align: top;
     
-    font-family: 'Lora', serif;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
     font-size: 1.05em;
     
     -webkit-animation: fadein 0.7s; /* Safari, Chrome and Opera > 12.1 */
@@ -49,12 +50,13 @@ body {
     width: 32.1%;
     height: auto;
     display: inline-block;
-    margin-top: 1.4%;
+    margin-top: 0.4%;
     margin-bottom: 3%;
     vertical-align: top;
     text-align: right;
     
-    font-family: 'Lora', serif;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
     font-size: 1.05em;
 }
 
@@ -88,7 +90,7 @@ body {
 }
 
 footer {
-    font-family: 'Lora', serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 0.8em;
     line-height: 1.0em;
@@ -110,7 +112,7 @@ a {
 }
 
 b {
-    font-weight: 700;
+    font-weight: 500;
 }
 
 i {
@@ -143,7 +145,7 @@ small {
 #projecttitle {
     width: 16.666667%;
     height: auto;
-    font-family: 'Lora', serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 1.05em;
     position: fixed;
         bottom: 2%;
@@ -157,8 +159,9 @@ small {
     display: inline-block;
     vertical-align: top;
     
-    font-family: 'Lora', serif;
-    font-size: 1.05em;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
     
     -webkit-animation: fadein 0.7s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 0.7s; /* Firefox < 16 */
@@ -245,8 +248,8 @@ small {
     padding-left: 5px;
     border-left: 2px solid black;
     box-sizing: content-box;
-    font-size: 1.8em;
-    line-height: 1.2em;
+    font-size: 1.3em;
+    line-height: 1.4em;
 }
 
 
@@ -286,7 +289,8 @@ small {
     margin-bottom:  0.3em;
     display: block;
     
-    font-family: 'Lora', serif;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
     font-size: 1.0em;
     line-height: 1.5em;
 }
@@ -300,13 +304,14 @@ small {
     display: inline-block;
     vertical-align: bottom;
     
-    font-family: 'Lora', serif;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
     font-size: 1.0em;
     line-height: 1.5em;
 }
 
 subheader {
-    font-size: 1.6em;
+    font-size: 1.4em;
     margin-top: 1%;
     margin-bottom: 1%;
     line-height: 2.0em;
@@ -320,7 +325,7 @@ iframe {
 /*1600px width*/
 @media only screen and (max-width: 1600px) {
   #name {
-      font-size: 2.5em;
+      font-size: 1.8em;
   }
 }
 
