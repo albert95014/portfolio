@@ -3,83 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Albert Yang, Pinwheels</title>
+    <title>Pinwheels</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    
+    
+    
+     <!-- Include jQuery and jquery.pin -->
+<!--    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />-->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="jquery.pin.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+<!--    <script type="text/javascript" src="jquery.fullPage.min.js"></script>-->
+    
+    <!--PRELOAD IMAGES SCRIPT-->
+    <script>
+        function preload(arrayOfImages) {
+            $(arrayOfImages).each(function(){
+                $('<img/>')[0].src = this;
+                // Alternatively you could use:
+                // (new Image()).src = this;
+            });
+        }
+
+        // Usage:
+
+        preload([
+            'pinwheels/angledview.jpg',
+            'pinwheels/attachmentview.jpg',
+            'pinwheels/frontview.jpg',
+            'pinwheels/separatedview.jpg',
+            'pinwheels/studiophoto.jpg',
+            'pinwheels/stackingdiagram.png',
+        ]);
+    
+    </script>
+    
 </head>
 
 <body>
-    <div id="name">
-        <h1>
-            <p><a href="index.html">ALBERT YANG</a></p>
-        </h1>
-    </div>
+        <!--BEGINNING OF FIRST SECTION (LANDING PAGE)-->
+        <div class="section group">
+           
+        <!--FIXED NAVIGATION ELEMENTS (RENDERS ON TOP OF FULLPAGE.JS)-->
+        <div class="col span_1_of_6">
+            <div id="name">
+                <p class="noborder"><a href="index.html#intro">Albert Yang</a></p>
+            </div>
+
+            <nav>
+                <p><a href="index.html#work">Work</a></p>
+            </nav>
+            
+            <div id="nextproject"><a href="twitteranalysis.html">Next Project</a></div>
+        </div>
+
+        <div class="col span_4_of_6 secondLeftColumn">
+            <p class="projecttitle">Pinwheels</p>
+            
+            
+            
+            <table class="projectinfotable">
+                <tr>
+                    <td>Discipline</td>
+                    <td>Environments Design</td>
+                </tr>
+                <tr>
+                    <td>Date of Completion</td>
+                    <td>May 2016</td>
+                </tr>
+            </table>
+            
+            <p class="subheader">Overview</p>
+            <p class="bodycopy">This project was an exercise in understanding private, public, and person spaces, as well as the interactions that take place in such environments.</p> 
+        
+            <p class="bodycopy">I researched spots around Carnegie Mellon's campus to explore how people behave differently within separate environments, taking note of aspects such as material, texture, climate, and sound. When I attempted to do this one windy and chilly afternoon, I found that there were considerably less people than previous days. As a result, my findings led me to explore ways for outdoor spaces to be utilized despite having less-than-ideal weather conditions. What if a space could be made public or private depending on the weather?</p> 
+            
+            <img class="projectImage" src="pinwheels/studiophoto.jpg">
+            
+            <p class="subheader">Installation Concept</p>
+
+            <p class="bodycopy">My solution was based around the persistence of vision illusion to create a more private or more public space depending on how windy it is outside. When winds are strong, the fans spin quickly, allowing people to see through the installation. When winds are weak, the fans stay stationary, obscuring the view of things behind the installation.</p>
+            
+            <div class="slick-gallery">
+                <div class="slick-slide"><img src="pinwheels/frontview.jpg"></div>
+                <div class="slick-slide"><img src="pinwheels/angledview.jpg"></div>
+                <div class="slick-slide"><img src="pinwheels/separatedview.jpg"></div>
+                <div class="slick-slide"><img src="pinwheels/attachmentview.jpg"></div>
+            </div>
+            
+            <p class="subheader">Stacking</p>
+        
+            <p class="bodycopy">To make the installation more adjustable depending on where it's placed, I created modules of fans that could be stacked on top of each other. The stacking mechanism simply involves a hole on the top of each module, in which the bottom of another module could easily fit into. </p>
+            
+            <img class="projectImage fullWidth" src="pinwheels/stackingdiagram.png">
+            
+            <p class="subheader">Functionality</p>
+        
+            <p class="bodycopy">The prototype I created was functional within indoor environments. The material utilized was too fragile and lightweight to be taken outside, so that's a problem that I could tackle in a future iteration. The installation worked when the window was open, so I was (somewhat) successful in trying to utilize natural forces to affect the utility of my piece.</p>
+            
+            <iframe src="https://www.youtube.com/embed/tMQATA5xbOY" frameborder="0" allowfullscreen></iframe>
+            
+            <p class="subheader">Post-Project Thoughts</p>
+        
+            <p class="bodycopy">Since my prototype was made out of thin materials such as paper and foamcore, if I were to make a full-fledged version of this installation, I would used stronger and heavier materials so it could be placed outside without falling. Additionally, using a thicker material for the frame would help reduce the amount of skewing that happens when the modules are stacked. I'd also make each module larger so that the fans would have a larger impact in obscuring and revealing the environment behind them. I think there's a lot of room for improvement in separating two spaces and making them private, so I could also explore different shapes and formations of pinwheels.</p>
+            
+        </div>
+        <!--END OF FIRST SECTION (LANDING PAGE)-->
+        
+            
+            
+        
+        </div>
+        <!--END OF "WORK" SECTION-->
     
-    <div id="nav">
-        <h2><a href="index.html"><border>WORK</border></a> &emsp;<a href="about.html">ABOUT</a> &emsp;<a href="resume.pdf" target="_blank">RESUME</a></h2> 
-    </div>
     
-    <div id="about">
-        <p class="projecttitle"><b>Pinwheels</b>
-            <br>
-        <i>Environments Design</i>
-        </p>
-        
-        <p>This project was an exercise in understanding private, public, and person spaces, as well as the interactions that take place in such environments.</p> 
-        
-        <p>I researched and was inspired by outdoor areas and natural forces. My research, which involved deep-hanging out at a seating area on CMU's campus, led me to explore ways for outdoor spaces to be utilized despite having less-than-ideal weather conditions. </p> 
-        
-        <p>My solution was based around the persistence of vision illusion to create a more private or more public space depending on how windy it is outside. When winds are strong, the fans spin quickly, allowing people to see through the installation. When winds are weak, the fans stay stationary, obscuring the view of things behind the installation.</p>
-    </div>
     
-    <ul id="projectpage">
-        <li>
-            <img src="pinwheels/studiophoto.jpg" id="projectimage">
-        </li>
+    <script>
         
-        <li>
-            <img src="pinwheels/frontview.jpg" id="projectimage">
-        </li>
+        /*TOP FUNCTION() IS FOR HOVER-ENTER, BOTTOM IS FOR HOVER-EXIT*/
+        $(document).ready(function(){
+            $(".projectlist a").hover(
+              function () {
+                $('.backgroundimages').html('<img src="' + $(this).data('id') + '.jpg">').stop().animate({
+                    opacity:0.3
+                });
+              },
+                
+                function () {
+                    $('.backgroundimages').stop().animate({
+                        opacity:0
+                    });
+                }
+               
+            );
+            
+        });
         
-        <li>
-            <img src="pinwheels/angledview.jpg" id="projectimage">
-        </li>
         
-        <p class="photoinfo"><subheader><b>Stacking</b></subheader></p>
         
-        <p class="photoinfo">To make the installation more adjustable depending on where it's placed, I created modules of fans that could be stacked on top of each other. The pictures below shows the single-module state, as well as the mechanism used for stacking.</p>
+        //BELOW SCRIPT WORKS TO MOVE PROJECTTITLE TO THE RIGHT WHILE SCROLLING
         
-        <li>
-            <img src="pinwheels/stackingdiagram.png" id="projectimage">
-        </li>
+        var scrollPercent = 100 * $(window).scrollTop() / ($(document).height() - $(window).height());
+            var offset = $(".projecttitle").offset();
         
-        <li>
-            <img src="pinwheels/separatedview.jpg" id="projectimage">
-        </li>
+                $(window).scroll(function(event) {
+                    var st = $(this).scrollTop();
+                    var windowWidth = $(window).width();
+                    var offsetRight = $(window).innerWidth() - (offset.left + $(".projecttitle").outerWidth());
+                    
+                    console.log(offsetRight);
+                    
+                    if ($(window).width() > 768) { 
+                        $(".projecttitle").css(
+                            "right", Math.max((windowWidth*0.02), offsetRight - st*10)
+                        );
+                    }
+                    
+                        if ($('body').height() <= ($(window).height() + $(window).scrollTop() + 200)) {
+                            $("#nextproject").fadeIn(300);
+                        } else {
+                            $("#nextproject").fadeOut(300);
+                        }
+                });
+         
+        /*SLICK CAROUSEL SETTINGS*/
+            $(document).ready(function(){
+              $('.slick-gallery').slick({
+                    dots: true,
+                    prevArrow: false,
+                    nextArrow: false,
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    focusOnSelect: true,
+              });
+            });
+       
+
         
-        <li>
-            <img src="pinwheels/attachmentview.jpg" id="projectimage">
-        </li>
-        
-        <p class="photoinfo"><subheader><b>Functionality</b></subheader></p>
-        
-        <p class="photoinfo">The prototype I created was functional within indoor environments. The material utilized was too fragile and lightweight to be taken outside, so that's a problem that I could tackle in a future iteration. The installation worked when the window was open, so I was (somewhat) successful in trying to utilize natural forces to affect the utility of my piece.</p>
-        
-        <iframe width="560" height="615" src="https://www.youtube.com/embed/tMQATA5xbOY" frameborder="0" allowfullscreen></iframe>
-        
-        <p class="photoinfo"><subheader><b>Post-Project Thoughts</b></subheader></p>
-        
-        <p class="photoinfo">Since my prototype was made out of thin materials such as paper and foamcore, if I were to make a full-fledged version of this installation, I would used stronger and heavier materials so it could be placed outside without falling. Additionally, using a thicker material for the frame would help reduce the amount of skewing that happens when the modules are stacked. I'd also make each module larger so that the fans would have a larger impact in obscuring and revealing the environment behind them. I think there's a lot of room for improvement in separating two spaces and making them private, so I could also explore different shapes and formations of pinwheels.</p>
-        
-    </ul>
+    </script>
     
-    <footer>
-        <p class="backbutton"><a href="index.html">Back to Home</a></p>
-        &copy; Albert Yang 2017
-    </footer>
 </body>
     
 </html>

@@ -7,16 +7,165 @@
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500," rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    
+     <!-- Include jQuery and jquery.pin -->
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="jquery.pin.js"></script>
+    <script type="text/javascript" src="jquery.fullPage.min.js"></script>
+    
+    <!--PRELOAD IMAGES SCRIPT-->
+    <script>
+    function preload(arrayOfImages) {
+            $(arrayOfImages).each(function(){
+                $('<img/>')[0].src = this;
+                // Alternatively you could use:
+                // (new Image()).src = this;
+            });
+        }
+
+        // Usage:
+
+        preload([
+            'cmudesigncensus/interactionphoto.jpg',
+            'aigadesigncensus/10.jpg',
+            'cherrypick/cherrypickmockup.jpg',
+            'paintthepavement/spread3.jpg',
+            'lowernine/boardcover.jpg',
+            'pinwheels/studiophoto.jpg',
+        ]);
+    
+    </script>
+    
 </head>
 
 <body>
-    <div id="container">
-        <h1>Albert Yang &mdash;</h1>
-        <p>Hi! I'm updating my portfolio site right now, so please check back later. Thanks!</p>
+    <div class="backgroundimages centerAlign">
+            </div>
+    
+    <div id="fullpage">
+        <!--BEGINNING OF FIRST SECTION (LANDING PAGE)-->
+        <div class="section group">
+           
+
+
+            <div class="col span_3_of_6 centerAlign" id="introduction">
+                <p>Hi! I'm Albert.</p>
+
+                <p>I’m currently a senior at Carnegie Mellon studying Communication and Environments Design, with a minor in Human-Computer Interaction.</p>
+
+                <p>I aim to create delightful experiences in a variety of platforms, whether they be print, digital, or something else entirely new. My main interests lie in utilizing storytelling and visual aesthetics to improve the experience of different forms of media. Within my career as a designer, I hope to further explore the idea of gamification in user experience, and work with others to foster a greater sense of empathy when interacting with and designing for users.</p>
+
+                <p>If you want to chat, please email me at <b>albertya@andrew.cmu.edu</b>! In the mean time, feel free to <a href="#work">check out my work</a> below or take a look at my <a href="resume.pdf" target="_blank">resume</a>! If neither of those strike your fancy, maybe take the time to check out my occasionally-updated <a href="http://www.instagram.com/albert95014">boba adventures</a>!</p>
+            </div>
+            
+        </div>
+        <!--END OF FIRST SECTION (LANDING PAGE)-->
+        
+        
+        
+        <!--BEGINNING OF "WORK" SECTION-->
+        <div class="section group" data-anchor="work">
+            <div class="col span_2_of_6 centerAlign">
+                <table class="projectlist">
+                    <tr>
+                        <th></th>
+                        <th>Projects</th>
+                    </tr>
+                    <tr>
+                        <td>Print, Data Viz</td>
+                        <td><a href="aigadesigncensus.html" data-id="aigadesigncensus/10">AIGA Design Census</a></td>
+                    </tr>
+                    <tr>
+                        <td>Data Viz, Web Design</td>
+                        <td><a href="cmudesigncensus.html" data-id="cmudesigncensus/interactionphoto">CMU Design Census</a></td>
+                    </tr>
+                    <tr>
+                        <td>UX Research, Visual Design</td>
+                        <td><a href="cherrypick.html" data-id="cherrypick/cherrypickmockup">Cherry Pick</a></td>
+                    </tr>
+                    <tr>
+                        <td>Print, Game Design</td>
+                        <td><a href="lowernine.html" data-id="lowernine/boardcover">Lower Nine</a></td>
+                    </tr>
+                    <tr>
+                        <td>Print, Branding</td>
+                        <td><a href="paintthepavement.html" data-id="paintthepavement/spread3">Paint the Pavement</a></td>
+                    </tr>
+                    <tr>
+                        <td>Environments</td>
+                        <td><a href="pinwheels.html" data-id="pinwheels/studiophoto">Pinwheels</a></td>
+                    </tr>
+                    <tr>
+                        <td>Data Viz, Motion</td>
+                        <td><a href="twitteranalysis.html" data-id="twitteranalysis/twitterthumbnail">Twitter Analysis</a></td>
+                    </tr>
+                    <tr>
+                        <td>Print, Book Design</td>
+                        <td><a href="hiraganabook.html" data-id="hiraganabook/hiraganabookcover">Hiragana Book</a></td>
+                    </tr>
+                </table>
+            </div>
+            
+            
+        
+        </div>
+        <!--END OF "WORK" SECTION-->
+        
     </div>
+    <!--END OF FULLPAGE.JS ELEMENTS-->
+    
+    <!--FIXED NAVIGATION ELEMENTS (RENDERS ON TOP OF FULLPAGE.JS)-->
+    <div class="col span_1_of_6">
+        <div id="name">
+            <p><a href="#intro">Albert Yang</a></p>
+        </div>
+
+        <nav>
+            <p><a href="#work">Work</a></p>
+        </nav>
+    </div>
+    
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors:['intro', 'work'],
+                onLeave: function(index, nextIndex, direction){
+                    //leaving 1st section
+                    if(index == 1){
+                       $('#name p').addClass('noborder');
+                       $('nav p').addClass('addborder')    
+                    }
+                    //back to the 1st section
+                    if(nextIndex == 1){
+                        $('#name p').removeClass('noborder');
+                        $('nav p').removeClass('addborder');
+                    }
+                }  
+            });
+        });
+        
+        
+        
+        $(document).ready(function(){
+            
+            $('#introduction').fadeIn(700);
+            
+            /*TOP FUNCTION() IS FOR HOVER-ENTER, BOTTOM IS FOR HOVER-EXIT*/
+            $(".projectlist a").hover(
+              function () {
+                $('.backgroundimages').html('<img src="' + $(this).data('id') + '.jpg">').stop().animate({opacity:0.3});
+              }, 
+              function () {
+                $('.backgroundimages').stop().animate({opacity:0});
+                });
+            
+        });
+        
+        
+    </script>
+    
 </body>
     
 </html>

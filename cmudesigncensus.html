@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMU Design Census</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    
+    
+    
+     <!-- Include jQuery and jquery.pin -->
+<!--    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />-->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="jquery.pin.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+<!--    <script type="text/javascript" src="jquery.fullPage.min.js"></script>-->
+    
+    <!--PRELOAD IMAGES SCRIPT-->
+    <script>
+        function preload(arrayOfImages) {
+            $(arrayOfImages).each(function(){
+                $('<img/>')[0].src = this;
+                // Alternatively you could use:
+                // (new Image()).src = this;
+            });
+        }
+
+        // Usage:
+
+        preload([
+            'cmudesigncensus/cdc_screencaps.jpg',
+            'cmudesigncensus/cubesketches.jpeg',
+            'cmudesigncensus/datascreenshot.png',
+            'cmudesigncensus/deb_cubeiterations.png',
+            'cmudesigncensus/earlymockup1.png',
+            'cmudesigncensus/earlymockup2.png',
+            'cmudesigncensus/interactionphoto.jpg',
+            'cmudesigncensus/steven_earlymockup.jpg',
+        ]);
+    
+    </script>
+    
+</head>
+
+<body>
+    <div class="backgroundimages centerAlign">
+            </div>
+        <!--BEGINNING OF FIRST SECTION (LANDING PAGE)-->
+        <div class="section group">
+           
+        <!--FIXED NAVIGATION ELEMENTS (RENDERS ON TOP OF FULLPAGE.JS)-->
+        <div class="col span_1_of_6">
+            <div id="name">
+                <p class="noborder"><a href="index.html#intro">Albert Yang</a></p>
+            </div>
+
+            <nav>
+                <p><a href="index.html#work">Work</a></p>
+            </nav>
+            
+            <div id="nextproject"><a href="cherrypick.html">Next Project</a></div>
+        </div>
+
+        <div class="col span_4_of_6 secondLeftColumn">
+            <p class="projecttitle">CMU Design Census</p>
+            
+            
+            
+            <table class="projectinfotable">
+                <tr>
+                    <td>Discipline</td>
+                    <td>Data Visualization, Web Design</td>
+                </tr>
+                <tr>
+                    <td>Team Members</td>
+                    <td><a href="http://jessieheadrick.com/">Jessie Headrick</a>, <a href="https://www.stevenji.com/">Steven Ji</a>, <a href="http://www.faithkaufman.com/">Faith Kaufman</a>, <a href="https://www.deborahjlee.com/">Deborah Lee</a>, <a href="https://www.albertyang.me/">Albert Yang</a></td>
+                </tr>
+                <tr>
+                    <td>Date of Completion</td>
+                    <td>May 2017</td>
+                </tr>
+            </table>
+            
+            <p class="subheader">Overview</p>
+            <p class="bodycopy">Building off of our AIGA Design Census project, my group and I collected data on alumni from the Carnegie Mellon School of Design to understand whether or not they "align" with the industries they work in. We visualized our data in a webpage, which can be viewed <a href="https://cmu-design-census.github.io/">here</a>.</p>
+            
+            <img class="projectImage fullWidth" src="cmudesigncensus/cdc_screencaps.jpg">
+            
+            <p class="subheader">Surveying</p>
+            <p class="bodycopy">We sent out a survey (available <a href="https://goo.gl/forms/1ao2CJBShFMEAyYA2">here</a>) to alumni residing in New York at the time, asking them about their three most recent job positions, as well as how satisfied they were with the role of designer, the company's design process, and the final product of the design phase. We were able to obtain more quantifiable metrics to use when determining how "aligned" a person is with their occupation and respective industries.</p>
+            
+            <p class="bodycopy">Within our survey, we asked on a scale of 1-5 how aligned a person was with each of the categories (designer, method, product). We then asked them to tell us why or why not they felt satisfied with the job's attitude towards and concept of design.</p>
+            
+            <p class="subheader">Interpreting Results</p>
+            <p class="bodycopy">In total, we received 86 responses from alumni to work with. Our next step was to interpret the data, with each of us taking some time to look for patterns and correlations between industries and levels of satisfaction. Ultimately, we decided that our goal was to present the data in a visual format rather than come to conclusions that could potentially be inferred. From there, we moved to figuring out how to present the data through digital media, and make it interactive for the user to navigate through different levels of information.</p>
+                        
+            <img class="projectImage" src="cmudesigncensus/datascreenshot.png">
+            
+            <p class="subheader">Visual Development</p>
+            <p class="bodycopy">From our responses, we felt that we had an understanding of each individual alumnus and how he or she felt about certain design philosophies. As a result, we decided to individualize each person as a cube, and placing them together would create a "city" of designers. Our original concept involved having different faces of cubes to represent their levels of satisfaction with the separate categories, but technical limitations, as well as the desire to simplify our representation of the data, led us down a different route.</p>
+           
+            <p class="bodycopy">For weeks we experimented with different visual styles, for both a motion graphics video as well as the webpage that would host the survey data. In the end, we developed a visualization tool that could filter out different industries, allowing the user to specify what he or she wanted to learn more about. We also created pages that talked about different patterns we noticed, and showed potential takeaways that could be found.</p>
+            
+            <div class="slick-gallery">
+                <div class="slick-slide"><img src="cmudesigncensus/cubesketches.jpeg"></div>
+                <div class="slick-slide"><img src="cmudesigncensus/deb_cubeiterations.png"></div>
+                <div class="slick-slide"><img src="cmudesigncensus/earlymockup1.png"></div>
+                <div class="slick-slide"><img src="cmudesigncensus/steven_earlymockup.jpg"></div>
+                <div class="slick-slide"><img src="cmudesigncensus/earlymockup2.png"></div>
+            </div>
+            
+            <p class="subheader">Final Thoughts</p>
+            <p class="bodycopy">Overall, our group was satisfied with our final deliverable considering the time we were given. Future steps for this project involve making it responsive for multiple platforms, and cleaning up interactions with the visual tool. Ultimately, I learned a lot about the perils of survey creation, data interpretation, web design, as well as visual development skills, so I'm (on a scale of 1-5) a 5 on the level of satisfaction I have with our final deliverable!</p>
+            
+        </div>
+        <!--END OF FIRST SECTION (LANDING PAGE)-->
+        
+            
+            
+        
+        </div>
+        <!--END OF "WORK" SECTION-->
+    
+    
+    
+    <script>
+        
+        /*TOP FUNCTION() IS FOR HOVER-ENTER, BOTTOM IS FOR HOVER-EXIT*/
+        $(document).ready(function(){
+            $(".projectlist a").hover(
+              function () {
+                $('.backgroundimages').html('<img src="' + $(this).data('id') + '.jpg">').stop().animate({
+                    opacity:0.3
+                });
+              },
+                
+                function () {
+                    $('.backgroundimages').stop().animate({
+                        opacity:0
+                    });
+                }
+               
+            );
+            
+        });
+        
+        
+        
+        //BELOW SCRIPT WORKS TO MOVE PROJECTTITLE TO THE RIGHT WHILE SCROLLING
+        
+        var scrollPercent = 100 * $(window).scrollTop() / ($(document).height() - $(window).height());
+            var offset = $(".projecttitle").offset();
+        
+                $(window).scroll(function(event) {
+                    var st = $(this).scrollTop();
+                    var windowWidth = $(window).width();
+                    var offsetRight = $(window).innerWidth() - (offset.left + $(".projecttitle").outerWidth());
+                    
+                    console.log(offsetRight);
+                    
+                    if ($(window).width() > 768) { 
+                        $(".projecttitle").css(
+                            "right", Math.max((windowWidth*0.02), offsetRight - st*10)
+                        );
+                    }
+                    
+                        if ($('body').height() <= ($(window).height() + $(window).scrollTop() + 200)) {
+                            $("#nextproject").fadeIn(300);
+                        } else {
+                            $("#nextproject").fadeOut(300);
+                        }
+                });
+         
+        /*SLICK CAROUSEL SETTINGS*/
+            $(document).ready(function(){
+              $('.slick-gallery').slick({
+                    dots: true,
+                    prevArrow: false,
+                    nextArrow: false,
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    focusOnSelect: true, 
+              });
+            });
+       
+
+        
+    </script>
+    
+</body>
+    
+</html>

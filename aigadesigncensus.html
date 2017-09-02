@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIGA Design Census</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    
+    
+    
+     <!-- Include jQuery and jquery.pin -->
+<!--    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />-->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="jquery.pin.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+<!--    <script type="text/javascript" src="jquery.fullPage.min.js"></script>-->
+    
+    <!--PRELOAD IMAGES SCRIPT-->
+    <script>
+        function preload(arrayOfImages) {
+            $(arrayOfImages).each(function(){
+                $('<img/>')[0].src = this;
+                // Alternatively you could use:
+                // (new Image()).src = this;
+            });
+        }
+
+        // Usage:
+
+        preload([
+            'aigadesigncensus/1.jpg',
+            'aigadesigncensus/2.jpg',
+            'aigadesigncensus/3.jpg',
+            'aigadesigncensus/4.jpg',
+            'aigadesigncensus/5.jpg',
+            'aigadesigncensus/6.jpg',
+            'aigadesigncensus/7.jpg',
+            'aigadesigncensus/8.jpg',
+            'aigadesigncensus/9.jpg',
+            'aigadesigncensus/10.jpg',
+            'aigadesigncensus/backofcard_iterations.png',
+            'aigadesigncensus/frontofcard_iterations.jpeg',
+            'aigadesigncensus/originalcards.jpeg',
+        ]);
+    
+    </script>
+    
+</head>
+
+<body>
+    <div class="backgroundimages centerAlign">
+            </div>
+        <!--BEGINNING OF FIRST SECTION (LANDING PAGE)-->
+        <div class="section group">
+           
+        <!--FIXED NAVIGATION ELEMENTS (RENDERS ON TOP OF FULLPAGE.JS)-->
+        <div class="col span_1_of_6">
+            <div id="name">
+                <p class="noborder"><a href="index.html#intro">Albert Yang</a></p>
+            </div>
+
+            <nav>
+                <p><a href="index.html#work">Work</a></p>
+            </nav>
+            
+            <div id="nextproject"><a href="cmudesigncensus.html">Next Project</a></div>
+        </div>
+
+        <div class="col span_4_of_6 secondLeftColumn">
+            <p class="projecttitle">AIGA Design Census</p>
+            
+            
+            
+            <table class="projectinfotable">
+                <tr>
+                    <td>Discipline</td>
+                    <td>Print, Data Visualization</td>
+                </tr>
+                <tr>
+                    <td>Team Members</td>
+                    <td><a href="http://jessieheadrick.com/">Jessie Headrick</a>, <a href="https://www.stevenji.com/">Steven Ji</a>, <a href="http://www.faithkaufman.com/">Faith Kaufman</a>, <a href="https://www.deborahjlee.com/">Deborah Lee</a>, <a href="http://www.albertyang.me/">Albert Yang</a></td>
+                </tr>
+                <tr>
+                    <td>Date of Completion</td>
+                    <td>April 2017</td>
+                </tr>
+            </table>
+            
+            <p class="subheader">Overview</p>
+            <p class="bodycopy">Our group was tasked with visually representing data from the <a href="http://designcensus.org/#!/">2016 AIGA Design Census</a>, and finding out how to present meaningful information that can be extracted from the results. We went down a more abstract path for the data visualization, <b>creating cards that represented how different industries approached design as a concept.</b></p>
+ 
+            <div class="slick-gallery">
+                <div class="slick-slide"><img src="aigadesigncensus/1.jpg"></div>
+                <div class="slick-slide"><img src="aigadesigncensus/10.jpg"></div>
+                <div class="slick-slide"><img src="aigadesigncensus/4.jpg"></div>
+                <div class="slick-slide"><img src="aigadesigncensus/3.jpg"></div>
+                <div class="slick-slide"><img src="aigadesigncensus/2.jpg"></div>
+                <div class="slick-slide"><img src="aigadesigncensus/7.jpg"></div>
+                <div class="slick-slide"><img src="aigadesigncensus/8.jpg"></div>
+                <div class="slick-slide"><img src="aigadesigncensus/9.jpg"></div>
+            </div>
+            
+            <p class="subheader">Developing a System</p>
+            <p class="bodycopy">The main piece of data we used from the Design Census was a question that asked surveyors to give three words that they believed represented the future of design. From there, we organized the words into three categories: <b>designer</b>, <b>method</b>, and <b>product</b>.</p>
+          
+            <p class="bodycopy">"Designer" represented how much should designers work with one another, "Method" represented the process in which they should work, and "Product" represented the ultimate outcome of the design process. Within each category, we filtered the results into smaller branches: words about the "designer" were interpreted as <b>collaborative or individual</b>, "method" was divided into <b>thinking or emotive process</b>, and "product" was divided into <b>positive, negative, or neutral connotations</b> about the future.</p>
+            
+            <img class="portraitimg portraitmargin" src="aigadesigncensus/5.jpg">
+            <img class="portraitimg" src="aigadesigncensus/6.jpg">
+            
+            <p class="subheader">Visual Language</p>
+            <p class="bodycopy">After developing our system for representing the data, our group worked towards creating a visual language that could communicate what we had found within the survey results. We worked separately on type, color, and layout iterations, and met up frequently to discuss potential ideas that could potentially work well together.</p>
+            
+            <p class="bodycopy">Our original iterations involved a more disparate color palate, but problems such as visual balance between the three categories led us to work with more harmonious colors. We also received feedback that the patterns within each grid unit were too busy, so we moved towards a more minimal approach with the symbols.</p>
+            
+            <img class="projectImage fullWidth" src="aigadesigncensus/originalcards.jpeg">
+            
+            <p class="subheader">Finalizing the Visuals</p>
+            <p class="bodycopy">We worked with each other for several weeks, developing different layouts and color schemes to create a more unified set of symbols within each card, and cards within the deck as a whole. Other iterations involved same-sized symbols on the fronts, breaking the grid within each section, vibrant symbols against duller backgrounds, among other variations of visual hierarchy.</p>
+            
+            <div class="slick-gallery">
+                <div class="slick-slide"><img src="aigadesigncensus/backofcard_iterations.png"></div>
+                <div class="slick-slide"><img src="aigadesigncensus/backofcard_iterations2.png"></div>
+                <div class="slick-slide"><img src="aigadesigncensus/frontofcard_iterations.jpeg"></div>
+                <div class="slick-slide"><img src="aigadesigncensus/backofcard_iterations3.jpeg"></div>
+            </div>
+            
+            <p class="subheader">Post-Project Thoughts</p>
+            <p class="bodycopy">As one of my first projects on visualizing large sets of data, I learned a lot about topics such as surveymaking and the development of visual systems. Among our group's largest concerns was the challenge of balancing an aesthetically-pleasing system with the clarity of communicating our findings in a visual format. In the end, I think that more focus could have been put on the communication aspect from multiple distances to improve the ease of use.</p>
+            
+        </div>
+        <!--END OF FIRST SECTION (LANDING PAGE)-->
+        
+            
+            
+        
+        </div>
+        <!--END OF "WORK" SECTION-->
+    
+    
+    
+    <script>
+        
+        /*TOP FUNCTION() IS FOR HOVER-ENTER, BOTTOM IS FOR HOVER-EXIT*/
+        $(document).ready(function(){
+            $(".projectlist a").hover(
+              function () {
+                $('.backgroundimages').html('<img src="' + $(this).data('id') + '.jpg">').stop().animate({
+                    opacity:0.3
+                });
+              },
+                
+                function () {
+                    $('.backgroundimages').stop().animate({
+                        opacity:0
+                    });
+                }
+               
+            );
+            
+        });
+        
+        
+        
+        //BELOW SCRIPT WORKS TO MOVE PROJECTTITLE TO THE RIGHT WHILE SCROLLING
+        
+        var scrollPercent = 100 * $(window).scrollTop() / ($(document).height() - $(window).height());
+            var offset = $(".projecttitle").offset();
+        
+                $(window).scroll(function(event) {
+                    var st = $(this).scrollTop();
+                    var windowWidth = $(window).width();
+                    var offsetRight = $(window).innerWidth() - (offset.left + $(".projecttitle").outerWidth());
+                    
+                    console.log(offsetRight);
+                    
+                    if ($(window).width() > 768) { 
+                        $(".projecttitle").css(
+                            "right", Math.max((windowWidth*0.02), offsetRight - st*10)
+                        );
+                    }
+                    
+                        if ($('body').height() <= ($(window).height() + $(window).scrollTop() + 200)) {
+                            $("#nextproject").fadeIn(300);
+                        } else {
+                            $("#nextproject").fadeOut(300);
+                        }
+                });
+         
+        /*SLICK CAROUSEL SETTINGS*/
+            $(document).ready(function(){
+              $('.slick-gallery').slick({
+                    dots: true,
+                    prevArrow: false,
+                    nextArrow: false,
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    focusOnSelect: true,
+              });
+            });
+       
+
+        
+    </script>
+    
+</body>
+    
+</html>
