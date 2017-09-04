@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
     
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
@@ -177,13 +179,17 @@
                     var st = $(this).scrollTop();
                     var windowWidth = $(window).width();
                     var offsetRight = $(window).innerWidth() - (offset.left + $(".projecttitle").outerWidth());
+                    var leftPos = $(".projecttitle").position.left;
                     
                     console.log(offsetRight);
                     
                     if ($(window).width() > 768) { 
-                        $(".projecttitle").css(
-                            "right", Math.max((windowWidth*0.02), offsetRight - st*10)
-                        );
+                        $(".projecttitle").css({
+                            "right": 
+                                Math.max((windowWidth*0.02), offsetRight - st*10),
+//                            "right":
+//                                Math.min((offsetRight - st*10), leftPos),
+                        });
                     }
                     
                         if ($('body').height() <= ($(window).height() + $(window).scrollTop() + 200)) {

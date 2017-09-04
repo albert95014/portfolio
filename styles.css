@@ -148,6 +148,10 @@ a:visited {
     color: #fa3727;
 }
 
+span:hover {
+    color: #fa3727;
+}
+
 #introduction {
     height: auto;
     display: none;
@@ -272,6 +276,7 @@ nav p.addborder {
 table {
     width: 100%;
     height: auto;
+    
 }
 
 .projectlist {
@@ -301,6 +306,7 @@ table tr td {
     font-weight: 700;
     
     padding: 6px 0;
+    
 }
 
 table tr td a:hover {
@@ -314,11 +320,13 @@ table tr td:first-child {
 }
 
 .backgroundimages img {
-    width: 40vw;
-    height: auto;
+    width: 60vw;
+    min-height: 60vh;
+    object-fit: contain;
     margin: 0 auto;
     display: block;
 }
+
 
 /*PROJECT-PAGE RELATED CLASSES AND IDS*/
 .projecttitle {
@@ -447,7 +455,6 @@ iframe {
 
 .slick-slide {
     text-align: center;
-    background: #fa3727;
     
 }
 
@@ -612,19 +619,45 @@ iframe {
 	.col {  margin: 1% 0 1% 0%; }
 	.span_1_of_6, .span_2_of_6, .span_3_of_6, .span_4_of_6, .span_5_of_6, .span_6_of_6 { width: 100%; }
     
-    #name, nav {
+    #name {
+        top: 15px;
+        left: 20px;
+    }
+    
+    nav {
+        bottom: 10px;
         left: 20px;
     }
     
     .projecttitle {
-        top: 1px;
+        top: -10px;
+        right: 20px;
+    }
+    
+    #nextproject {
+        bottom: 15px;
+        right: 20px;
     }
     
     .projectlist {
         margin-left: 20px;
     }
     
-    #introduction {
+    #introduction p{
         width: 360px;
+        margin-left: 15px;
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+        margin-bottom: 0.9rem;
     }
+    
+    #introduction p:first-child {
+        font-size: 1.4rem;
+    }
+    
+    #introduction p {
+        
+        
+    }
+    
 }
