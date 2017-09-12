@@ -347,7 +347,7 @@ table tr td a:hover+img {
     min-height: 60vh;
     object-fit: contain;
     margin: 0 auto;
-    display: block;
+    display: none;
 }
 
 
