@@ -58,8 +58,10 @@
                 <p>I’m currently a senior at Carnegie Mellon studying <a href="http://http://design.cmu.edu/content/communications">Communication</a> and <a href="http://design.cmu.edu/content/environments-1">Environments</a> Design, with a minor in Human-Computer Interaction.</p>
 
                 <p>I aim to create delightful experiences in a variety of platforms, whether they be print, digital, or something else entirely new. My main interests lie in utilizing storytelling and visual aesthetics to improve the experience of different forms of media. Within my career as a designer, I hope to further explore the idea of gamification in user experience, and work with others to foster a greater sense of empathy when interacting with and designing for users.</p>
+                
+                <p>Outside of design, I love to try out new games, travel, and explore cities looking for places to eat great food. If you're in the mood, feel free to check out my occasionally-updated catalog of <a href="http://www.instagram.com/albert95014" target="_blank">boba adventures</a>!</p>
 
-                <p>If you want to chat, please email me at <b>albertya@andrew.cmu.edu</b>! In the mean time, feel free to <a href="#work">check out my work</a> below or take a look at my <a href="resume.pdf" target="_blank">resume</a>! If neither of those strike your fancy, maybe take the time to check out my occasionally-updated <a href="http://www.instagram.com/albert95014" target="_blank">boba adventures</a>!</p>
+                <p>If you want to chat, I can be reached at <b>albertya@andrew.cmu.edu</b>. In the mean time, you're more than welcome to <a href="#work"><b>check out my work</b></a> below or take a look at my <a href="resume.pdf" target="_blank"><b>resume</b></a>! </p>
             </div>
             
         </div>
@@ -77,11 +79,17 @@
                     </tr>
                     <tr>
                         <td>Print, Data Viz</td>
-                        <td><a href="aigadesigncensus.html" data-id="aigadesigncensus/10">AIGA Design Census</a></td>
+                        <td><a href="aigadesigncensus.html" data-id="aigadesigncensus/10">AIGA Design Census</a>
+                        
+                        </td>
+                        <td>
+                        <img class="backgroundimg" src="aigadesigncensus/10.jpg">
+                        </td>
                     </tr>
                     <tr>
                         <td>Data Viz, Web Design</td>
-                        <td><a href="cmudesigncensus.html" data-id="cmudesigncensus/interactionphoto">CMU Design Census</a></td>
+                        <td><a href="cmudesigncensus.html" data-id="cmudesigncensus/interactionphoto">CMU Design Census</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>UX Research, Visual Design</td>
@@ -149,21 +157,24 @@
         });
         
         
-        
+   
         $(document).ready(function(){
             
             $('#introduction').fadeIn(700);
             
             /*TOP FUNCTION() IS FOR HOVER-ENTER, BOTTOM IS FOR HOVER-EXIT*/
-            $(".projectlist a").hover(
+            $(".projectlist a").mouseover(
               function () {
-                $('.backgroundimages').html('<img src="' + $(this).data('id') + '.jpg">').stop().animate({opacity:0.3});
-              }, 
+                $('.backgroundimages').html('<img src="' + $(this).data('id') + '.jpg">').stop(true, true).animate({opacity:0.3});
+              }),
+                
+                $(".projectlist a").mouseout(
               function () {
-                $('.backgroundimages').stop().animate({opacity:0});
+                $('.backgroundimages').html('<img src="' + $(this).data('id') + '.jpg">').stop(true, true).animate({opacity:0});
                 });
             
         });
+        
         
         
     </script>
