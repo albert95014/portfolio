@@ -101,7 +101,7 @@ a:visited {
         top: 25px;
         left: 25px;
     z-index: 9999;
-    color: #fa3727;
+    color: #fa3727 !important;
     
 /*
     -webkit-transition-duration: 0.3s;
