@@ -688,7 +688,9 @@ iframe {
     }
     
     #introduction {
-        width: 90%;
+        width: 100vw;
+        padding: 0 20px;
+        box-sizing: border-box;
     }
     
     
