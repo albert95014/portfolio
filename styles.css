@@ -107,8 +107,12 @@ a:visited {
 #name p {
     display: inline-block;
     padding-bottom: 6px;
-    color: #fa3727;
+    
     border-bottom: 3px solid #fa3727;
+}
+
+#name p a {
+    color: #fa3727;
 }
 
 #name p.noborder {
