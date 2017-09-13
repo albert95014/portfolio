@@ -380,12 +380,10 @@ table tr td a:hover+img {
     text-decoration: underline;
 }
 
-.subheader, .projectinfotable tr td:first-child {
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    font-style: normal;
+h2, .projectinfotable tr td:first-child {
+    font-size: 1.2rem;
+    font-style: italic;
     font-weight: 700;
-    letter-spacing: 0.075rem;
     
     width: 23.5%;
     padding-bottom: 16px;
@@ -401,7 +399,7 @@ table tr td a:hover+img {
 /*    border: 1px solid black;*/
 }
 
-.subheader {
+h2 {
     display: inline-block;
     width: 23.5%;
     vertical-align: top;
@@ -415,7 +413,7 @@ table tr td a:hover+img {
 .bodycopy {
     font-size: 1.2rem;
     font-weight: 300;
-    line-height: 1.8rem;
+    line-height: 1.85rem;
     
     float: right;
     width: 74.5%;
@@ -570,7 +568,7 @@ iframe {
         min-width: 360px;
     }
     
-    .subheader {
+    h2 {
         font-size: 1.4rem;
         width: 90%;
         margin-left: 5%;
