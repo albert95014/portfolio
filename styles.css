@@ -112,12 +112,12 @@ a:visited {
 }
 
 #name p a {
-    color: #fa3727;
+    
 }
 
 #name p.noborder {
     border-bottom: none;
-/*    color: #000;*/
+    color: #000;
     
 }
 
