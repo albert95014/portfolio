@@ -76,7 +76,7 @@ b {
 }
 
 a {
-    color: #000;
+    color: black;
     text-decoration: none;
 }
 
@@ -102,6 +102,7 @@ a:visited {
         left: 25px;
     z-index: 9999;
     color: #fa3727;
+    
 }
 
 #name p {
@@ -112,7 +113,7 @@ a:visited {
 
 #name p.noborder {
     border-bottom: none;
-/*    color: #000;*/
+    color: #000;
     
 }
 
