@@ -616,6 +616,21 @@ iframe {
             right: 20px;
     }
     
+    #introduction {
+        width: 60vw;
+    }
+    
+    #introduction p{
+        margin: 0 auto;
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+        margin-bottom: 0.9rem;
+    }
+    
+    #introduction p:first-child {
+        font-size: 1.2rem;
+    }
+    
     .slick-gallery {
         width: 100%;
     }
@@ -638,11 +653,19 @@ iframe {
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
 	.col {  margin: 1% 0 1% 0%; }
+    .col:first-child {
+        margin-left: 0%;
+    }
 	.span_1_of_6, .span_2_of_6, .span_3_of_6, .span_4_of_6, .span_5_of_6, .span_6_of_6 { width: 100%; }
+    
+    #name, nav, .projecttitle, #nextproject {
+        font-size: 1.0rem;
+    }
     
     #name {
         top: 20px;
         left: 20px;
+        
     }
     
     nav {
@@ -664,21 +687,19 @@ iframe {
         margin-left: 20px;
     }
     
+    #introduction {
+        width: 90%;
+    }
+    
+    
     #introduction p{
-        width: 360px;
-        margin-left: 15px;
-        font-size: 0.8rem;
-        line-height: 1.3rem;
-        margin-bottom: 0.9rem;
+        font-size: 0.7rem;
+        line-height: 1.2rem;
+        margin-bottom: 0.75rem;
     }
     
     #introduction p:first-child {
-        font-size: 1.4rem;
-    }
-    
-    #introduction p {
-        
-        
+        font-size: 1.2rem;
     }
     
 }
