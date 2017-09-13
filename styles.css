@@ -76,7 +76,7 @@ b {
 }
 
 a {
-/*    color: #000;*/
+    color: #000;
     text-decoration: none;
 }
 
@@ -85,7 +85,7 @@ a:hover {
 }
 
 a:visited {
-    color: inherit;
+/*    color: inherit;*/
 }
 
 
@@ -101,12 +101,13 @@ a:visited {
         top: 25px;
         left: 25px;
     z-index: 9999;
-    color: #fa3727;
+    
 }
 
 #name p {
     display: inline-block;
     padding-bottom: 6px;
+    color: #fa3727;
     border-bottom: 3px solid #fa3727;
 }
 
