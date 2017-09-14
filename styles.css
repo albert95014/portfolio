@@ -105,23 +105,23 @@ a:visited {
     
 }
 
-#name p {
+#name p a {
     display: inline-block;
     padding-bottom: 6px;
     border-bottom: 3px solid #fa3727;
+    color: #fa3727;
 }
 
-#name p.noborder {
+#name p a.noborder {
     border-bottom: none;
     color: #000;
-    
 }
 
 .noborder {
     border-bottom: none;
 }
 
-#name p:hover {
+#name p a:hover {
 /*    border-bottom: 3px solid #000;*/
     color: #fa3727;
 }
@@ -172,37 +172,14 @@ nav {
         left: 25px;
     z-index: 9999;
     
-/*
-    -webkit-transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    animation: slideUpOnLoad 2s 1;
-    -webkit-animation: slideUpOnLoad 2s 1;
-*/
 }
 
-/*
-        @keyframes slideUpOnLoad
-        {
-            0% {bottom:-25px;}
-            50% {bottom:-25px;}
-            100% {bottom:25px;}
-        }
-        @-webkit-keyframes slideUpOnLoad
-        {
-            0% {bottom:-25px;}
-            50% {bottom:-25px;}
-            100% {bottom:25px;}
-        }
-*/
-
-nav p:hover {
+nav p a:hover {
 /*    border-bottom: 3px solid black;*/
     color: #fa3727;
 }
 
-nav p.addborder {
+nav p a.addborder {
     border-bottom: 3px solid #fa3727;
      color: #fa3727;
 }
@@ -223,7 +200,7 @@ nav p.addborder {
     display: none;
 }
 
-#nextproject:hover {
+#nextproject a:hover {
 /*    border-bottom: 3px solid #fa3727;*/
     color: #fa3727;
 }

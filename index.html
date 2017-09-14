@@ -144,13 +144,13 @@
                 onLeave: function(index, nextIndex, direction){
                     //leaving 1st section
                     if(index == 1){
-                       $('#name p').addClass('noborder');
-                       $('nav p').addClass('addborder')    
+                       $('#name p a').addClass('noborder');
+                       $('nav p a').addClass('addborder')    
                     }
                     //back to the 1st section
                     if(nextIndex == 1){
-                        $('#name p').removeClass('noborder');
-                        $('nav p').removeClass('addborder');
+                        $('#name p a').removeClass('noborder');
+                        $('nav p a').removeClass('addborder');
                     }
                 }  
             });
