@@ -1,8 +1,12 @@
 body {
     font-family: 'Nunito', sans-serif;
     font-size: 12pt;
-    overflow-x: hidden;
+    
     height: 100%;
+}
+
+.sitewrapper {
+    overflow-x: hidden;
 }
 
 /*  SECTIONS  */
