@@ -353,6 +353,10 @@ table tr td a:hover+img {
 /*    border: 1px solid black;*/
 }
 
+.projectinfotable p a:hover {
+    color: #fa3727;
+}
+
 h2 {
     font-size: 1.8rem;
     font-weight: 700;
