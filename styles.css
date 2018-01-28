@@ -236,6 +236,7 @@ table {
     width: 65%;
     height: auto;
     margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 table tr th {
@@ -475,10 +476,6 @@ iframe {
         background: lightblue;
     }
     
-    .span_2_of_6 {
-        width: auto;
-    }
-    
     #name, nav, .projecttitle, #nextproject {
         font-size: 1.2rem;
 /*        margin-left: 20px;*/
@@ -653,7 +650,7 @@ iframe {
     }
 
     h2, .bodycopy {
-        margin-left: 24px;
+        margin-left: 20px;
     }
     
     #introduction {
