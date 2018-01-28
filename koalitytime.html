@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koality Time</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="jquery.pin.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    
+    <!--PRELOAD IMAGES SCRIPT-->
+    <script>
+        function preload(arrayOfImages) {
+            $(arrayOfImages).each(function(){
+                $('<img/>')[0].src = this;
+            });
+        }
+
+        // Usage:
+
+        preload([
+        ]);
+    
+    </script>
+    
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106735853-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', 'UA-106735853-1');
+</script>
+
+    
+</head>
+
+<body>
+<div class="sitewrapper">
+    <div class="backgroundimages centerAlign">
+            </div>
+        <!--BEGINNING OF FIRST SECTION (LANDING PAGE)-->
+        <div class="section group">
+           
+        <!--FIXED NAVIGATION ELEMENTS (RENDERS ON TOP OF FULLPAGE.JS)-->
+        <div class="col span_1_of_4">
+            <div id="name">
+                <p><a href="index.html#intro" class="noborder">Albert Yang</a></p>
+            </div>
+
+            <nav>
+                <p><a href="index.html#work">Work</a></p>
+            </nav>
+            
+            <div id="nextproject"><a href="cherrypick.html">Next Project</a></div>
+        </div>
+
+        <div class="col span_2_of_4 secondLeftColumn">
+            <p class="projecttitle">Koality Time</p>
+            
+            
+            
+            <div class="projectinfotable">
+                <p>Discipline</p>
+                <p>UX/UI, Visual Design</p>
+            </div>
+            
+            <div class="projectinfotable">
+                <p>Team Members</p>
+                <p><a href="http://tiffany-chen.com/">Tiffany Chen</a>, <a href="http://www.christiechong.net/">Christie Chong</a>, <a href="http://albertyang.me/">Albert Yang</a>, <a href="http://alexlyeh.com/">Alex Yeh</a></p>
+            </div>
+            
+            <h2>Overview</h2>
+            <p class="bodycopy">With smartphone usage consistently on the rise, it can be difficult to have in-person conversations with people so glued to their mobile devices. Koality Time is an app that incentivizes putting one's phone away and engaging with others in social hangouts. By providing in-app currency that can be exchanged at real-life vendors, users improve their social experiences while obtaining rewards that are worthwhile.</p>
+ 
+            <iframe class="fullWidth" src="https://www.youtube.com/embed/h2OQvmCTXzA" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            
+            <h2>Defining the Problem Space</h2>
+            <p class="bodycopy">Early on, we decided that we wanted to improve the social experience between college students, especially since we each noticed people's attachments with smartphones during hangouts. We discussed a variety of ways to combat this issue, including creating "bets" between a hangout's participants, or posting embarrassing messages to social media accounts of those who used their phones. Our team settled on incentivizing users with rewards that can be exchanged for real-life goods, such as a drink at one's local coffeeshop.</p>
+
+            <p class="bodycopy">We employed a proof-of-concept test over the next week by challenging the people we hung out with to not use their phones for the duration of the hangout. If they succeeded, we would buy them something for their reward. We also tested it with parties larger than three people and upped the challenge by telling them if one person used their phone, then everyone failed the challenge. At the end of the week, we had tested it with six other people and four of them had succeeded. Those in groups were a lot more invested in the challenge, reminding each other to not use their phones when someone was about to.
+
+            <img class="projectImage" src="koalitytime/systemsmap.jpg">
+            
+            <h2>User Flow and Paper Prototyping</h2>
+            <p class="bodycopy">We created a quick mockup of a storyboard that we wanted to follow, which included how we wanted the user to go through the app. Our initial struggles were determining how to get multiple users into one "hangout" room, and whether or not every participant needed the app. We settled on including a code for hangout creators to send out to their friends&mdash;their friends would then have to type in the code through the app on their own phones. When the hangout starts, unlocking one's phone would cause the group to lose points the longer it was open.</p>
+
+            <p class="bodycopy">Our next step was to test the paper prototypes and see whether or not the user flows made sense and allowed the user to seamlessly move through the app. The main takeaway from our low-fidelity testing was that the "Wallet" and "Store" functions were confusing to users, due to the difficult navigation in order to get to the former. As a result, our team decided to make the two sections separate from each other in the app's flow map.</p>
+            
+            <img class="projectImage" src="koalitytime/storyboard.jpg">
+            <img class="projectImage" src="koalitytime/userflow.jpg">
+            
+            <h2>High-Fidelity Prototyping</h2>
+            <p class="bodycopy">Over the next few weeks, we moved from paper prototyping to creating higher-fidelity mockups in Sketch. We established a style guide that used vibrant, pastel colors and fonts with more rounded edges to have a more friendly vibe to the app. To test the prototypes, we gave participants a variety of tasks, such as creating a hangout, joining a hangout, spending in-app points, or redeeming coupons in order to see if the app's interface was easy to understand. While we thought our app made the "Wallet" and "Store" interfaces clearer and easier to navigate to, our testers still had trouble distinguishing them and figuring out how to get to them.</p>
+            
+            <img class="projectImage" src="koalitytime/sketchscreenshot.png">
+            
+            <h2>Improving and Creating Interactions</h2>
+            <p class="bodycopy">Our team's next step was to improve the "Wallet" and "Store" interactions, so we created tabs at the top of the app in order to fully distinguish them. Users could swipe back and forth to interact with the "Hangouts", "Wallet", and "Store" screens. Upon testing these changes, we found that users could more easily understand the different between the screens and utilize the app's in-game rewards (found in "Wallet") to spend at the "Store". With our app's flow seemingly understandable to new users, we created a more fully-interactive prototype in Principle.</p>
+
+            <img class="projectImage" src="koalitytime/principlescreenshot.png">
+            
+            <div class="slick-gallery small-slick">
+                <div class="slick-slide"><img src="koalitytime/koalitytimescreens/1.png"></div>
+                <div class="slick-slide"><img src="koalitytime/koalitytimescreens/2.png"></div>
+                <div class="slick-slide"><img src="koalitytime/koalitytimescreens/3.png"></div>
+                <div class="slick-slide"><img src="koalitytime/koalitytimescreens/4.png"></div>
+                <div class="slick-slide"><img src="koalitytime/koalitytimescreens/5.png"></div>
+                <div class="slick-slide"><img src="koalitytime/koalitytimescreens/6.png"></div>
+                <div class="slick-slide"><img src="koalitytime/koalitytimescreens/7.png"></div>
+                <div class="slick-slide"><img src="koalitytime/koalitytimescreens/8.png"></div>
+                <div class="slick-slide"><img src="koalitytime/koalitytimescreens/9.png"></div>
+                <div class="slick-slide"><img src="koalitytime/koalitytimescreens/10.png"></div>
+                <div class="slick-slide"><img src="koalitytime/koalitytimescreens/11.png"></div>
+                <div class="slick-slide"><img src="koalitytime/koalitytimescreens/12.png"></div>
+                <div class="slick-slide"><img src="koalitytime/koalitytimescreens/13.png"></div>
+                <div class="slick-slide"><img src="koalitytime/koalitytimescreens/14.png"></div>
+                <div class="slick-slide"><img src="koalitytime/koalitytimescreens/15.png"></div>
+                <div class="slick-slide"><img src="koalitytime/koalitytimescreens/16.png"></div>
+            </div>
+            
+            <h2>Post-Project Thoughts</h2>
+            <p class="bodycopy">Koality Time is ultimately one of many methods to combat overusage of smartphones in social contexts. Given more time, our team would have created a functional prototype in Objective-C in order to further test user interactions. Nevertheless, we feel that given our time constraints we designed a strong mockup of a product that could improve social conversations and obsessions with our phones. It would also be interesting and insightful to explore our earlier brainstormed ideas, such as the "betting" incentive or publicized social media messages to see which incentive is most effective in reducing smartphone usage.</p>
+            
+        </div>
+        <!--END OF FIRST SECTION (LANDING PAGE)-->
+        
+            
+            
+        
+        </div>
+        <!--END OF "WORK" SECTION-->
+    
+    
+    
+    <script>
+        
+        /*TOP FUNCTION() IS FOR HOVER-ENTER, BOTTOM IS FOR HOVER-EXIT*/
+        $(document).ready(function(){
+            $(".projectlist a").hover(
+              function () {
+                $('.backgroundimages').html('<img src="' + $(this).data('id') + '.jpg">').stop().animate({
+                    opacity:0.3
+                });
+              },
+                
+                function () {
+                    $('.backgroundimages').stop().animate({
+                        opacity:0
+                    });
+                }
+               
+            );
+            
+        });
+        
+        
+        
+        //BELOW SCRIPT WORKS TO MOVE PROJECTTITLE TO THE RIGHT WHILE SCROLLING
+        
+        var scrollPercent = 100 * $(window).scrollTop() / ($(document).height() - $(window).height());
+            var offset = $(".projecttitle").offset();
+        
+                $(window).scroll(function(event) {
+                    var st = $(this).scrollTop();
+                    var windowWidth = $(window).width();
+                    var offsetRight = $(window).innerWidth() - (offset.left + $(".projecttitle").outerWidth());
+                    
+                    console.log(offsetRight);
+                    
+                    if ($(window).width() > 768) { 
+                        $(".projecttitle").css(
+                            "right", Math.max((windowWidth*0.02), offsetRight - st*10)
+                        );
+                    }
+                    
+                        if ($('body').height() <= ($(window).height() + $(window).scrollTop() + 200)) {
+                            $("#nextproject").fadeIn(300);
+                        } else {
+                            $("#nextproject").fadeOut(300);
+                        }
+                });
+         
+        /*SLICK CAROUSEL SETTINGS*/
+            $(document).ready(function(){
+              $('.slick-gallery').slick({
+                    dots: true,
+                    prevArrow: false,
+                    nextArrow: false,
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    focusOnSelect: true,
+              });
+            });
+       
+
+        
+    </script>
+</div>
+</body>
+    
+</html>

@@ -1,5 +1,5 @@
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Karla', sans-serif;
     font-size: 12pt;
     
     height: 100%;
@@ -11,50 +11,42 @@ body {
 
 /*  SECTIONS  */
 .section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
+    clear: both;
+    padding: 0px;
+    margin: 0px;
 }
 
 /*  COLUMN SETUP  */
 .col {
-	display: block;
-	float:left;
-	margin: 0 0 0 2%; /*originally was 2% 0 1% 2%*/
+    display: block;
+    float:left;
+    margin: 0% 0 1% 2%;
 }
-
-.col:first-child { 
-    margin-left: 2%; 
-}
+.col:first-child { margin-left: 0; }
 
 /*  GROUPING  */
 .group:before,
 .group:after { content:""; display:table; }
 .group:after { clear:both;}
 .group { zoom:1; /* For IE 6/7 */ }
-/*  GRID OF SIX  */
-.span_6_of_6 {
-	width: 96%;
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+    width: 100%;
+}
+.span_3_of_4 {
+    width: 74.5%;
+}
+.span_2_of_4 {
+    width: 49%;
+}
+.span_1_of_4 {
+    width: 23.5%;
 }
 
-.span_5_of_6 {
-  	width: 79.666667%;
-}
-
-.span_4_of_6 {
-  	width: 63.333333%;
-}
-
-.span_3_of_6 {
-  	width: 47%;
-}
-
-.span_2_of_6 {
-  	width: 30.666667%; /*take into consideration gutter width*/
-}
-
-.span_1_of_6 {
-  	width: 14.333333%; /*100% - (7 gutters of 2%) / 6columns*/
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+    .col {  margin: 1% 0 1% 0%; }
+    .span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
 }
 
 
@@ -63,9 +55,9 @@ body {
     position: fixed;
 }
 
-.secondLeftColumn {
-    margin-left: 18.333333%;
-}
+/*.secondLeftColumn {
+    margin-left: 23.5%;
+}*/
 
 .centerAlign {
     position: absolute;
@@ -96,7 +88,7 @@ a:visited {
 /*IDS AND CLASSES*/
 #name {
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 400;
     
     height: 40px;
     box-sizing: border-box;
@@ -112,7 +104,7 @@ a:visited {
 #name p a {
     display: inline-block;
     padding-bottom: 6px;
-    border-bottom: 3px solid #fa3727;
+    border-bottom: 2px solid #fa3727;
     color: #fa3727;
 }
 
@@ -142,17 +134,19 @@ span:hover {
 #introduction p:first-child {
     font-size: 3.0rem;
     font-weight: 700;
-    font-style: italic;
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.8rem;
+    line-height: 4.0rem;
+    letter-spacing: 0px;
     
     color: #3D3D3D;
 }
 
 #introduction p {
-    font-size: 1.0rem;
+    font-size: 1.1rem;
     font-weight: 300;
-    line-height: 1.8rem;
-    margin-bottom: 1.6rem;
+    line-height: 2.0rem;
+    margin-bottom: 1.2rem;
+    color: #3D3D3D;
 }
 
 #introduction p a {
@@ -166,7 +160,7 @@ span:hover {
 
 nav {
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 300;
     line-height: 1.9rem;
     
     height: 40px;
@@ -184,13 +178,13 @@ nav p a:hover {
 }
 
 nav p a.addborder {
-    border-bottom: 3px solid #fa3727;
+    border-bottom: 2px solid #fa3727;
      color: #fa3727;
 }
 
 #nextproject {
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.9rem;
     
     box-sizing: border-box;
@@ -236,27 +230,23 @@ nav p a.addborder {
 table {
     width: 100%;
     height: auto;
-   
-    
 }
 
 .projectlist {
-    width: 100%;
+    width: 65%;
     height: auto;
+    margin: 0 auto;
 }
 
 table tr th {
-    font-size: 0.8rem;
-    font-weight: 300;
+    font-size: 0.9rem;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.075rem;
     
-    padding: 40px 0 20px;
+    padding: 40px 0 18px;
 }
 
-tr:first-child th {
-    padding: 0 0 18px 0;
-}
 
 table tr, td{
     text-align: left;
@@ -266,7 +256,7 @@ table tr td {
     font-size: 1.4rem;
     font-weight: 700;
     
-    padding: 6px 0;
+    padding: 8px 0px;
 }
 
 table tr td a:hover {
@@ -274,9 +264,10 @@ table tr td a:hover {
 }
 
 table tr td:first-child {
-    font-size: 0.8rem;
-    font-style: italic;
+    font-size: 0.9rem;
     font-weight: 300;
+    color: #3D3D3D;
+    padding-left: 15px;
 }
 
 table tr td:nth-child(3) img {
@@ -313,7 +304,7 @@ table tr td a:hover+img {
 .projecttitle {
     
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 500;
     
     display: inline-block;
     width: auto;
@@ -321,7 +312,7 @@ table tr td a:hover+img {
     
     margin-top: 25px;
     padding-bottom: 6px;
-    border-bottom: 3px solid #fa3727;
+    border-bottom: 2px solid #fa3727;
     position: fixed;
     z-index: 9999;
     
@@ -329,8 +320,11 @@ table tr td a:hover+img {
     
 }
 .projectinfotable {
-    margin-bottom: 40px;
-    margin-top: 100px;
+    margin-bottom: 60px;
+    margin-top: 120px;
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
 /*    border: 1px solid black;*/
 }
 
@@ -338,31 +332,32 @@ table tr td a:hover+img {
     text-decoration: underline;
 }
 
-h2, .projectinfotable tr td:first-child {
+.projectinfotable p:first-child {
     font-size: 1.2rem;
-    font-style: italic;
-    font-weight: 700;
+    font-weight: 500;
+    color: #A2A2A2;
     
-    width: 23.5%;
-    padding-bottom: 16px;
+    padding-bottom: 14px;
+    padding-left: 0;
+    
     
 /*    border: 1px solid black;*/
 }
 
-.projectinfotable tr td:nth-child(2) {
+.projectinfotable p:nth-child(2) {
     font-size: 1.2rem;
-    font-weight: 300;
-    padding-left: 2%;
+    font-weight: 500;
+    line-height: 1.6rem;
     
 /*    border: 1px solid black;*/
 }
 
 h2 {
-    display: inline-block;
-    width: 23.5%;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
     vertical-align: top;
     
-    float: left;
     padding: 6px 0;
 /*    border-bottom: 2px solid #000;*/
     clear: both;
@@ -371,11 +366,8 @@ h2 {
 .bodycopy {
     font-size: 1.2rem;
     font-weight: 300;
-    line-height: 1.85rem;
+    line-height: 1.95rem;
     
-    float: right;
-    width: 74.5%;
-    padding-left: 2%;
     margin-bottom: 20px;
 }
 
@@ -396,9 +388,15 @@ h2 {
 .projectImage {
     margin-top: 15px;
     margin-bottom: 35px;
-    float: right;
-    width: 74.5%;
+    width: 100%;
     
+}
+
+.smallprojectImage {
+    margin-top: 15px;
+    margin-bottom: 35px;
+    width: 60%;
+    margin-left: 20%;
 }
 
 .portraitimg {
@@ -425,9 +423,7 @@ iframe {
 }
 
 .slick-gallery {
-    margin-top: 15px;
-    width: 74.5%;
-    float: right;
+    margin-top: 30px;
     overflow: visible;
 }
 
@@ -442,8 +438,8 @@ iframe {
 }
 
 .small-slick {
-    width: 34.5%;
-    margin-right: 20%;
+    width: 38%;
+    margin-left: 31%;
 }
 
 
@@ -503,6 +499,7 @@ iframe {
     
     #introduction p:first-child {
         font-size: 2.0rem;
+        line-height: 2.8rem;
         margin-bottom: 1.2rem;
     }
     
@@ -528,31 +525,28 @@ iframe {
     
     h2 {
         font-size: 1.4rem;
-        width: 90%;
-        margin-left: 5%;
         margin-bottom: 8px;
     }
     
     .bodycopy {
         font-size: 0.9rem;
-        line-height: 1.4rem;
+        line-height: 1.6rem;
         width: 90%;
         margin-right: 5%;
     }
     
     .projectinfotable { 
-        width: 90%;
         margin-top: 75px;
-        margin-left: 5%;
+        vertical-align: top;
     }
     
-    .projectinfotable tr td:first-child {
+    .projectinfotable p:first-child {
         font-size: 0.7rem;
         line-height: 1.1rem;
         padding-right: 5%;
     }
     
-    .projectinfotable tr td:nth-child(2) {
+    .projectinfotable p:nth-child(2) {
         font-size: 0.8rem;
         line-height: 1.1rem;
     }
@@ -573,7 +567,7 @@ iframe {
         position: fixed;
             right: 20px;
     }
-    
+
     #introduction {
         width: 60vw;
     }
@@ -587,6 +581,7 @@ iframe {
     
     #introduction p:first-child {
         font-size: 1.2rem;
+        line-height: 1.8rem;
     }
     
     .slick-gallery {
@@ -599,10 +594,12 @@ iframe {
     
     .small-slick {
         margin-right: 0;
+        margin-left: 20px;
     }
     
     .small-slick div {
         width: 50%;
+
     }
     
     
@@ -643,6 +640,20 @@ iframe {
     
     .projectlist {
         margin-left: 20px;
+    }
+
+    .projectinfotable { 
+        width: calc(49% - 48px);
+        margin: 60px 0 30px 24px;
+        vertical-align: top;
+    }
+
+    .projectinfotable p:first-child {
+        margin: 0 0 0 0 ;
+    }
+
+    h2, .bodycopy {
+        margin-left: 24px;
     }
     
     #introduction {
