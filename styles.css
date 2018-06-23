@@ -1,682 +1,328 @@
+.wrapper {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: [line1] 1fr [line2] 1fr [line3] 1fr;
+    grid-gap: 60px;
+    box-sizing: border-box;
+}
+
+.wrapper div {
+    color: #000;
+    border-radius: 5px;
+}
+
+/*---------------------------------------------------------*/
+
 body {
-    font-family: 'Karla', sans-serif;
-    font-size: 12pt;
-    
-    height: 100%;
+    margin: 100px 120px;
+    font-family: aktiv-grotesk, sans-serif;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.2rem;
 }
 
-.sitewrapper {
-    overflow-x: hidden;
-}
-
-/*  SECTIONS  */
-.section {
-    clear: both;
-    padding: 0px;
-    margin: 0px;
-}
-
-/*  COLUMN SETUP  */
-.col {
-    display: block;
-    float:left;
-    margin: 0% 0 1% 2%;
-}
-.col:first-child { margin-left: 0; }
-
-/*  GROUPING  */
-.group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both;}
-.group { zoom:1; /* For IE 6/7 */ }
-/*  GRID OF FOUR  */
-.span_4_of_4 {
-    width: 100%;
-}
-.span_3_of_4 {
-    width: 74.5%;
-}
-.span_2_of_4 {
-    width: 49%;
-}
-.span_1_of_4 {
-    width: 23.5%;
-}
-
-/*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
-    .col {  margin: 1% 0 1% 0%; }
-    .span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
-}
-
-
-/*REPEATABLE CLASSES AND SELECTORS*/
-.fixedPosition {  
-    position: fixed;
-}
-
-/*.secondLeftColumn {
-    margin-left: 23.5%;
-}*/
-
-.centerAlign {
-    position: absolute;
-        top: 50%;
-        left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-}
-
-b {
+h1 {
     font-weight: 700;
+    display: block;
+    color: #1E1E1E;
+    margin-bottom: 1.35rem;
+    z-index: 99999;
+}
+
+.line-title {
+    border-bottom: 4px solid #000;
+    height: 1.65rem;
+}
+
+.line-title span {
+    background: #fff;
+    padding-right: 60px;
+}
+
+li {
+    position: relative;
+    z-index: 99999;
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 
 a {
-    color: black;
+    color: #1E1E1E;
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: none;
+    color: blue;
 }
 
-a:visited {
-    color: inherit;
+.underlinedtext {
+    border-bottom: 4px solid #1E1E1E;
+    display: inline;
 }
 
-
-/*IDS AND CLASSES*/
-#name {
-    font-size: 1.6rem;
-    font-weight: 400;
-    
-    height: 40px;
-    box-sizing: border-box;
-    
-    position: fixed;
-        top: 25px;
-        left: 25px;
-    z-index: 9999;
-    color: #fa3727;
-    
+.intro, .contact {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    z-index: 99999;
 }
 
-#name p a {
-    display: inline-block;
-    padding-bottom: 6px;
-    border-bottom: 2px solid #fa3727;
-    color: #fa3727;
-}
-
-#name p a.noborder {
-    border-bottom: none;
-    color: #000;
-}
-
-.noborder {
-    border-bottom: none;
-}
-
-#name p a:hover {
-/*    border-bottom: 3px solid #000;*/
-    color: #fa3727;
-}
-
-span:hover {
-    color: #fa3727;
-}
-
-#introduction {
+.work_header, .contact_header {
     height: auto;
-    display: none;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 
-#introduction p:first-child {
-    font-size: 3.0rem;
-    font-weight: 700;
-    margin-bottom: 1.8rem;
-    line-height: 3.8rem;
-    letter-spacing: 0px;
-    
-    color: #3D3D3D;
+.work, .contact {
+    height: auto;
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 
-#introduction p {
-    font-size: 1.1rem;
-    font-weight: 300;
-    line-height: 2.0rem;
-    margin-bottom: 1.2rem;
-    color: #3D3D3D;
-}
-
-#introduction p a {
-    text-decoration: underline;
-}
-
-#introduction p a:hover {
-    text-decoration: underline;
-    color: #fa3727;
-}
-
-nav {
-    font-size: 1.6rem;
-    font-weight: 300;
-    line-height: 1.9rem;
-    
-    height: 40px;
-    
+.backgroundimage {
+    z-index: 0;
     position: fixed;
-        bottom: 15px; /*FIX WHEN I GET BACK BECAUSE IT AINT RESPONSIVE*/
-        left: 25px;
-    z-index: 9999;
-    
+        top: 100px;
+        right: 120px;
+    width: 45%;
+    height: auto;
+    text-align: right;
 }
 
-nav p a:hover {
-/*    border-bottom: 3px solid black;*/
-    color: #fa3727;
+.copyright {
+    position: relative;
+        bottom: -80px;
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 
-nav p a.addborder {
-    border-bottom: 2px solid #fa3727;
-     color: #fa3727;
-}
-
-#nextproject {
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.9rem;
-    
-    box-sizing: border-box;
-    height: 35px;
-    
+.preview {
     position: fixed;
-        bottom: 20px;
-        right: 25px;
-    z-index: 9999;
-    
-    display: none;
+}
+/*
+PROJECT PAGE STYLES
+*/
+
+.arrow {
+    position: fixed;
+        top: 30px;
+    font-size: 2.8rem;
 }
 
-#nextproject a:hover {
-/*    border-bottom: 3px solid #fa3727;*/
-    color: #fa3727;
+.projecttitle {
+    position: fixed;
+    grid-column-start: 1;
+    grid-column-end: 1;
 }
 
-/*PROJECT INFO-RELATED CLASSES*/
-.project {
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.6rem;
-    
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    padding: 6px 0;
-    margin-top: 40px;
-    margin-bottom: 12px;
-}
-
-
-.projectname {
+.projecttitle h1 {
     font-weight: 700;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.projectinfo h2 {
+    font-weight: 700;
+    margin-top: 3.0rem;
+}
+
+.projectinfo h2:first-child{
+    margin-top: 0;
 }
 
 .projectinfo {
-    font-size: 1.2rem;
-    font-weight: 300;
-    line-height: 1.7rem;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-size: 2.0rem;
 }
 
-table {
-    width: 100%;
-    height: auto;
-}
-
-.projectlist {
-    width: 65%;
-    height: auto;
-    margin: 0 auto;
-    margin-bottom: 40px;
-}
-
-table tr th {
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.075rem;
-    
-    padding: 40px 0 18px;
-}
-
-
-table tr, td{
-    text-align: left;
-}
-
-table tr td {
-    font-size: 1.4rem;
-    font-weight: 700;
-    
-    padding: 8px 0px;
-}
-
-table tr td a:hover {
-    color: #fa3727;
-}
-
-table tr td:first-child {
-    font-size: 0.9rem;
-    font-weight: 300;
-    color: #3D3D3D;
-    padding-left: 15px;
-}
-
-table tr td:nth-child(3) img {
-    width: 50vw;
-    height: auto;
-    opacity: 0.5;
-    position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    z-index: 1;
-    display: none;
-   
-}
-
-.backgroundimg {
-    width: 3000px;
-}
-
-table tr td a:hover+img {
-    opacity: 100%;
-}
-
-.backgroundimages img {
-    width: 60vw;
-    min-height: 60vh;
-    object-fit: contain;
-    margin: 0 auto;
-    display: block;
-}
-
-
-/*PROJECT-PAGE RELATED CLASSES AND IDS*/
-.projecttitle {
-    
+.projectinfo p {
     font-size: 1.6rem;
-    font-weight: 500;
-    
-    display: inline-block;
-    width: auto;
-    box-sizing: border-box;
-    
-    margin-top: 25px;
-    padding-bottom: 6px;
-    border-bottom: 2px solid #fa3727;
-    position: fixed;
-    z-index: 9999;
-    
-    color: #fa3727
-    
-}
-.projectinfotable {
-    margin-bottom: 60px;
-    margin-top: 120px;
-    width: 49%;
-    display: inline-block;
-    vertical-align: top;
-/*    border: 1px solid black;*/
+    line-height: 2.5rem;
+    margin: 1.2rem 0;
 }
 
-.projectinfotable a {
-    text-decoration: underline;
-}
-
-.projectinfotable p:first-child {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #A2A2A2;
-    
-    padding-bottom: 14px;
-    padding-left: 0;
-    
-    
-/*    border: 1px solid black;*/
-}
-
-.projectinfotable p:nth-child(2) {
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 1.6rem;
-    
-/*    border: 1px solid black;*/
-}
-
-.projectinfotable p a:hover {
-    color: #fa3727;
-}
-
-h2 {
-    font-size: 1.8rem;
+.projectinfo p a {
     font-weight: 700;
-    margin-bottom: 0.8rem;
-    vertical-align: top;
-    
-    padding: 6px 0;
-/*    border-bottom: 2px solid #000;*/
-    clear: both;
 }
 
-.bodycopy {
-    font-size: 1.2rem;
-    font-weight: 300;
-    line-height: 1.95rem;
-    
-    margin-bottom: 20px;
-}
-
-.bodycopy a {
-    text-decoration: underline;
-}
-
-.bodycopy a:hover {
-    color: #fa3727;
-}
-
-.bodycopy:last-child {
-    margin-bottom: 60px;
-}
-
-
-/*IMG OR VID CLASSES AND IDS*/
-.projectImage {
-    margin-top: 15px;
-    margin-bottom: 35px;
+.projectinfo img, iframe {
     width: 100%;
-    
+    margin-top: 3.0rem;
 }
 
-.smallprojectImage {
-    margin-top: 15px;
-    margin-bottom: 35px;
-    width: 60%;
-    margin-left: 20%;
+.projectinfo .smallimg {
+    width: 50%;
+    transform: translateX(50%);
 }
 
-.portraitimg {
-    width: 49%;
-    float: left;
-    margin-top: 15px;
-    margin-bottom: 40px;
-}
-
-.portraitmargin {
-    margin-right: 2%;
-}
-
-.fullWidth {
+.videocontainer {
+    position: relative;
     width: 100%;
-}
+    height: 0;
+    padding-bottom: 56.25%;
+    margin-bottom: 6.0rem;
+ }
 
-iframe {
-    margin-top: 15px;
-    margin-bottom: 35px;
-    float: right;
-    width: 74.5%;
-    height: 540px;
-}
-
-.slick-gallery {
-    margin-top: 30px;
-    overflow: visible;
-}
-
-
-.slick-slide {
-    text-align: center;
-    
-}
-
-.slick-slide img {
+ .video {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+ }
+
+.collaborators, .contributions {
+    margin-top: 3.0rem;
+    line-height: 3.0rem;
 }
 
-.small-slick {
-    width: 38%;
-    margin-left: 31%;
+.collaborators h3, .contributions h3 {
+    font-size: 2.0rem;
+    font-weight: 700;
 }
 
-
-
-
-
-
-
-@media only screen and (max-width: 1366px) {
-    
-    #name, nav, .projecttitle, #nextproject {
-        font-size: 1.4rem;
-    }
-    
-    
-    table tr td {
-        font-size: 1.2rem;
-    }
-    
-    table tr th {
-        font-size: 0.7rem;
-    }
-    
-    table tr td:first-child {
-        font-size: 0.7rem;
-        
-    }
+.collaborators p , .contributions p{
+    font-size: 1.6rem;
+    line-height: 2.5rem;
 }
 
-@media only screen and (max-width: 1280px) {
-    
-    col {
-        background: lightblue;
-    }
-    
-    #name, nav, .projecttitle, #nextproject {
-        font-size: 1.2rem;
-/*        margin-left: 20px;*/
-    }
-    
-    .projecttitle {
-        margin-left: 3.25%;
-    }
-    
-    #nextproject {
-        bottom: 20px;
-        right: 20px;
-    }
-    
-    #introduction {
-        min-width: 360px;
-    }
-    
-    #introduction p:first-child {
+/*
+END OF PROJECT PAGE STYLES
+*/
+
+@media only screen and (max-width: 1800px) {
+    body {
         font-size: 2.0rem;
         line-height: 2.8rem;
-        margin-bottom: 1.2rem;
     }
-    
-    #introduction p {
-        font-size: 0.8rem;
-        line-height: 1.4rem;
-        margin-bottom: 1.1rem;
-    }
-    
-    table tr td {
-        width: auto;
-        font-size: 1.0rem;
-    }
-    
-    table tr th {
-        font-size: 0.7rem;
-    }
-    
-    .projectlist {
-        width: 100%;
-        min-width: 360px;
-    }
-    
-    h2 {
-        font-size: 1.4rem;
-        margin-bottom: 8px;
-        line-height: 1.8rem;
-    }
-    
-    .bodycopy {
-        font-size: 0.9rem;
-        line-height: 1.6rem;
-        width: 90%;
-        margin-right: 5%;
-    }
-    
-    .projectinfotable { 
-        margin-top: 75px;
-        vertical-align: top;
-    }
-    
-    .projectinfotable p:first-child {
-        font-size: 0.7rem;
-        line-height: 1.1rem;
-        padding-right: 5%;
-    }
-    
-    .projectinfotable p:nth-child(2) {
-        font-size: 0.8rem;
-        line-height: 1.1rem;
-    }
-    
-    .projectImage {
-        width: 100%;
-    }
-    
-    iframe {
-        width: 100%;
-        max-height: 360px;
+
+    .discipline, .completion-date {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .projecttitle {
-        margin-left: 5%;
-        position: fixed;
-            right: 20px;
-    }
-
-    #introduction {
-        width: 60vw;
-    }
-    
-    #introduction p{
+@media only screen and (max-width: 1550px) {
+    .wrapper {
+        display: grid;
         margin: 0 auto;
-        font-size: 0.8rem;
-        line-height: 1.3rem;
-        margin-bottom: 0.9rem;
-    }
-    
-    #introduction p:first-child {
-        font-size: 1.2rem;
-        line-height: 1.8rem;
-    }
-    
-    .slick-gallery {
-        width: 100%;
-    }
-    
-    .backgroundimages img {
-        display: none;
-    }
-    
-    .small-slick {
-        margin-right: 0;
-        margin-left: 20px;
-    }
-    
-    .small-slick div {
-        width: 50%;
-
-    }
-    
-    
-}
-
-/*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
-	.col {  margin: 1% 0 1% 0%; }
-    .col:first-child {
-        margin-left: 0%;
-    }
-	.span_1_of_6, .span_2_of_6, .span_3_of_6, .span_4_of_6, .span_5_of_6, .span_6_of_6 { width: 100%; }
-    
-    #name, nav, .projecttitle, #nextproject {
-        font-size: 1.0rem;
-    }
-    
-    #name {
-        top: 20px;
-        left: 20px;
-        
-    }
-    
-    nav {
-        bottom: 10px;
-        left: 20px;
-    }
-    
-    .projecttitle {
-        top: -5px;
-        right: 20px;
-    }
-    
-    #nextproject {
-        bottom: 15px;
-        right: 20px;
-    }
-    
-    .projectlist {
-        margin-left: 20px;
-    }
-
-    table tr td:first-child {
-        padding-left: 0;
-    }
-
-    .projectinfotable { 
-        width: calc(49% - 48px);
-        margin: 60px 0 30px 20px;
-        vertical-align: top;
-    }
-
-    .projectinfotable p:first-child {
-        margin: 0 0 0 0 ;
-    }
-
-    h2, .bodycopy {
-        margin-left: 20px;
-    }
-    
-    #introduction {
-        width: 100vw;
-        padding: 0 20px;
+        grid-template-columns: [line1] 1fr [line2] 1fr [line3] 1fr;
+        grid-gap: 45px;
         box-sizing: border-box;
     }
-    
-    
-    #introduction p{
-        font-size: 0.7rem;
-        line-height: 1.2rem;
-        margin-bottom: 0.75rem;
+
+    .line-title {
+        height: 1.2rem;
     }
-    
-    #introduction p:first-child {
+
+    .line-title span {
+        background: #fff;
+        padding-right: 30px;
+    }
+
+    body, .discipline, .completion-date, 
+    .collaborators h3, .collaborators p, 
+    .contributions h3, .contributions p, 
+    .projectinfo h2, .projectinfo p {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+
+    .projectinfo p {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        margin: 1.0rem 0;
+    }
+
+    .projectinfo h2 {
+        border-bottom: 2px solid #000;
+        padding-bottom: 16px;
+        width: 30px;
+        white-space: nowrap;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        margin: 50px 60px;
+    }
+
+    .line-title {
+        border-bottom: 2px solid #000;
+        height: 1.0rem;
+    }
+
+    .line-title span {
+        background: #fff;
+        padding-right: 45px;
+    }
+
+    .arrow {
+        position: fixed;
+            top: 15px;
+        font-size: 1.8rem;
+    }
+
+    body, .discipline, .completion-date, 
+    .collaborators h3, .collaborators p, 
+    .contributions h3, .contributions p, 
+    .projectinfo h2, .projectinfo p {
         font-size: 1.2rem;
+        line-height: 2.0rem;
     }
-    
+
+    .projectinfo p {
+        margin: 1.0rem 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .wrapper {
+        display: block;
+    }
+
+    body {
+        margin: 40px 30px;
+        font-size: 1.0rem;
+        line-height: 1.6rem;
+    }
+
+    .arrow {
+        position: static;
+        margin-bottom: 30px;
+
+    }
+
+    .line-title {
+        border: none;
+    }
+
+    .intro, .work {
+        margin-bottom: 2.0rem;
+    }
+
+    .projecttitle {
+        position: relative;
+    }    
+
+    .discipline, .completion-date, 
+    .collaborators h3, .collaborators p, 
+    .contributions h3, .contributions p, 
+    .projectinfo h2, .projectinfo p {
+        font-size: 1.0rem;
+        line-height: 1.6rem;
+    }
+
+    .collaborators, .contributions {
+        margin-top: 20px;
+    }
+
+    .projecttitle div:last-child, .projectinfo p:last-child {
+        border-bottom: 2px solid #000;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-radius: 0;
+    }
 }

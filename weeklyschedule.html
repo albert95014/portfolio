@@ -6,183 +6,109 @@
     <title>Weekly Schedule</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lyg4qtn.css">
     
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-    
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    
-    <!--PRELOAD IMAGES SCRIPT-->
+
     <script>
-        function preload(arrayOfImages) {
-            $(arrayOfImages).each(function(){
-                $('<img/>')[0].src = this;
+        function resizeIframe(obj) {
+            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+        };
+
+        $(document).ready(function() {
+            if ($(window).width() > 700) {
+                adjustWidth();
+            } else {
+                $(".projecttitle").width("auto");
+            };
+
+            $(window).resize(function() {
+                if ($(window).width() > 700) {
+                    adjustWidth();
+                }else {
+                    $(".projecttitle").width("auto");
+                };
             });
-        }
+        });
 
-        // Usage:
-
-        preload([
-            
-        ]);
-    
+        function adjustWidth() {
+            var parentwidth = $(".wrapper").width()/3;
+            $(".projecttitle").width(parentwidth);
+        };
     </script>
-    
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106735853-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)};
-  gtag('js', new Date());
 
-  gtag('config', 'UA-106735853-1');
-</script>
-
-    
 </head>
 
 <body>
-<div class="sitewrapper">
-    <div class="backgroundimages centerAlign">
-            </div>
-        <!--BEGINNING OF FIRST SECTION (LANDING PAGE)-->
-        <div class="section group">
-           
-        <!--FIXED NAVIGATION ELEMENTS (RENDERS ON TOP OF FULLPAGE.JS)-->
-        <div class="col span_1_of_4">
-            <div id="name">
-                <p><a href="index.html#intro" class="noborder">Albert Yang</a></p>
-            </div>
 
-            <nav>
-                <p><a href="index.html#work">Work</a></p>
-            </nav>
-            
-            <div id="nextproject"><a href="cmudesigncensus.html">Next Project</a></div>
+    <div class="wrapper">
+        <div class="arrow">
+            <a href="index.html"><p>&larr;</p></a>
         </div>
 
-        <div class="col span_2_of_4 secondLeftColumn">
-            <p class="projecttitle">Weekly Schedule</p>
-            
-            
-            
-            <div class="projectinfotable">
-                <p>Discipline</p>
-                <p>Generative Design</p>
+        <div class="projecttitle">
+            <h1>Weekly Schedule</h1>
+            <p class="discipline">Generative Design</p>
+            <p class="completion-date">December 2017</p>
+
+            <div class="contributions">
+                <h3>Contributions</h3>
+                <p>Visual Design</p>
+                <p>Coding (basil.js)</p>
             </div>
-            
-            <div class="projectinfotable">
-                <p>Team Members</p>
-                <p><a href="http://albertyang.me/">Albert Yang</a></p>
-            </div>
-            
+
+        </div>
+
+        <div class="projectinfo">
             <h2>Overview</h2>
-            <p class="bodycopy">Weekly Schedule is a generative poster series made with basil.js that visually represents one's routine in a week, day-by-day. Each poster lists out by hour a person's activity throughout a particular day of the week, taking into consideration what is considered a "routine" event versus an event that's unique. For example, taking a class in the afternoon every Wednesday may be considered routine, whereas going to a concert on Friday night is something that doesn't happen every week. Those unique events stand out and are given more visual emphasis compared to the weekly routine occurences, as well as photos that represents the events.</p>
- 
-            <img class="smallprojectImage" src="weeklyschedule/weeklyschedule.gif">
+            <p>Weekly Schedule is a generative poster series made with basil.js that visually represents one's routine in a week, day-by-day. Each poster lists out by hour a person's activity throughout a particular day of the week, taking into consideration what is considered a "routine" event versus an event that's unique. For example, taking a class in the afternoon every Wednesday may be considered routine, whereas going to a concert on Friday night is something that doesn't happen every week. Those unique events stand out and are given more visual emphasis compared to the weekly routine occurences, as well as photos that represents the events.</p>
+
+            <img class="smallimg" src="weeklyschedule/weeklyschedule.gif">
             
             <h2>Working with basil.js</h2>
-            <p class="bodycopy">I utilized basil.js and Adobe InDesign to generate a variety of randomized layouts, playing with color, placement of photos, and data input from an external spreadsheet. Prior to moving forward with basil.js, I manually created posters in InDesign that allowed the text and photos to interact differently in order to determine a layout that I felt could convey my concept clearly while still allowing the code to generate randomized placements.</p>
+            <p>I utilized basil.js and Adobe InDesign to generate a variety of randomized layouts, playing with color, placement of photos, and data input from an external spreadsheet. Prior to moving forward with basil.js, I manually created posters in InDesign that allowed the text and photos to interact differently in order to determine a layout that I felt could convey my concept clearly while still allowing the code to generate randomized placements.</p>
 
-            <img class="projectImage" src="weeklyschedule/basilscreenshot1.png">
-            <img class="projectImage" src="weeklyschedule/basilscreenshot2.png">
-            
-            <div class="slick-gallery small-slick">
-                <div class="slick-slide"><img src="weeklyschedule/poster.jpg"></div>
-                <div class="slick-slide"><img src="weeklyschedule/poster1.jpg"></div>
-                <div class="slick-slide"><img src="weeklyschedule/poster2.jpg"></div>
-                <div class="slick-slide"><img src="weeklyschedule/poster3.jpg"></div>
-                <div class="slick-slide"><img src="weeklyschedule/poster4.jpg"></div>
-                <div class="slick-slide"><img src="weeklyschedule/poster5.jpg"></div>
-                <div class="slick-slide"><img src="weeklyschedule/poster6.jpg"></div>
-            </div>
+            <img src="weeklyschedule/basilscreenshot1.png">
+            <img src="weeklyschedule/basilscreenshot2.png">
             
             <h2>Post-Project Thoughts</h2>
-            <p class="bodycopy">As my first project using basil.js, I feel that Weekly Schedule was successful in teaching me the limits of designing with code and the situations in which code can be beneficial in my design process. Working with data files in this project especially makes datasets considerably easier to design for in the future, while also helping me keep in mind the interaction of type and image when designing poster series. Weekly Schedule ultimately excites me more about creating generative layouts with code and opens up a lot of doors for me when considering implementation of code in my design process.</p>
-            
+            <p>As my first project using basil.js, I feel that Weekly Schedule was successful in teaching me the limits of designing with code and the situations in which code can be beneficial in my design process. Working with data files in this project especially makes datasets considerably easier to design for in the future, while also helping me keep in mind the interaction of type and image when designing poster series. Weekly Schedule ultimately excites me more about creating generative layouts with code and opens up a lot of doors for me when considering implementation of code in my design process.</p>
         </div>
-        <!--END OF FIRST SECTION (LANDING PAGE)-->
-        
-            
-            
-        
-        </div>
-        <!--END OF "WORK" SECTION-->
-    
-    
-    
-    <script>
-        
-        /*TOP FUNCTION() IS FOR HOVER-ENTER, BOTTOM IS FOR HOVER-EXIT*/
-        $(document).ready(function(){
-            $(".projectlist a").hover(
-              function () {
-                $('.backgroundimages').html('<img src="' + $(this).data('id') + '.jpg">').stop().animate({
-                    opacity:0.3
-                });
-              },
-                
-                function () {
-                    $('.backgroundimages').stop().animate({
-                        opacity:0
-                    });
-                }
-               
-            );
-            
-        });
-        
-        
-        
-        //BELOW SCRIPT WORKS TO MOVE PROJECTTITLE TO THE RIGHT WHILE SCROLLING
-        
-        var scrollPercent = 100 * $(window).scrollTop() / ($(document).height() - $(window).height());
-            var offset = $(".projecttitle").offset();
-        
-                $(window).scroll(function(event) {
-                    var st = $(this).scrollTop();
-                    var windowWidth = $(window).width();
-                    var offsetRight = $(window).innerWidth() - (offset.left + $(".projecttitle").outerWidth());
-                    
-                    console.log(offsetRight);
-                    
-                    if ($(window).width() > 768) { 
-                        $(".projecttitle").css(
-                            "right", Math.max((windowWidth*0.02), offsetRight - st*10)
-                        );
-                    }
-                    
-                        if ($('body').height() <= ($(window).height() + $(window).scrollTop() + 200)) {
-                            $("#nextproject").fadeIn(300);
-                        } else {
-                            $("#nextproject").fadeOut(300);
-                        }
-                });
-         
-        /*SLICK CAROUSEL SETTINGS*/
-            $(document).ready(function(){
-              $('.slick-gallery').slick({
-                    dots: true,
-                    prevArrow: false,
-                    nextArrow: false,
-                    infinite: true,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 3000,
-                    focusOnSelect: true,
-              });
-            });
-       
 
-        
-    </script>
-</div>
+
+
+
+        <div class="work_header">
+        </div>
+
+        <div class="work">
+            <ul>
+                <li data-discipline="UX/UI" data-completion-date="March 2018" data-image-src="backgroundimages/koalitytimemockup.jpg"><a href="koalitytime.html">Koality Time</a></li>
+                <li data-discipline="UX/UI" data-completion-date="May 2018" data-image-src="spotify/spotifymockups.png"><a href="spotify.html">Spotify Redesign</a></li>
+                <li data-discipline="Pop-Up Exhibition" data-completion-date="May 2018" data-image-src="backgroundimages/blablab.jpg"><a href="blablab.html">Blablab</a></li>
+                <li data-discipline="UX Research" data-completion-date="May 2016" data-image-src="backgroundimages/cherrypick.jpg"><a href="cherrypick.html">Cherry Pick</a></li>
+                <li data-discipline="Data Visualization" data-completion-date="April 2018" data-image-src="backgroundimages/bobaintheus.png"><a href="bobaintheus.html">Boba in the United States</a></li>
+                <li data-discipline="Data Visualization" data-completion-date="May 2017" data-image-src="backgroundimages/cmudesigncensus.jpg"><a href="cmudesigncensus.html">CMU Design Census</a></li>
+                <li data-discipline="Data Visualization" data-completion-date="March 2017" data-image-src="backgroundimages/aigadesigncensus.jpg"><a href="aigadesigncensus.html">AIGA Design Census</a></li>
+                <li data-discipline="Generative Design" data-completion-date="December 2017" data-image-src="backgroundimages/weeklyschedule.gif"><a href="weeklyschedule.html">Weekly Schedule</a></li>
+                <li data-discipline="Game Design" data-completion-date="December 2016" data-image-src="backgroundimages/lowernine.jpg"><a href="lowernine.html">Lower Nine</a></li>
+                <li data-discipline="Environments" data-completion-date="May 2016" data-image-src="backgroundimages/pinwheels.jpg"><a href="pinwheels.html">Pinwheels</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="preview">
+            <img class="backgroundimage" src="">
+        </div>
+
+        <div class="copyright">
+            <p>&copy; Albert Yang 2018</p>
+        </div>
+    </div>
+    
 </body>
     
 </html>

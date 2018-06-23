@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lower Nine</title>
+    <title>Boba in the United States</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/lyg4qtn.css">
@@ -50,55 +50,55 @@
         </div>
 
         <div class="projecttitle">
-            <h1>Lower Nine</h1>
-            <p class="discipline">Game Design</p>
-            <p class="completion-date">December 2016</p>
+            <h1>Boba in the United States</h1>
+            <p class="discipline">Data Visualization</p>
+            <p class="completion-date">April 2018</p>
 
             <div class="contributions">
                 <h3>Contributions</h3>
-                <p>Physical Prototyping</p>
+                <p>Web Design</p>
+                <p>Coding (d3.js)</p>
                 <p>Visual Design</p>
-                <p>Book Design</p>
+                <p>Wireframing</p>
+                <p>Data Collection</p>
+                <p>Data Cleaning</p>
             </div>
         </div>
 
         <div class="projectinfo">
             <h2>Overview</h2>
-            <p>11 years ago, Hurricane Katrina hit New Orleans and left thousands of people with nothing to their names. The podcast <i>This American Life</i> visited one of the most devastated parts of New Orleans, the Lower Ninth Ward, and revealed the stories of those who had survived and were trying to rebuild their lives 11 years after the catastrophe.</p> 
-        
-            <p>The goal for this project was to tell the stories of those from the Lower Ninth Ward. My aim was to create a more interactive experience for telling personal stories by presenting them within the context of a board game. </p> 
+            <p>Boba tea, also known as pearl milk tea or bubble tea, is a Taiwanese-originated drink that has found increased popularity across the world in the past few decades. The goal for this visualization is to visualize how popular the drink is in different cities within the United States.</p>
 
-            <p>My concept for the interactive game revolves around players attempting to rebuild the Lower Ninth Ward after Katrina. The players each have their own individual goals, depending on who they're playing as, but must learn how to collaborate in order to fulfill their personal objectives. Points are determined by how much they rebuilt and how often they contributed to the goals of other people.</p>
-            
-            <img src="lowernine/boardcover.jpg">
-            <img src="lowernine/boardgamecontents.jpg">
-            <img src="lowernine/instructionbookcover.jpg">
-            <img src="lowernine/instructionsspread.jpg">
-            <img src="lowernine/artifactcards.jpg">
-            <img src="lowernine/eventcards.jpg">
-            <img src="lowernine/gameplay.jpg">
-            
-            <h2>Categorizing the Artifacts</h2>
-            
-            <p>A major part of this project was figuring out how to incorporate approximately 40 objects that were to be represented as artifacts from Hurricane Katrina. I moved forward with the goal of categorizing them into different locations or settings that can represent parts of the Lower Ninth Ward. Since I was still in the rule development phase, I listed out different ways I could utilize the artifacts as cards (some of which were based off ideas from games I had played).</p>
-            
-            <img src="lowernine/artifactcategorization.jpg">
+            <p>To visualize the data obtained from Yelp's Fusion API, I used d3.js to develop an interactive website, which can be found <a href="https://albert95014.github.io/boba_in_the_us/" target="_blank">here</a>.
 
-            <h2>Playtesting</h2>
-                
-            <p>With my concept planned out, I created a paper prototype of the board to see how people would interact with each other while playing. I realized there were some gameplay elements that could be abused by the players, and also saw spaces where I could stronger promote the idea of collaboration while still making it competitive. From here, I moved to fixing gameplay issues and employing different gameplay elements to emphasize the importance of working with others to reach one's goal.</p>
+            <p>The site currently only works for 15" screens and larger.</p>
+
+            <img src="bobaintheus/sitescreenshot1.png">
+            <img src="bobaintheus/sitescreenshot2.png">
+            <img src="bobaintheus/sitescreenshot3.png">
+
+            <div class="videocontainer">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/0CydWzF5P2U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+
+            <h2>Beginning Process</h2>
+            <p>Inspired by <a href="https://www.instagram.com/albert95014">my boba-documenting Instagram</a>, I wanted to see how easy it would be to find boba in various regions of the United States. I sketched a few potential ways of visualizing the data, which had been scraped using the Yelp Fusion API (returning every business in certain cities under the "Bubble Tea" category).</p>
+
+            <img src="bobaintheus/vizsketches1.jpg">
+            <img src="bobaintheus/vizsketches2.jpg">
+
+            <h2>Data Collection and Cleaning</h2>
+            <p>The data, which was originally returned in JSON format, contained a lot of categories that weren't as relevant to the story I was trying to tell. I cleaned up the data by adding and removing categories as necessary, and organizing them by city into various .csv files to work with separately.</p>
+
+            <img src="bobaintheus/bobadata.png">
+
+            <h2>Wireframing and Mock-ups</h2>
+            <p>I used Sketch to create high-fidelity mock-ups of how I wanted the website to look. I originally used Yelp's yellow-to-red scale to visualize the ratings, but adding colors to differentiate a 3.0-rating versus a 3.5-rating made it difficult to see the difference. Considering the background and text color, inspired by the drink itself, it made sense to use a color scheme of light versus dark reds to make the data stand out more.
+            <img src="bobaintheus/sketchmockups.png">
             
-            <img src="lowernine/playtesting.jpg">
-            
-            <h2>Iconography</h2>
-                
-            <p>I also created a set of icons for the game to give more character and use visuals as a way of representing different elements of gameplay. Several of the icons were used as game pieces, as well as graphic elements in many pages of the instruction booklet.</p>
-            
-            <img src="lowernine/iconset.png">
-        
+
             <h2>Post-Project Thoughts</h2>
-            
-            <p>It was extremely challenging to tell the story of a serious event through a game experience and keep it sensitive at the same time. Games are often seen as fun entertainment and occasionally childish, but I'm interested in seeing them as a more serious medium not unlike television and cinema. Over time, I hope to see the perception of games become more respected as they're utilized in fields such as education and art. Through this project, I learned a lot about a traditional game design process and playtesting, as well as the appropriateness of chosen medium and typographic voice. </p>
+            <p>Working with d3.js for the first time was challenging, yet rewarding to see how to present large datasets in an interactive way. Future steps would nvolve making the website more responsive, which presents the extra challenge of making my visualization scale up and down. Through the development of this website, I learned different ways I could tell a story using interactive data visualizations, as well as how to guide users through what I wanted to say with the data.</p>
         </div>
 
 

@@ -6,198 +6,122 @@
     <title>Albert Yang</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lyg4qtn.css">
     
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
     
      <!-- Include jQuery and jquery.pin -->
     <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="jquery.fullPage.min.js"></script>
-    
-    <!--PRELOAD IMAGES SCRIPT-->
+
     <script>
-    function preload(arrayOfImages) {
-            $(arrayOfImages).each(function(){
-                $('<img/>')[0].src = this;
-                // Alternatively you could use:
-                // (new Image()).src = this;
-            });
-        }
+        $(document).ready(function() {
+            function hoverOverWork() {
+                $('li a').hover(
+                    function() {
+                        $('.discipline').text($(this).parent().data('discipline'))
+                                      .css("color", "#002BFF");
+                        $('.completion-date').text($(this).parent().data('completion-date'))
+                                           .css("color", "blue");
+                        $('.backgroundimage').attr("src", $(this).parent().data("image-src"))
+                                             .css("display", "block");
+                    }, function() {
+                        $('.discipline').text("");
+                        $('.completion-date').text("");
+                        $('.backgroundimage').css("display", "none");
+                });
+            }
 
-        // Usage:
+            function hideWork() {
+                $('.discipline').css("display", "none");
+                $('.completion-date').css("display", "none");
+                $('.backgroundimage').css("display", "none");
+            }
 
-        preload([
-            'cmudesigncensus/interactionphoto.jpg',
-            'aigadesigncensus/10.jpg',
-            'cherrypick/cherrypickmockup.jpg',
-            'paintthepavement/spread3.jpg',
-            'lowernine/boardcover.jpg',
-            'pinwheels/studiophoto.jpg',
-        ]);
-    
+            if ($(window).width() < 700) {
+                hideWork();
+            } else {
+                hoverOverWork();
+                $('.discipline').css("display", "block");
+                $('.completion-date').css("display", "block");
+            };
+
+            $(window).resize(function()
+            {
+                if ($(window).width() < 700) {
+                    hideWork();
+                } else {
+                    hoverOverWork();
+                    $('.discipline').css("display", "block");
+                    $('.completion-date').css("display", "block");
+                };
+            })
+        });
+
+
     </script>
-    
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106735853-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)};
-  gtag('js', new Date());
 
-  gtag('config', 'UA-106735853-1');
-</script>
 
-    
 </head>
 
 <body>
-    <div class="backgroundimages centerAlign">
-            </div>
-    
-    <div id="fullpage">
-        <!--BEGINNING OF FIRST SECTION (LANDING PAGE)-->
-        <div class="section group">
-           
 
-
-            <div class="col span_2_of_4 centerAlign" id="introduction">
-                <p>Hi! I'm Albert. I design experiences that delight and inform audiences.</p>
-
-                <p>I’m currently a senior at Carnegie Mellon studying Communication Design, with a minor in Human-Computer Interaction. My skills and interests lie in the realms of interaction and visual design, both in digital and print media. In my free time, I love to try out new games, travel, and especially explore local areas for <a href="http://www.instagram.com/albert95014" target="_blank"><b>boba</b></a>!</p>
-
-                <!-- <p>I aim to create delightful experiences in a variety of platforms, whether they be print, digital, or something else entirely new. My main interests lie in utilizing storytelling and visual aesthetics to improve the experience of different forms of media. Within my career as a designer, I hope to further explore the idea of gamification in user experience, and work with others to foster a greater sense of empathy when interacting with and designing for users.</p>
-                
-                <p>Outside of design, I love to try out new games, travel, and explore cities looking for places to eat great food. If you're in the mood, feel free to check out my occasionally-updated catalog of <a href="http://www.instagram.com/albert95014" target="_blank">boba adventures</a>!</p> -->
-
-                <p>If you want to chat, I can be reached at <b>albertya@andrew.cmu.edu</b>. In the mean time, you're more than welcome to <a href="#work"><b>check out my work</b></a> below or take a look at my <a href="resume.pdf" target="_blank"><b>resume</b></a>!</p>
-            </div>
-            
+    <div class="wrapper">
+        <div class="name_header">
+            <h1 class="line-title"><span>Albert Yang</span></h1>
         </div>
-        <!--END OF FIRST SECTION (LANDING PAGE)-->
-        
-        
-        
-        <!--BEGINNING OF "WORK" SECTION-->
-        <div class="section group" data-anchor="work">
-            <div class="col span_2_of_4 centerAlign">
-                <table class="projectlist">
-                    <tr>
-                        <th></th>
-                        <th>Digital Works</th>
-                    </tr>
-                    <tr>
-                        <td>UX/UI</td>
-                        <td><a href="koalitytime.html" data-id="backgroundimages/koalitytimemockup">Koality Time</a></td>
-                    </tr>
-                    <tr>
-                        <td>UX/UI</td>
-                        <td><a href="cherrypick.html" data-id="backgroundimages/cherrypick">Cherry Pick</a></td>
-                    </tr>
-                    <tr>
-                        <td>Generative Design</td>
-                        <td><a href="weeklyschedule.html" data-id="backgroundimages/weeklyschedule">Weekly Schedule</a></td>
-                    </tr>
-                    <tr>
-                        <td>Web Design</td>
-                        <td><a href="cmudesigncensus.html" data-id="backgroundimages/cmudesigncensus">CMU Design Census</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Motion</td>
-                        <td><a href="twitteranalysis.html" data-id="backgroundimages/twitteranalysis">Twitter Analysis</a></td>
-                    </tr>
 
-                    <tr>
-                        <th></th>
-                        <th>Print/Physical Works</th>
-                    </tr>
-                    <tr>
-                        <td>Game Design</td>
-                        <td><a href="lowernine.html" data-id="backgroundimages/lowernine">Lower Nine</a></td>
-                    </tr>
-                    <tr>
-                        <td>Data Viz</td>
-                        <td><a href="aigadesigncensus.html" data-id="backgroundimages/aigadesigncensus">AIGA Design Census</a></td>
-                    </tr>
-                    <tr>
-                        <td>Environments Design</td>
-                        <td><a href="pinwheels.html" data-id="backgroundimages/pinwheels">Pinwheels</a></td>
-                    </tr>
-                    <tr>
-                        <td>Book Design</td>
-                        <td><a href="paintthepavement.html" data-id="backgroundimages/paintthepavement">Paint the Pavement</a></td>
-                    </tr>
-                    <tr>
-                        <td>Book Design</td>
-                        <td><a href="hiraganabook.html" data-id="backgroundimages/hiraganabook">Hiragana Book</a></td>
-                    </tr>
-                </table>
-            </div>
-            
-            
-        
+        <div class="intro">
+            <p>Hello! I’m a designer who recently graduated from Carnegie Mellon’s School of Design. My skills and interests lie in a variety of disciplines, from interaction and visual design to data visualization and game design. Feel free to check out my work below!</p>
         </div>
-        <!--END OF "WORK" SECTION-->
+
+       <!--  <div class="resume">
+            <p><a href="resume.pdf" target="_blank">Resume</a></p>
+        </div> -->
+
         
+
+        <div class="work_header">
+            <h1 class="line-title"><span>Work</span></h1>
+            <p class="discipline"></p>
+            <p class="completion-date"></p>
+        </div>
+
+        <div class="work">
+            <ul>
+                <li data-discipline="UX/UI" data-completion-date="March 2018" data-image-src="backgroundimages/koalitytimemockup.jpg"><a href="koalitytime.html">Koality Time</a></li>
+                <li data-discipline="UX/UI" data-completion-date="May 2018" data-image-src="spotify/spotifymockups.png"><a href="spotify.html">Spotify Redesign</a></li>
+                <li data-discipline="Pop-Up Exhibition" data-completion-date="May 2018" data-image-src="backgroundimages/blablab.jpg"><a href="blablab.html">Blablab</a></li>
+                <li data-discipline="UX Research" data-completion-date="May 2016" data-image-src="backgroundimages/cherrypick.jpg"><a href="cherrypick.html">Cherry Pick</a></li>
+                <li data-discipline="Data Visualization" data-completion-date="April 2018" data-image-src="backgroundimages/bobaintheus.png"><a href="bobaintheus.html">Boba in the United States</a></li>
+                <li data-discipline="Data Visualization" data-completion-date="May 2017" data-image-src="backgroundimages/cmudesigncensus.jpg"><a href="cmudesigncensus.html">CMU Design Census</a></li>
+                <li data-discipline="Data Visualization" data-completion-date="March 2017" data-image-src="backgroundimages/aigadesigncensus.jpg"><a href="aigadesigncensus.html">AIGA Design Census</a></li>
+                <li data-discipline="Generative Design" data-completion-date="December 2017" data-image-src="backgroundimages/weeklyschedule.gif"><a href="weeklyschedule.html">Weekly Schedule</a></li>
+                <li data-discipline="Game Design" data-completion-date="December 2016" data-image-src="backgroundimages/lowernine.jpg"><a href="lowernine.html">Lower Nine</a></li>
+                <li data-discipline="Environments" data-completion-date="May 2016" data-image-src="backgroundimages/pinwheels.jpg"><a href="pinwheels.html">Pinwheels</a></li>
+            </ul>
+        </div>
+
+        <div class="preview">
+            <img class="backgroundimage" src="">
+        </div>
+
+        <div class="contact_header">
+            <h1 class="line-title"><span>Contact</span></h1>
+        </div>
+
+        <div class="contact">
+            <p><a href="mailto:albertyang.me@gmail.com">albertyang.me@gmail.com</a></p>
+            <p>(408) 823 3318</p>
+            <p><a href="resume.pdf">Resumé</a></p>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; Albert Yang 2018</p>
+        </div>
     </div>
-    <!--END OF FULLPAGE.JS ELEMENTS-->
-    
-    <!--FIXED NAVIGATION ELEMENTS (RENDERS ON TOP OF FULLPAGE.JS)-->
-    <div class="col span_1_of_4">
-        <div id="name">
-            <p><a href="#intro">Albert Yang</a></p>
-        </div>
-
-        <nav>
-            <p><a href="#work">Work</a></p>
-        </nav>
-    </div>
-    
-    <script>
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                anchors:['intro', 'work'],
-                onLeave: function(index, nextIndex, direction){
-                    //leaving 1st section
-                    if(index == 1){
-                       $('#name p a').addClass('noborder');
-                       $('nav p a').addClass('addborder')    
-                    }
-                    //back to the 1st section
-                    if(nextIndex == 1){
-                        $('#name p a').removeClass('noborder');
-                        $('nav p a').removeClass('addborder');
-                    }
-                }  
-            });
-        });
-        
-        
-   
-        $(document).ready(function(){
-            
-            $('a[href*="link.php"]').attr("target", "_blank");
-            
-            $('#introduction').fadeIn(700);
-            
-            /*TOP FUNCTION() IS FOR HOVER-ENTER, BOTTOM IS FOR HOVER-EXIT*/
-            $(".projectlist a").mouseover(
-              function () {
-                $('.backgroundimages').html('<img src="' + $(this).data('id') + '.jpg">').stop(true, true).animate({opacity:0.3});
-              }),
-                
-                $(".projectlist a").mouseout(
-              function () {
-                $('.backgroundimages').html('<img src="' + $(this).data('id') + '.jpg">').stop(true, true).animate({opacity:0});
-                });
-            
-        });
-        
-        
-        
-    </script>
     
 </body>
     
