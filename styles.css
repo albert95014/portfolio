@@ -1,36 +1,43 @@
 .wrapper {
     display: grid;
     margin: 0 auto;
-    grid-template-columns: [line1] 1fr [line2] 1fr [line3] 1fr;
-    grid-gap: 60px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 24px;
     box-sizing: border-box;
 }
 
 .wrapper div {
-    color: #000;
+    color: #A8A8A8;
     border-radius: 5px;
+    background-color: white;
 }
 
 /*---------------------------------------------------------*/
 
 body {
-    margin: 100px 120px;
-    font-family: aktiv-grotesk, sans-serif;
-    font-size: 2.4rem;
+    margin: 100px 200px;
+    /*font-family: aktiv-grotesk, sans-serif;*/
+    font-family: inter ui;
+    font-size: 1.6rem;
     font-style: normal;
-    font-weight: 400;
-    line-height: 3.2rem;
+    font-weight: 100;
+    line-height: 2.7rem;
+    letter-spacing: 0px;
+    color: #A8A8A8;
 }
 
 h1 {
+    font-size: 1.3rem;
     font-weight: 700;
     display: block;
     color: #1E1E1E;
     margin-bottom: 1.35rem;
     z-index: 99999;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
-.line-title {
+/*.line-title {
     border-bottom: 4px solid #000;
     height: 1.65rem;
 }
@@ -38,13 +45,28 @@ h1 {
 .line-title span {
     background: #fff;
     padding-right: 60px;
-}
+}*/
 
 li {
     position: relative;
     z-index: 99999;
-    grid-column-start: 2;
-    grid-column-end: 4;
+    margin-bottom: 48px;
+}
+
+li img {
+    width: 66.666667%;
+    display: inline-block;
+}
+
+.home-projectinfo {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 16px;
+}
+
+.home-projectinfo p:first-child {
+    color: #000;
+    font-weight: 500;
 }
 
 a {
@@ -56,27 +78,36 @@ a:hover {
     color: blue;
 }
 
+
 .underlinedtext {
     border-bottom: 4px solid #1E1E1E;
     display: inline;
 }
 
 .intro, .contact {
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 7;
     z-index: 99999;
 }
 
-.work_header, .contact_header {
+.intro p {
+    margin-bottom: 3.0rem;
+}
+
+.intro p span {
+    color: black;
+}
+
+.name_header, .work_header, .contact_header {
     height: auto;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
 }
 
 .work, .contact {
     height: auto;
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 9;
 }
 
 .backgroundimage {
@@ -92,8 +123,8 @@ a:hover {
 .copyright {
     position: relative;
         bottom: -80px;
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 9;
 }
 
 .preview {
@@ -112,38 +143,50 @@ PROJECT PAGE STYLES
 .projecttitle {
     position: fixed;
     grid-column-start: 1;
-    grid-column-end: 1;
+    grid-column-end: 3;
+
 }
 
 .projecttitle h1 {
     font-weight: 700;
     margin-bottom: 0;
     width: 100%;
+    text-transform: none;
+    font-size: 1.6rem;
+    letter-spacing: 0px;
+}
+.projectinfo p, .projectinfo h2 {
+    width: 66%;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    margin: 1.3rem auto;
 }
 
 .projectinfo h2 {
     font-weight: 700;
-    margin-top: 3.0rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000;
+    margin: 2.3rem auto 0.8rem;
 }
 
-.projectinfo h2:first-child{
-    margin-top: 0;
+.projectinfo h2:first-child {
+    margin-top: 0.3rem;
 }
 
 .projectinfo {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    font-size: 2.0rem;
+    grid-column-start: 3;
+    grid-column-end: 9;
+    font-size: 1.3rem;
 }
 
-.projectinfo p {
-    font-size: 1.6rem;
-    line-height: 2.5rem;
-    margin: 1.2rem 0;
+.projectinfo p span {
+    color: #000;
 }
+
 
 .projectinfo p a {
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .projectinfo img, iframe {
@@ -174,17 +217,38 @@ PROJECT PAGE STYLES
 
 .collaborators, .contributions {
     margin-top: 3.0rem;
-    line-height: 3.0rem;
+    line-height: 2.3rem;
 }
 
 .collaborators h3, .contributions h3 {
-    font-size: 2.0rem;
-    font-weight: 700;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
 }
 
-.collaborators p , .contributions p{
-    font-size: 1.6rem;
-    line-height: 2.5rem;
+.collaborators p , .contributions p, .collaborators a{
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    color: #A8A8A8;
+}
+
+.collaborators a:hover {
+    color:blue;
+}
+
+.work_links {
+    grid-column-start: 4;
+    grid-column-end: 9;
+    margin:0;
+
+}
+
+.work_links li {
+    margin-bottom: 0;
 }
 
 /*
@@ -193,13 +257,14 @@ END OF PROJECT PAGE STYLES
 
 @media only screen and (max-width: 1800px) {
     body {
-        font-size: 2.0rem;
-        line-height: 2.8rem;
+        font-size: 1.3rem;
+        line-height: 2.3rem;
+        margin: 100px;
     }
 
     .discipline, .completion-date {
-        font-size: 1.6rem;
-        line-height: 2.5rem;
+        font-size: 1.3rem;
+        line-height: 2.3rem;
     }
 }
 
@@ -207,38 +272,39 @@ END OF PROJECT PAGE STYLES
     .wrapper {
         display: grid;
         margin: 0 auto;
-        grid-template-columns: [line1] 1fr [line2] 1fr [line3] 1fr;
-        grid-gap: 45px;
+        /*grid-template-columns: [line1] 1fr [line2] 1fr [line3] 1fr;
+        grid-gap: 45px;*/
+
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 36px;
         box-sizing: border-box;
     }
 
-    .line-title {
+    /*.line-title {
         height: 1.2rem;
     }
 
     .line-title span {
-        background: #fff;
+        background: #000;
         padding-right: 30px;
     }
-
-    body, .discipline, .completion-date, 
+*/
+    body, h1, .discipline, .completion-date, 
     .collaborators h3, .collaborators p, 
     .contributions h3, .contributions p, 
     .projectinfo h2, .projectinfo p {
-        font-size: 1.6rem;
-        line-height: 2.6rem;
+        font-size: 1.1rem;
+        line-height: 2.1rem;
     }
 
     .projectinfo p {
-        font-size: 1.6rem;
-        line-height: 2.6rem;
-        margin: 1.0rem 0;
+        font-size: 1.3rem;
+        line-height: 2.3rem;
+        margin: 1.0rem auto;
     }
 
     .projectinfo h2 {
-        border-bottom: 2px solid #000;
-        padding-bottom: 16px;
-        width: 30px;
+        /*width: 30px;*/
         white-space: nowrap;
     }
 
@@ -248,16 +314,16 @@ END OF PROJECT PAGE STYLES
     body {
         margin: 50px 60px;
     }
-
+/*
     .line-title {
         border-bottom: 2px solid #000;
         height: 1.0rem;
-    }
+    }*/
 
-    .line-title span {
+/*    .line-title span {
         background: #fff;
         padding-right: 45px;
-    }
+    }*/
 
     .arrow {
         position: fixed;
@@ -266,15 +332,21 @@ END OF PROJECT PAGE STYLES
     }
 
     body, .discipline, .completion-date, 
-    .collaborators h3, .collaborators p, 
-    .contributions h3, .contributions p, 
+    .collaborators h3, .collaborators p,
+    .collaborators p a, 
+    .contributions h3, .contributions p,
     .projectinfo h2, .projectinfo p {
-        font-size: 1.2rem;
+        font-size: 1.0rem;
         line-height: 2.0rem;
     }
 
+    .projecttitle h1 {
+        font-size: 1.2rem;
+        line-height: 2.3rem;
+    }
+
     .projectinfo p {
-        margin: 1.0rem 0;
+        margin: 1.0rem auto;
     }
 }
 
@@ -285,8 +357,8 @@ END OF PROJECT PAGE STYLES
 
     body {
         margin: 40px 30px;
-        font-size: 1.0rem;
-        line-height: 1.6rem;
+        font-size: 1.1rem;
+        line-height: 2.1rem;
     }
 
     .arrow {
@@ -300,24 +372,33 @@ END OF PROJECT PAGE STYLES
     }
 
     .intro, .work {
-        margin-bottom: 2.0rem;
+        margin-bottom: 1.6rem;
     }
 
     .projecttitle {
         position: relative;
     }    
 
+    li a img {
+        width: 100%;
+    }
+
+    .home-projectinfo {
+        margin-left: 0;
+    }
+
     .discipline, .completion-date, 
     .collaborators h3, .collaborators p, 
     .contributions h3, .contributions p, 
     .projectinfo h2, .projectinfo p {
         font-size: 1.0rem;
-        line-height: 1.6rem;
+        line-height: 2.0rem;
     }
 
     .collaborators, .contributions {
         margin-top: 20px;
     }
+
 
     .projecttitle div:last-child, .projectinfo p:last-child {
         border-bottom: 2px solid #000;
@@ -325,4 +406,9 @@ END OF PROJECT PAGE STYLES
         margin-bottom: 30px;
         border-radius: 0;
     }
+
+    .projectinfo h2, .projectinfo p {
+        width: 100%;
+    }
+
 }

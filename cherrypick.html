@@ -13,33 +13,6 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script>
-        function resizeIframe(obj) {
-            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-        };
-
-        $(document).ready(function() {
-            if ($(window).width() > 700) {
-                adjustWidth();
-            } else {
-                $(".projecttitle").width("auto");
-            };
-
-            $(window).resize(function() {
-                if ($(window).width() > 700) {
-                    adjustWidth();
-                }else {
-                    $(".projecttitle").width("auto");
-                };
-            });
-        });
-
-        function adjustWidth() {
-            var parentwidth = $(".wrapper").width()/3;
-            $(".projecttitle").width(parentwidth);
-        };
-    </script>
-
 </head>
 
 <body>
@@ -109,33 +82,18 @@
             <p>This project was mainly based in the research realm of user experience, and I felt that the methods we utilized were definitely good strategies to explore further in the future. That being said, each stage felt relatively shallow due to the fast-paced timeline, but I believe that conducting more user testing and visual iterations can strongly improve our prototype. Regardless, I feel that due to the quantity of research conducted, our first full visual prototype was well-informed and well-guided by our findings. Future iterations would involve a more in-depth exploration of user testing sessions and consistently returning to our affinity diagrams to help keep us on track.</p>
         </div>
 
-
-
-
-        <div class="work_header">
-        </div>
-
-        <div class="work">
+        <div class="work_links">
             <ul>
-                <li data-discipline="UX/UI" data-completion-date="March 2018" data-image-src="backgroundimages/koalitytimemockup.jpg"><a href="koalitytime.html">Koality Time</a></li>
-                <li data-discipline="UX/UI" data-completion-date="May 2018" data-image-src="spotify/spotifymockups.png"><a href="spotify.html">Spotify Redesign</a></li>
-                <li data-discipline="Pop-Up Exhibition" data-completion-date="May 2018" data-image-src="backgroundimages/blablab.jpg"><a href="blablab.html">Blablab</a></li>
-                <li data-discipline="UX Research" data-completion-date="May 2016" data-image-src="backgroundimages/cherrypick.jpg"><a href="cherrypick.html">Cherry Pick</a></li>
-                <li data-discipline="Data Visualization" data-completion-date="April 2018" data-image-src="backgroundimages/bobaintheus.png"><a href="bobaintheus.html">Boba in the United States</a></li>
-                <li data-discipline="Data Visualization" data-completion-date="May 2017" data-image-src="backgroundimages/cmudesigncensus.jpg"><a href="cmudesigncensus.html">CMU Design Census</a></li>
-                <li data-discipline="Data Visualization" data-completion-date="March 2017" data-image-src="backgroundimages/aigadesigncensus.jpg"><a href="aigadesigncensus.html">AIGA Design Census</a></li>
-                <li data-discipline="Generative Design" data-completion-date="December 2017" data-image-src="backgroundimages/weeklyschedule.gif"><a href="weeklyschedule.html">Weekly Schedule</a></li>
-                <li data-discipline="Game Design" data-completion-date="December 2016" data-image-src="backgroundimages/lowernine.jpg"><a href="lowernine.html">Lower Nine</a></li>
-                <li data-discipline="Environments" data-completion-date="May 2016" data-image-src="backgroundimages/pinwheels.jpg"><a href="pinwheels.html">Pinwheels</a></li>
+                <li><a href="koalitytime.html">Koality Time</a></li>
+                <li><a href="spotify.html">Spotify Redesign</a></li>
+                <li><a href="blablab.html">Blablab</a></li>
+                <li><a href="bobaintheus.html">Boba in the United States</a></li>
+                <li><a href="cmudesigncensus.html">CMU Design Census</a></li>
+                <li><a href="aigadesigncensus.html">AIGA Design Census</a></li>
+                <li><a href="weeklyschedule.html">Weekly Schedule</a></li>
+                <li><a href="pinwheels.html">Pinwheels</a></li>
+                
             </ul>
-        </div>
-
-        <div class="preview">
-            <img class="backgroundimage" src="">
-        </div>
-
-        <div class="copyright">
-            <p>&copy; Albert Yang 2018</p>
         </div>
     </div>
     

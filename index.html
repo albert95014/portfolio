@@ -6,59 +6,13 @@
     <title>Albert Yang</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="fonts/inter-ui.css">
     <link rel="stylesheet" href="https://use.typekit.net/lyg4qtn.css">
     
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            function hoverOverWork() {
-                $('li a').hover(
-                    function() {
-                        $('.discipline').text($(this).parent().data('discipline'))
-                                      .css("color", "#002BFF");
-                        $('.completion-date').text($(this).parent().data('completion-date'))
-                                           .css("color", "blue");
-                        $('.backgroundimage').attr("src", $(this).parent().data("image-src"))
-                                             .css("display", "block");
-                    }, function() {
-                        $('.discipline').text("");
-                        $('.completion-date').text("");
-                        $('.backgroundimage').css("display", "none");
-                });
-            }
-
-            function hideWork() {
-                $('.discipline').css("display", "none");
-                $('.completion-date').css("display", "none");
-                $('.backgroundimage').css("display", "none");
-            }
-
-            if ($(window).width() < 700) {
-                hideWork();
-            } else {
-                hoverOverWork();
-                $('.discipline').css("display", "block");
-                $('.completion-date').css("display", "block");
-            };
-
-            $(window).resize(function()
-            {
-                if ($(window).width() < 700) {
-                    hideWork();
-                } else {
-                    hoverOverWork();
-                    $('.discipline').css("display", "block");
-                    $('.completion-date').css("display", "block");
-                };
-            })
-        });
-
-
-    </script>
 
     <!--Google Analytics-->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106735853-1"></script>
@@ -81,14 +35,14 @@
         </div>
 
         <div class="intro">
-            <p>Hello! I’m a designer who recently graduated from Carnegie Mellon’s School of Design. I seek to create memorable experiences that focus on exciting interactions and emotional impact. Feel free to check out my work below!</p>
+            <p>Hello! I’m a designer who recently graduated from <span><a href="https://design.cmu.edu/">Carnegie Mellon’s School of Design</a></span>. I’m currently working as a <span><a href="https://www.leapdesignstudio.com/">Product Designer at Leap Design Studio</a></span>.</p>
+
+            <p>My skills and interests lie in a variety of disciplines, from interaction and visual design to data visualization and game design. Feel free to check out my work below, view my <a href="resume.pdf">resume</a> or email me at <a href="mailto:albertyang.me@gmail.com">albertyang.me@gmail.com</a>!</p>
         </div>
 
        <!--  <div class="resume">
             <p><a href="resume.pdf" target="_blank">Resume</a></p>
         </div> -->
-
-        
 
         <div class="work_header">
             <h1 class="line-title"><span>Work</span></h1>
@@ -98,16 +52,87 @@
 
         <div class="work">
             <ul>
-                <li data-discipline="UX/UI" data-completion-date="March 2018" data-image-src="backgroundimages/koalitytimemockup.jpg"><a href="koalitytime.html">Koality Time</a></li>
-                <li data-discipline="UX/UI" data-completion-date="May 2018" data-image-src="spotify/spotifymockups.png"><a href="spotify.html">Spotify Redesign</a></li>
-                <li data-discipline="Pop-Up Exhibition" data-completion-date="May 2018" data-image-src="backgroundimages/blablab.jpg"><a href="blablab.html">Blablab</a></li>
-                <li data-discipline="UX Research" data-completion-date="May 2016" data-image-src="backgroundimages/cherrypick.jpg"><a href="cherrypick.html">Cherry Pick</a></li>
-                <li data-discipline="Data Visualization" data-completion-date="April 2018" data-image-src="backgroundimages/bobaintheus.png"><a href="bobaintheus.html">Boba in the United States</a></li>
-                <li data-discipline="Data Visualization" data-completion-date="May 2017" data-image-src="backgroundimages/cmudesigncensus.jpg"><a href="cmudesigncensus.html">CMU Design Census</a></li>
-                <li data-discipline="Data Visualization" data-completion-date="March 2017" data-image-src="backgroundimages/aigadesigncensus.jpg"><a href="aigadesigncensus.html">AIGA Design Census</a></li>
-                <li data-discipline="Generative Design" data-completion-date="December 2017" data-image-src="backgroundimages/weeklyschedule.gif"><a href="weeklyschedule.html">Weekly Schedule</a></li>
-                <li data-discipline="Game Design" data-completion-date="December 2016" data-image-src="backgroundimages/lowernine.jpg"><a href="lowernine.html">Lower Nine</a></li>
-                <li data-discipline="Environments" data-completion-date="May 2016" data-image-src="backgroundimages/pinwheels.jpg"><a href="pinwheels.html">Pinwheels</a></li>
+                <li>
+                    <a href="koalitytime.html">
+                        <img src="updated_bg_imgs/koalitytime.jpg">
+                        <div class="home-projectinfo">
+                            <p class="home-projecttitle">Koality Time</p>
+                            <p class="discipline">UX Design</p>
+                            <p class="completion-date">March 2018</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="spotify.html">
+                        <img src="updated_bg_imgs/spotifyredesign.jpg">
+                        <div class="home-projectinfo">
+                            <p class="home-projecttitle">Spotify Redesign</p>
+                            <p class="discipline">UI Design</p>
+                            <p class="completion-date">May 2018</p>
+                        </div>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="blablab.html">
+                        <img src="updated_bg_imgs/blablab.jpg">
+                        <div class="home-projectinfo">
+                            <p class="home-projecttitle">Blablab</p>
+                            <p class="discipline">Pop-Up Exhibition</p>
+                            <p class="completion-date">May 2018</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="bobaintheus.html">
+                        <img src="updated_bg_imgs/bobaintheus.jpg">
+                        <div class="home-projectinfo">
+                            <p class="home-projecttitle">Boba in the United States</p>
+                            <p class="discipline">Data Visualization</p>
+                            <p class="completion-date">April 2018</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="cmudesigncensus.html">
+                        <img src="updated_bg_imgs/cmudesigncensus.jpg">
+                        <div class="home-projectinfo">
+                            <p class="home-projecttitle">CMU Design Census</p>
+                            <p class="discipline">Data Visualization</p>
+                            <p class="completion-date">May 2017</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="aigadesigncensus.html">
+                        <img src="updated_bg_imgs/aigadesigncensus.jpg">
+                        <div class="home-projectinfo">
+                            <p class="home-projecttitle">AIGA Design Census</p>
+                            <p class="discipline">Data Visualization</p>
+                            <p class="completion-date">March 2017</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="weeklyschedule.html">
+                        <img src="updated_bg_imgs/weeklyschedule.jpg">
+                        <div class="home-projectinfo">
+                            <p class="home-projecttitle">Weekly Schedule</p>
+                            <p class="discipline">Generative Design</p>
+                            <p class="completion-date">December 2017</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="pinwheels.html">
+                        <img src="updated_bg_imgs/pinwheels.jpg">
+                        <div class="home-projectinfo">
+                            <p class="home-projecttitle">Pinwheels</p>
+                            <p class="discipline">Installation</p>
+                            <p class="completion-date">May 2016</p>
+                        </div>
+                    </a>
+                </li>
             </ul>
         </div>
 
@@ -123,11 +148,10 @@
             <p><a href="mailto:albertyang.me@gmail.com">albertyang.me@gmail.com</a></p>
             <p>(408) 823 3318</p>
             <p><a href="resume.pdf">Resumé</a></p>
-            <p><a href="https://www.instagram.com/balt.er/">Instagram</a></p>
         </div>
 
         <div class="copyright">
-            <p>&copy; Albert Yang 2018</p>
+            <p>&copy; Albert Yang 2019</p>
         </div>
     </div>
     

@@ -13,33 +13,6 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script>
-        function resizeIframe(obj) {
-            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-        };
-
-        $(document).ready(function() {
-            if ($(window).width() > 700) {
-                adjustWidth();
-            } else {
-                $(".projecttitle").width("auto");
-            };
-
-            $(window).resize(function() {
-                if ($(window).width() > 700) {
-                    adjustWidth();
-                }else {
-                    $(".projecttitle").width("auto");
-                };
-            });
-        });
-
-        function adjustWidth() {
-            var parentwidth = $(".wrapper").width()/3;
-            $(".projecttitle").width(parentwidth);
-        };
-    </script>
-
 </head>
 
 <body>
@@ -57,7 +30,7 @@
                 <h3>Collaborators</h3>
                 <p><a href="http://tiffany-chen.com/">Tiffany Chen</a></p>
                 <p><a href="http://www.christiechong.net/">Christie Chong</a></p>
-                <p><a href="http://alexlyeh.com/">Alex Yeh</a></p>
+                <p><a href="http://www.alexlyeh.me/">Alex Yeh</a></p>
             </div>
 
             <div class="contributions">
@@ -71,7 +44,7 @@
 
         <div class="projectinfo">
             <h2>Overview</h2>
-            <p>With smartphone usage consistently on the rise, it can be difficult to have in-person conversations with people so glued to their mobile devices. Koality Time is an app that incentivizes putting one's phone away and engaging with others in social hangouts. By providing in-app currency that can be exchanged at real-life vendors, users improve their social experiences while obtaining rewards that are worthwhile.</p>
+            <p>With smartphone usage consistently on the rise, it can be difficult to have in-person conversations with people so glued to their mobile devices. <span>Koality Time is an app that incentivizes putting one's phone away and engaging with others in social hangouts.</span> By providing in-app currency that can be exchanged at real-life vendors, users improve their social experiences while obtaining rewards that are worthwhile.</p>
 
             <img src="koalitytime/screens1-3.png">
             <img src="koalitytime/screens4-6.png">
@@ -112,28 +85,18 @@
         <div class="work_header">
         </div>
 
-        <div class="work">
+        <div class="work_links">
             <ul>
-               <li data-discipline="UX/UI" data-completion-date="March 2018" data-image-src="backgroundimages/koalitytimemockup.jpg"><a href="koalitytime.html">Koality Time</a></li>
-                <li data-discipline="UX/UI" data-completion-date="May 2018" data-image-src="spotify/spotifymockups.png"><a href="spotify.html">Spotify Redesign</a></li>
-                <li data-discipline="Pop-Up Exhibition" data-completion-date="May 2018" data-image-src="backgroundimages/blablab.jpg"><a href="blablab.html">Blablab</a></li>
-                <li data-discipline="UX Research" data-completion-date="May 2016" data-image-src="backgroundimages/cherrypick.jpg"><a href="cherrypick.html">Cherry Pick</a></li>
-                <li data-discipline="Data Visualization" data-completion-date="April 2018" data-image-src="backgroundimages/bobaintheus.png"><a href="bobaintheus.html">Boba in the United States</a></li>
-                <li data-discipline="Data Visualization" data-completion-date="May 2017" data-image-src="backgroundimages/cmudesigncensus.jpg"><a href="cmudesigncensus.html">CMU Design Census</a></li>
-                <li data-discipline="Data Visualization" data-completion-date="March 2017" data-image-src="backgroundimages/aigadesigncensus.jpg"><a href="aigadesigncensus.html">AIGA Design Census</a></li>
-                <li data-discipline="Generative Design" data-completion-date="December 2017" data-image-src="backgroundimages/weeklyschedule.gif"><a href="weeklyschedule.html">Weekly Schedule</a></li>
-                <li data-discipline="Game Design" data-completion-date="December 2016" data-image-src="backgroundimages/lowernine.jpg"><a href="lowernine.html">Lower Nine</a></li>
-                <li data-discipline="Environments" data-completion-date="May 2016" data-image-src="backgroundimages/pinwheels.jpg"><a href="pinwheels.html">Pinwheels</a></li>
+                <li><a href="koalitytime.html">Koality Time</a></li>
+                <li><a href="spotify.html">Spotify Redesign</a></li>
+                <li><a href="blablab.html">Blablab</a></li>
+                <li><a href="bobaintheus.html">Boba in the United States</a></li>
+                <li><a href="cmudesigncensus.html">CMU Design Census</a></li>
+                <li><a href="aigadesigncensus.html">AIGA Design Census</a></li>
+                <li><a href="weeklyschedule.html">Weekly Schedule</a></li>
+                <li><a href="pinwheels.html">Pinwheels</a></li>
                 
             </ul>
-        </div>
-
-        <div class="preview">
-            <img class="backgroundimage" src="">
-        </div>
-
-        <div class="copyright">
-            <p>&copy; Albert Yang 2018</p>
         </div>
     </div>
     

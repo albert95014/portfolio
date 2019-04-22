@@ -13,33 +13,6 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script>
-        function resizeIframe(obj) {
-            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-        };
-
-        $(document).ready(function() {
-            if ($(window).width() > 700) {
-                adjustWidth();
-            } else {
-                $(".projecttitle").width("auto");
-            };
-
-            $(window).resize(function() {
-                if ($(window).width() > 700) {
-                    adjustWidth();
-                }else {
-                    $(".projecttitle").width("auto");
-                };
-            });
-        });
-
-        function adjustWidth() {
-            var parentwidth = $(".wrapper").width()/3;
-            $(".projecttitle").width(parentwidth);
-        };
-    </script>
-
 </head>
 
 <body>
@@ -65,12 +38,10 @@
 
         <div class="projectinfo">
             <h2>Overview</h2>
-            <p>For this design challenge, I was to redesign four screens for Spotify's mobile app. I conducted user research to better understand how people used the app and what music meant to them, and aimed to design an experience that would better bring forth those personal and emotional aspects of listening to music.</p>
-
-            <p>Process documentation can be found <a href="https://medium.com/@albert95014/testing-this-story-73afac7987ae">here</a> on Medium.
+            <p>For this design challenge, I was to redesign four screens for Spotify's mobile app. I conducted user research to better understand how people used the app and what music meant to them, and aimed to design an experience that would better bring forth those personal and emotional aspects of listening to music. Process documentation can be found <a href="https://medium.com/@albert95014/testing-this-story-73afac7987ae">here</a> on Medium.
 
             <h2>Concept</h2>
-            <p>Inspired by how pieces of music can mean different things to different people, I set out to redesign a way for artists and listeners to document their own interpretations of albums and songs. Another goal was to add more information about the artists, who they are, and where they come from. Creating a space where both parties can come together and realize they have encountered similar experiences can make listening to music a much more powerful experience, while also humanizing artists and fostering a culture where music can be an extension of an artist’s identity.</p>
+            <p>Inspired by how pieces of music can mean different things to different people, <span>I set out to redesign a way for artists and listeners to document their own interpretations of albums and songs.</span> Another goal was to add more information about the artists, who they are, and where they come from. Creating a space where both parties can come together and realize they have encountered similar experiences can make listening to music a much more powerful experience, while also humanizing artists and fostering a culture where music can be an extension of an artist’s identity.</p>
 
             <img src="spotify/spotifymockups2.jpg">
             <img src="spotify/spotifymockups3.jpg">
@@ -97,32 +68,18 @@
         </div>
 
 
-
-
-        <div class="work_header">
-        </div>
-
-        <div class="work">
+       <div class="work_links">
             <ul>
-                <li data-discipline="UX/UI" data-completion-date="March 2018" data-image-src="backgroundimages/koalitytimemockup.jpg"><a href="koalitytime.html">Koality Time</a></li>
-                <li data-discipline="UX/UI" data-completion-date="May 2018" data-image-src="spotify/spotifymockups.png"><a href="spotify.html">Spotify Redesign</a></li>
-                <li data-discipline="Pop-Up Exhibition" data-completion-date="May 2018" data-image-src="backgroundimages/blablab.jpg"><a href="blablab.html">Blablab</a></li>
-                <li data-discipline="UX Research" data-completion-date="May 2016" data-image-src="backgroundimages/cherrypick.jpg"><a href="cherrypick.html">Cherry Pick</a></li>
-                <li data-discipline="Data Visualization" data-completion-date="April 2018" data-image-src="backgroundimages/bobaintheus.png"><a href="bobaintheus.html">Boba in the United States</a></li>
-                <li data-discipline="Data Visualization" data-completion-date="May 2017" data-image-src="backgroundimages/cmudesigncensus.jpg"><a href="cmudesigncensus.html">CMU Design Census</a></li>
-                <li data-discipline="Data Visualization" data-completion-date="March 2017" data-image-src="backgroundimages/aigadesigncensus.jpg"><a href="aigadesigncensus.html">AIGA Design Census</a></li>
-                <li data-discipline="Generative Design" data-completion-date="December 2017" data-image-src="backgroundimages/weeklyschedule.gif"><a href="weeklyschedule.html">Weekly Schedule</a></li>
-                <li data-discipline="Game Design" data-completion-date="December 2016" data-image-src="backgroundimages/lowernine.jpg"><a href="lowernine.html">Lower Nine</a></li>
-                <li data-discipline="Environments" data-completion-date="May 2016" data-image-src="backgroundimages/pinwheels.jpg"><a href="pinwheels.html">Pinwheels</a></li>
+                <li><a href="koalitytime.html">Koality Time</a></li>
+                <li><a href="spotify.html">Spotify Redesign</a></li>
+                <li><a href="blablab.html">Blablab</a></li>
+                <li><a href="bobaintheus.html">Boba in the United States</a></li>
+                <li><a href="cmudesigncensus.html">CMU Design Census</a></li>
+                <li><a href="aigadesigncensus.html">AIGA Design Census</a></li>
+                <li><a href="weeklyschedule.html">Weekly Schedule</a></li>
+                <li><a href="pinwheels.html">Pinwheels</a></li>
+                
             </ul>
-        </div>
-
-        <div class="preview">
-            <img class="backgroundimage" src="">
-        </div>
-
-        <div class="copyright">
-            <p>&copy; Albert Yang 2018</p>
         </div>
     </div>
     
