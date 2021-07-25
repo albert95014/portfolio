@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+
+
+  <title>Albert Yang</title>
+</head>
+
+<body>
+
+  <div id="nav">
+    <ul>
+      <li class="navlinks name">
+        <a href="index.html">Albert Yang</a>
+      </li>
+
+      <div id="right_nav">
+        <li class="navlinks work">
+          <a href="index.html">Work</a>
+        </li>
+
+        <li class="navlinks about">
+          <a href="about.html">About</a>
+        </li>
+
+        <li class="navlinks contact">
+          <a href="resume.pdf" target="_blank">Resume</a>
+        </li>
+      </div>
+    </ul>
+  </div>
+
+
+
+  <div id="project_page">
+    <div id="project_info">
+      <h1>Weekly Schedule</h1>
+      <p>December 2017</p>
+      <p>Generative</p>
+    </div>
+
+    <div id="project_story">
+      <h2>Overview</h2>
+      <p><span>Weekly Schedule is a generative poster series made with basil.js that visually represents one's routine in a week, day-by-day.</span> Each poster lists out by hour a person's activity throughout a particular day of the week, taking into consideration what is considered a "routine" event versus an event that's unique. For example, taking a class in the afternoon every Wednesday may be considered routine, whereas going to a concert on Friday night is something that doesn't happen every week. Those unique events stand out and are given more visual emphasis compared to the weekly routine occurences, as well as photos that represents the events.
+
+      <img class="project_story_image" src="images/weeklyschedule/weeklyschedule.gif">
+    </p>
+
+      <h2>Working with basil.js</h2>
+      <p>I utilized basil.js and Adobe InDesign to generate a variety of randomized layouts, playing with color, placement of photos, and data input from an external spreadsheet. Prior to moving forward with basil.js, I manually created posters in InDesign that allowed the text and photos to interact differently in order to determine a layout that I felt could convey my concept clearly while still allowing the code to generate randomized placements.</p>
+
+      <img class="project_story_image" src="images/weeklyschedule/basilscreenshot1.png">
+      <img class="project_story_image" src="images/weeklyschedule/basilscreenshot2.png">
+
+      <h2>Post-Project Thoughts</h2>
+      <p>As my first project using basil.js, I feel that Weekly Schedule was successful in teaching me the limits of designing with code and the situations in which code can be beneficial in my design process. Working with data files in this project especially makes datasets considerably easier to design for in the future, while also helping me keep in mind the interaction of type and image when designing poster series. Weekly Schedule ultimately excites me more about creating generative layouts with code and opens up a lot of doors for me when considering implementation of code in my design process.</p>
+    </div>
+  </div>
+
+
+  <div id="bottom_nav">
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>

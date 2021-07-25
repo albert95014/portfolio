@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+
+
+  <title>Albert Yang</title>
+</head>
+
+<body>
+
+  <div id="nav">
+    <ul>
+      <li class="navlinks name">
+        <a href="index.html">Albert Yang</a>
+      </li>
+
+      <div id="right_nav">
+        <li class="navlinks work">
+          <a href="index.html">Work</a>
+        </li>
+
+        <li class="navlinks about">
+          <a href="about.html">About</a>
+        </li>
+
+        <li class="navlinks contact">
+          <a href="resume.pdf" target="_blank">Resume</a>
+        </li>
+      </div>
+    </ul>
+  </div>
+
+
+
+  <div id="project_page">
+    <div id="project_info">
+      <h1>Boba in the US</h1>
+      <p>April 2018</p>
+      <p>Data Visualization, Web Design</p>
+    </div>
+
+    <div id="project_story">
+      <h2>Overview</h2>
+      <p>Boba tea, also known as pearl milk tea or bubble tea, is a Taiwanese-originated drink that has found increased popularity across the world in the past few decades. <span>The goal for this visualization is to visualize how popular the drink is in different cities within the United States.</span></p>
+
+      <p>To visualize the data obtained from Yelp's Fusion API, I used d3.js to develop an interactive website, which can be found <a href="https://albert95014.github.io/boba_in_the_us/" target="_blank">here</a> (try zooming out if the browser size is too small!).</p>
+
+
+      <img class="project_story_image" src="images/bobaintheus/sitescreenshot1.png">
+      <img class="project_story_image" src="images/bobaintheus/sitescreenshot2.png">
+      <img class="project_story_image" src="images/bobaintheus/sitescreenshot3.png">
+
+      <h2>Beginning Process</h2>
+      <p>Inspired by <a href="https://www.instagram.com/albert95014">my boba-documenting Instagram</a>, I wanted to see how easy it would be to find boba in various regions of the United States. I sketched a few potential ways of visualizing the data, which had been scraped using the Yelp Fusion API (returning every business in certain cities under the "Bubble Tea" category).</p>
+
+      <img class="project_story_image" src="images/bobaintheus/vizsketches1.jpg">
+      <img class="project_story_image" src="images/bobaintheus/vizsketches2.jpg">
+
+      <h2>Data Collection and Cleaning</h2>
+      <p>The data, which was originally returned in JSON format, contained a lot of categories that weren't as relevant to the story I was trying to tell. I cleaned up the data by adding and removing categories as necessary, and organizing them by city into various .csv files to work with separately.</p>
+
+      <img class="project_story_image" src="images/bobaintheus/bobadata.png">
+
+      <h2>Wireframing and Mock-ups</h2>
+      <p>I used Sketch to create high-fidelity mock-ups of how I wanted the website to look. I originally used Yelp's yellow-to-red scale to visualize the ratings, but adding colors to differentiate a 3.0-rating versus a 3.5-rating made it difficult to see the difference. Considering the background and text color, inspired by the drink itself, it made sense to use a color scheme of light versus dark reds to make the data stand out more.</p>
+
+      <img class="project_story_image" src="images/bobaintheus/sketchmockups.png">
+
+
+      <h2>Post-Project Thoughts</h2>
+      <p>Working with d3.js for the first time was challenging, yet rewarding to see how to present large datasets in an interactive way. Future steps would nvolve making the website more responsive, which presents the extra challenge of making my visualization scale up and down. Through the development of this website, I learned different ways I could tell a story using interactive data visualizations, as well as how to guide users through what I wanted to say with the data.</p>
+    </div>
+  </div>
+
+
+  <div id="bottom_nav">
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>

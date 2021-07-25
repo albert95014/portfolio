@@ -1,0 +1,248 @@
+@font-face {
+  font-family: "Epilogue";
+  src: url("Epilogue-VariableFont_wght.ttf") format("truetype");
+  font-weight: 125 950;
+}
+
+body {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 11px;
+  width: calc(100vw - 128px);
+  margin: 0 0 0 64px;
+}
+
+/*---------NAV BAR---------*/
+#nav {
+  margin: 48px 0;
+  /* background-color: yellow; */
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navlinks {
+  display:inline-block;
+  width: 120px;
+  /* background: green; */
+
+  font-size: 1.0rem;
+  font-variation-settings: 'wght' 600
+}
+
+#right_nav {
+  text-align: right;
+  float: right;
+}
+
+/*---------PROJECTS/WORK SECTION---------*/
+a {
+  text-decoration: none;
+  color: black;
+  transition:0.3s;
+}
+
+a img {
+  transition: 0.3s;
+}
+
+#about {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+#about a {
+  font-variation-settings: 'wght' 400;
+  text-decoration: underline;
+}
+
+#work {
+  /* background-color:grey; */
+  width: 100%;
+  margin: 48px 0;
+
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project {
+  width: calc(100%/3 - 32px);
+  margin-bottom: 32px;
+}
+
+.project_image {
+  width: 100%;
+  height: auto;
+}
+
+.project p {
+  font-size: 1.1rem;
+  /* background-color:grey; */
+  margin: 0;
+}
+
+.project_title {
+  font-variation-settings: 'wght' 600;
+  padding: 12px 0 8px;
+  transition: 0.3s;
+}
+
+.project_label {
+  font-variation-settings: 'wght' 400;
+}
+
+/*---------PROJECT PAGES---------*/
+.project_story {
+  width: 100%;
+}
+
+#project_info > * {
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+
+#project_info p {
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+#project_story {
+  width: 100%;
+  margin-top: 48px;
+}
+
+#project_story h2, #project_story p {
+  width: 60%;
+  max-width: 840px;
+  margin: 0 auto;
+  /* background:green; */
+}
+
+h2 {
+  font-size: 1.0rem;
+}
+
+#project_story p {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  margin-top: 16px;
+}
+
+#project_story p a {
+  font-variation-settings: 'wght' 600;
+  transition: 0.3s;
+}
+
+#project_story p:last-child {
+  margin-bottom: 48px;
+}
+
+.project_story_image, .video_container {
+  width: 80%;
+  display: block;
+  margin: 48px auto;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+/*---------BOTTOM NAV/FOOTER---------*/
+#bottom_nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+#bottom_nav a {
+  font-size: 1.6rem;
+  margin: 16px 32px;
+  font-variation-settings: 'wght' 400;
+  transition: 0.3s !important;
+  /* background: blue; */
+}
+
+
+
+/*---------1024PX---------*/
+@media (max-width: 1024px) {
+  body {
+    width: calc(100vw - 96px);
+    margin: 0 0 0 48px;
+  }
+
+  .project {
+    width: calc(100%/2 - 24px);
+  }
+}
+
+
+
+/*---------640PX---------*/
+@media (max-width: 640px) {
+  body {
+      width: calc(100vw - 64px);
+    margin: 0 0 0 32px;
+  }
+
+  .project {
+    width: 100%;
+  }
+
+  .navlinks {
+    display:block;
+    width: 100%;
+    /* background: green; */
+
+    font-size: 1.0rem;
+    font-variation-settings: 'wght' 600
+  }
+
+  li {
+    margin-bottom: 16px;
+  }
+
+  #right_nav, .name {
+    float: none;
+    text-align: center;
+  }
+
+  .work, .about, .contact {
+    font-variation-settings: 'wght' 400;
+  }
+
+  #project_story h2, #project_story p {
+    width: 100%;
+  }
+
+  .project_story_image {
+    width: 100%;
+    margin: 24px auto;
+  }
+
+}
+
+a:hover, #about a:hover, a:hover p.project_title, #bottom_nav a:hover, #project_story p a:hover {
+  font-variation-settings: 'wght' 800;
+  transition: 0.3s;
+}
+
+a img:hover {
+  border-radius: 16px;
+  transition: 0.3s;
+}
