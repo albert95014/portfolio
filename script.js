@@ -1,20 +1,17 @@
 let pages = ["index.html",
-             "soundhound.html",
-             "soundhound.html",
-             "soundhound.html",
-             "soundhound.html",
-             "soundhound.html",
-             "soundhound.html",
-             "soundhound.html"];
+             "gridpatterns.html",
+             "bobaintheus.html",
+             "aigadesigncensus.html",
+             "cmudesigncensus.html",
+             "weeklyschedule.html",
+             "pinwheels.html"];
 let pageNames = ["All",
-                 "SoundHound",
-                 "SoundHound",
-                 "SoundHound",
-                 "SoundHound",
-                 "SoundHound",
-                 "SoundHound",
-                 "SoundHound",
-                 "SoundHound",]
+                 "Grid Patterns",
+                 "Boba in the US",
+                 "AIGA Design Census",
+                 "CMU Design Census",
+                 "Weekly Schedule",
+                 "Pinwheels"]
 
 for (var i=0; i<pages.length; i++) {
   $("#bottom_nav").append("<a href='" + pages[i] + "'>" + pageNames[i] + "</a>");
