@@ -1,7 +1,15 @@
 @font-face {
   font-family: "Epilogue";
-  src: url("Epilogue-VariableFont_wght.ttf") format("truetype");
+  src: url("Epilogue[wght].woff2") format("woff2-variations");
   font-weight: 125 950;
+  font-stretch: 75% 125%;
+}
+
+@font-face {
+  font-family: "Epilogue Italic";
+  src: url("Epilogue-Italic[wght].woff2") format("woff2-variations");
+  font-weight: 125 950;
+  font-style: oblique 0 20;
 }
 
 body {
@@ -49,12 +57,24 @@ a img {
   transition: 0.3s;
 }
 
-#about {
+#bio {
+  width: 50%;
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
 
-#about a {
+#bio span {
+  font-weight: 200;
+  font-style: italic;
+}
+
+#about {
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+#about a, #bio a {
   font-variation-settings: 'wght' 400;
   text-decoration: underline;
 }
@@ -82,19 +102,20 @@ a img {
 }
 
 .project p {
-  font-size: 1.1rem;
-  /* background-color:grey; */
   margin: 0;
 }
 
 .project_title {
+  font-size: 1.1rem;
   font-variation-settings: 'wght' 600;
-  padding: 12px 0 8px;
+  padding: 12px 0 6px;
   transition: 0.3s;
 }
 
 .project_label {
-  font-variation-settings: 'wght' 400;
+  font-size: 0.9rem;
+  /* font-family: 'Epilogue Italic'; */
+  font-variation-settings: 'wght' 300;
 }
 
 /*---------PROJECT PAGES---------*/
@@ -157,6 +178,28 @@ h2 {
   height: 100%;
 }
 
+.two_column {
+  width: 80%;
+  margin: 48px auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  column-gap: 48px;
+  row-gap: 24px;
+}
+
+.two_column > * {
+  width: calc(50% - 24px);
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  margin: 24px auto;
+}
+
+hr {
+  width: 25%;
+  border: 1px solid lightgray;
+}
+
 
 
 
@@ -185,6 +228,10 @@ h2 {
   body {
     width: calc(100vw - 96px);
     margin: 0 0 0 48px;
+  }
+
+  #about, #bio {
+    width: 100%;
   }
 
   .project {
@@ -236,11 +283,23 @@ h2 {
     margin: 24px auto;
   }
 
+  .two_column {
+    width: 100%;
+  }
+
+  .two_column > * {
+    width: 100%;
+  }
+
 }
 
-a:hover, #about a:hover, a:hover p.project_title, #bottom_nav a:hover, #project_story p a:hover {
+a:hover, #about a:hover, #bio a:hover, a:hover p.project_title, #bottom_nav a:hover, #project_story p a:hover {
   font-variation-settings: 'wght' 800;
   transition: 0.3s;
+}
+
+#project_page a {
+  text-decoration: underline;
 }
 
 a img:hover {

@@ -1,17 +1,17 @@
 let pages = ["index.html",
+             "dreamfestival.html",
+             "citiesintheus.html",
              "gridpatterns.html",
              "bobaintheus.html",
              "aigadesigncensus.html",
-             "cmudesigncensus.html",
-             "weeklyschedule.html",
-             "pinwheels.html"];
+             "cmudesigncensus.html",];
 let pageNames = ["All",
+                 "Dream Festival",
                  "Grid Patterns",
+                 "Cities in the US",
                  "Boba in the US",
                  "AIGA Design Census",
-                 "CMU Design Census",
-                 "Weekly Schedule",
-                 "Pinwheels"]
+                 "CMU Design Census",]
 
 for (var i=0; i<pages.length; i++) {
   $("#bottom_nav").append("<a href='" + pages[i] + "'>" + pageNames[i] + "</a>");

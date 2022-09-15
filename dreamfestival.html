@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+
+
+  <title>Albert Yang</title>
+</head>
+
+<body>
+
+  <div id="nav">
+    <ul>
+      <li class="navlinks name">
+        <a href="index.html">Albert Yang</a>
+      </li>
+
+      <div id="right_nav">
+        <li class="navlinks work">
+          <a href="index.html">Work</a>
+        </li>
+
+        <li class="navlinks about">
+          <a href="about.html">About</a>
+        </li>
+
+        <li class="navlinks contact">
+          <a href="resume.pdf" target="_blank">Resume</a>
+        </li>
+      </div>
+    </ul>
+  </div>
+
+
+
+  <div id="project_page">
+    <div id="project_info">
+      <h1>Dream Festival</h1>
+      <p>2022</p>
+      <p>Generative</p>
+    </div>
+
+    <div id="project_story">
+      <h2>Overview</h2>
+      <p>Dream Festival is a web app that uses a person's top artists from Spotify to generate a poster for an imaginary music festival.
+        <br>
+        <br>
+        <a href="https://albert95014.github.io/Festival-Poster/" target="_blank">Website Link</a> 
+        <br>
+        <a href="https://youtu.be/WZZUBXvKLGU" target="_blank">Demo Video</a>
+      <br>
+      <br>
+      Inspired by the variety in music festival posters (as well as the disappointment in recent local lineups), I aimed to create a way for people to design their own posters from their favorite artists. I viewed this project as an intro to working with data from Spotify's API, and wanted to create a robust enough foundation so I can easily add new features in the future.
+      </p>
+
+      <div class="two_column">
+        <img alt="notebook showing initial ideas and brainstorming" src="images/dreamfestival/process1.jpg">
+        <span><strong>Initial Ideas</strong>
+          <br>
+          I started out thinking about what data should the visuals be generated from, and which parts should be customizable by the user. For example, I initially played with the idea of having multiple lineups by day since many music festivals take place over the course of a full weekend. 
+          <br>
+          <br>
+          There were some concerns on my mind about the constraints of a generative poster versus one made for a specific event, mainly regarding using a broad visual identity when all the content differs from user to user. In the end, I opted for randomized colors with more faded gradients to keep a consistent visual theme across different posters without making it too specific.</span>
+
+          <img alt="notebook showing initial ideas and brainstorming" src="images/dreamfestival/process2.png">
+        <span><strong>Prototype - Version 1</strong>
+          <br>
+          In the initial prototypes, I used placeholder data to figure out how to design the poster layout. As p5 doesn't have the most robust textbox functionality, the main problem with the layout involved putting the line breaks in the correct places so that artist names with multiple words end up on the same line. Another issue was figuring out how to make sure the character(s) in between artist names aren't on the ends of each line. While solving these problems, I was also thinking how to highlight the festival info to make it more distinguisable from the artist names.
+          <br>
+          </span>
+
+          <img alt="notebook showing initial ideas and brainstorming" src="images/dreamfestival/process3.png">
+        <span><strong>Prototype - Version 2</strong>
+          <br>
+          After determining the layout and plugging in artist data from the Spotify API, I had a little fun trying out various ways to style the text itself. 
+          <br>
+          <br>
+          Around the time, I was exploring generative typography though an online course at Cooper Union so I tried out different ways to break up the text and modify it to create a unique style. I came to the conclusion that perhaps a poster that's meant to be customized by the user shouldn't necessarily have an offbeat visual style.
+          <br>
+          </span>
+      </div>
+
+      <h2>Creating the UI</h2>
+      <p>My initial sketches had a simple layout that I stuck with for the UI, with the customizable parameters as its own section on the left and the poster output on the right. In the middle of the project, I rewrote parts of the generated poster to update in real-time based on the sliders on the left rather than forcing the user to click a button to update. I felt that leaving some sliders without a label added more to the exploration aspect and cleaned up the overall number of labels in the adjustable parameters as well. Additionally, there's a scrollable sidebar on the right to provide Spotify links to a user's favorite artists. 
+      <br>
+      <br>
+      <a href="https://albert95014.github.io/Festival-Poster/" target="_blank">Try it out yourself!</a> </p>
+
+
+      <img class="project_story_image" alt="website screenshot" src="images/dreamfestival/screenshot1.png">
+      <img class="project_story_image" alt="various poster examples" src="images/dreamfestival/posterexamples.png">
+
+      <h2>Post-Project Thoughts</h2>
+      <p>Branding for music festival posters tend to have beautiful visuals that are specific to the event details, such as the location, date, or music genre. Without definitive festival details, I felt that I had to give up a unique visual identity for sake of user customizability--in my opinion, the biggest hurdle of the project was striking that balance between the two. In the future, there could be a lot of ways to add customizability and interesting features that use the digital medium to its advantage, such as adding visuals based on the user's music tastes (or location), and animating the poster background or playing around with the typography style more.</p>
+
+    </div>
+  </div>
+
+
+  <div id="bottom_nav">
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>
