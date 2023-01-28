@@ -89,6 +89,13 @@ a img {
   flex-flow: row wrap;
   flex-direction: row;
   justify-content: space-between;
+  /* justify-content: left; */
+  /* justify-items: start; */
+}
+
+#work::after {
+  content: "";
+  width: calc(100%/3 - 32px);
 }
 
 .project {
@@ -158,8 +165,9 @@ h2 {
   margin-top: 16px;
 }
 
-#project_story p a {
+#project_story p a, .two_column a {
   font-variation-settings: 'wght' 600;
+  color: #0008D2;
   transition: 0.3s;
 }
 
