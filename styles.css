@@ -145,6 +145,8 @@ a img {
 
 #project_info p {
   font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-variation-settings: 'wght' 300;
 }
 
 h1 {
