@@ -185,7 +185,7 @@ h2 {
   margin-bottom: 48px;
 } */
 
-.project_story_image, .video_container, .project_story_header_p {
+.project_story_image, .project_story_image_link, .video_container, .project_story_header_p {
   width: 100%;
   max-width: 1280px;
   display: block;
@@ -193,6 +193,9 @@ h2 {
   padding: 24px 0;
 }
 
+.project_story_image_link {
+  padding: 0;
+}
 
 /* .project_story_header_p {
   width: 80%;
@@ -326,6 +329,10 @@ hr {
     width: 100%;
     margin: 0 auto;
     padding: 24px 0;
+  }
+
+  .project_story_image_link {
+    padding: 0;
   }
 }
 
