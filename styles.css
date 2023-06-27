@@ -166,14 +166,14 @@ h1 {
 }
 
 h2 {
-  font-size: 1.0rem;
-  line-height: 2.4rem;
+  font-size: 1.2rem;
+  line-height: 3.2rem;
 }
 
-#project_story p {
+/* #project_story p {
   font-size: 0.8rem;
   line-height: 1.4rem;
-}
+} */
 
 #project_story p a, .two_column a {
   font-variation-settings: 'wght' 600;
@@ -191,6 +191,12 @@ h2 {
   display: block;
   margin: 0 auto;
   padding: 24px 0;
+}
+
+.project_story_header_p > p {
+  font-size: 1.2rem;
+  line-height: 2.0rem;
+  font-weight: 300;
 }
 
 .project_story_image_link {
@@ -227,13 +233,19 @@ h2 {
   margin: 0 auto;
 }
 
+.two_column > p {
+  font-size: 0.8rem;
+}
+
 hr {
   width: 100%;
   margin: 24px 0;
   border: 0.5px solid #f0f0f0;
 }
 
-
+span.underline {
+  text-decoration: underline;
+}
 
 
 /*---------BOTTOM NAV/FOOTER---------*/
