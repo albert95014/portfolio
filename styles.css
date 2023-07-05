@@ -44,7 +44,7 @@ ul {
 }
 
 .name {
-  font-variation-settings: 'wght' 700;
+  font-variation-settings: 'wght' 600;
 }
 
 #right_nav {
@@ -357,7 +357,7 @@ a:hover, #about a:hover, #bio a:hover, a:hover p.project_title, #bottom_nav a:ho
   text-decoration: underline;
 }
 
-a img:hover{
+.project:hover img {
   border-radius: 48px;
   transition: 0.3s;
 }
