@@ -103,11 +103,11 @@ a img {
 
 #work::after {
   content: "";
-  width: calc(100%/3 - 32px);
+  width: calc(100%/3 - 16px);
 }
 
 .project {
-  width: calc(100%/3 - 32px);
+  width: calc(100%/3 - 16px);
   margin-bottom: 32px;
 }
 
@@ -281,7 +281,7 @@ span.underline {
   }
 
   .project {
-    width: calc(100%/2 - 24px);
+    width: calc(100%/2 - 16px);
   }
 
   .two_column {
