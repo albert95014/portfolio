@@ -42,67 +42,58 @@
 
 
   <div id="project_page">
+    <h1>Boba in the US</h1>
+    
     <div id="project_info">
-      <h1>Boba in the US</h1>
-      <p>Data visualization of boba in major US cities</p>
+      <p class="project_summary">Boba tea, also known as pearl milk tea or bubble tea, is a Taiwanese-originated drink that has found increased popularity across the world in the past few decades. The goal for this visualization, made using D3, is to display how popular the drink is in different cities within the United States.</p>
+      <div id="project_supp_info">
+        <p class="project_date">2018</p>
+        <a class="project_link" href="https://albert95014.github.io/boba_in_the_us/" target="_blank">Website Link &#8594;</a>
+      </div>
     </div>
+
+    <img class="project_story_image_large" src="images/mainimages/bobaintheus.png">
 
     <hr>
 
     <div id="project_story">
-      <div class="project_story_header_p">
-        <h2>Overview</h2>
-        <p>Boba tea, also known as pearl milk tea or bubble tea, is a Taiwanese-originated drink that has found increased popularity across the world in the past few decades. <span>The goal for this visualization is to visualize how popular the drink is in different cities within the United States.</span></p>
-        <br>
-        <br>
-        <p>To visualize the data obtained from Yelp's Fusion API, I used d3.js to develop an interactive website, which can be found <a href="https://albert95014.github.io/boba_in_the_us/" target="_blank">here</a> (try zooming out if the browser size is too small!).</p>
-      </div>
+      <h2>Beginning Process</h2>
+      <p class="project_story_content">Inspired by <a href="https://www.instagram.com/albert95014">my boba-documenting Instagram</a>, I wanted to see how easy it would be to find boba in various regions of the United States. I sketched a few potential ways of visualizing the data, which had been scraped using the Yelp Fusion API (returning every business in certain cities under the "Bubble Tea" category).</p>
+    </div>
 
-      <hr>
+    <img class="project_story_image" src="images/bobaintheus/vizsketches1.jpg">
+    <img class="project_story_image" src="images/bobaintheus/vizsketches2.jpg">
 
-      <img class="project_story_image" src="images/bobaintheus/sitescreenshot1.png">
-      <img class="project_story_image" src="images/bobaintheus/sitescreenshot2.png">
-      <img class="project_story_image" src="images/bobaintheus/sitescreenshot3.png">
+    <hr>
 
-      <hr>
+    <div id="project_story">
+      <h2>Data Collection and Cleaning</h2>
+      <p class="project_story_content">The data, which was originally returned in JSON format, contained a lot of categories that weren't as relevant to the story I was trying to tell. I cleaned up the data by adding and removing categories as necessary, and organizing them by city into various .csv files to work with separately.</p>
+    </div>
 
-      <div class="project_story_header_p">
-        <h2>Beginning Process</h2>
-        <p>Inspired by <a href="https://www.instagram.com/albert95014">my boba-documenting Instagram</a>, I wanted to see how easy it would be to find boba in various regions of the United States. I sketched a few potential ways of visualizing the data, which had been scraped using the Yelp Fusion API (returning every business in certain cities under the "Bubble Tea" category).</p>
-      </div>
+    <img class="project_story_image" src="images/bobaintheus/bobadata.png">
 
-      <div class="two_column">
-        <img class="project_story_image" src="images/bobaintheus/vizsketches1.jpg">
-        <img class="project_story_image" src="images/bobaintheus/vizsketches2.jpg">
-      </div>
+    <hr>
 
-      <hr>
-      
-      <div class="project_story_header_p">
-        <h2>Data Collection and Cleaning</h2>
-        <p>The data, which was originally returned in JSON format, contained a lot of categories that weren't as relevant to the story I was trying to tell. I cleaned up the data by adding and removing categories as necessary, and organizing them by city into various .csv files to work with separately.</p>
-      </div>
+    <div id="project_story">
+      <h2>Wireframing and Mock-ups</h2>
+      <p class="project_story_content">I used Sketch to create high-fidelity mock-ups of how I wanted the website to look. I originally used Yelp's yellow-to-red scale to visualize the ratings, but adding colors to differentiate a 3.0-rating versus a 3.5-rating made it difficult to see the difference. Considering the background and text color, inspired by the drink itself, it made sense to use a color scheme of light versus dark reds to make the data stand out more.</p>
+    </div>
 
-      <img class="project_story_image" src="images/bobaintheus/bobadata.png">
+    <img class="project_story_image" src="images/bobaintheus/sketchmockups.png">
+    <img class="project_story_image" src="images/bobaintheus/sitescreenshot1.png">
+    <img class="project_story_image" src="images/bobaintheus/sitescreenshot2.png">
+    <img class="project_story_image" src="images/bobaintheus/sitescreenshot3.png">
 
-      <hr>
+    <hr>
 
-      <div class="project_story_header_p">
-        <h2>Wireframing and Mock-ups</h2>
-        <p>I used Sketch to create high-fidelity mock-ups of how I wanted the website to look. I originally used Yelp's yellow-to-red scale to visualize the ratings, but adding colors to differentiate a 3.0-rating versus a 3.5-rating made it difficult to see the difference. Considering the background and text color, inspired by the drink itself, it made sense to use a color scheme of light versus dark reds to make the data stand out more.</p>
-      </div>
+    <div id="project_story">
+      <h2>Post-Project Thoughts</h2>
+      <p class="project_story_content">Working with d3.js for the first time was challenging, yet rewarding to see how to present large datasets in an interactive way. Future steps would nvolve making the website more responsive, which presents the extra challenge of making my visualization scale up and down. Through the development of this website, I learned different ways I could tell a story using interactive data visualizations, as well as how to guide users through what I wanted to say with the data.</p>
+    </div>
 
-      <img class="project_story_image" src="images/bobaintheus/sketchmockups.png">
-
-      <hr>
-
-      <div class="project_story_header_p">
-        <h2>Post-Project Thoughts</h2>
-        <p>Working with d3.js for the first time was challenging, yet rewarding to see how to present large datasets in an interactive way. Future steps would nvolve making the website more responsive, which presents the extra challenge of making my visualization scale up and down. Through the development of this website, I learned different ways I could tell a story using interactive data visualizations, as well as how to guide users through what I wanted to say with the data.</p>
-      </div>
+    <hr>
   </div>
-
-  <hr>
 
   <div id="bottom_nav">
   </div>

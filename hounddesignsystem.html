@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+
+
+  <title>Albert Yang</title>
+</head>
+
+<body>
+
+  <div id="nav">
+    <ul>
+      <li class="navlinks name">
+        <a href="index.html">Albert Yang</a>
+      </li>
+
+      <div id="right_nav">
+        <li class="navlinks work">
+          <a href="index.html">Work</a>
+        </li>
+
+        <li class="navlinks about">
+          <a href="about.html">About</a>
+        </li>
+
+        <li class="navlinks contact">
+          <a href="resume.pdf" target="_blank">Resume</a>
+        </li>
+      </div>
+    </ul>
+  </div>
+
+
+
+  <div id="project_page">
+    <h1>Hound Design System</h1>
+
+    <div id="project_info">
+      <p class="project_summary">Hound (now known as SoundHound Chat AI) is a voice assistant app available on both iOS and Android. One of the main projects I worked on involved consolidating and maintaining Hound's growing design system.</p>
+      <div id="project_supp_info">
+        <p class="project_date">2019-2022</p>
+        <a class="project_link" href="https://apps.apple.com/us/app/soundhound-chat-ai-app/id1032432287" target="_blank">App Store Link &#8594;</a>
+      </div>
+    </div>
+
+    <img class="project_story_image_large" src="images/mainimages/hounddesignsystem.png">
+
+    <div id="project_context">
+      <div class="project_problem">
+        <h2>Background</h2>
+        <p>As Hound was designed with the intention of being a general-use voice assistant, there were numerous use cases that had to be made from scratch, such as queries involving movie information, sports, music playback, restaurant search, etc. </p>
+      </div> 
+      <div class="project_audience">
+        <h2>Goals</h2>
+        <p>When I had joined SoundHound in 2019, there was an existing style guide for Hound providing typography and color guidelines, but still much to be consolidated in terms of following said guidelines, repeated components, and visual language. The main purpose of the style guide was to expedite our internal workflow via reusable components and style guidelines.
+        </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <img class="project_story_image_large" src="images/hounddesignsystem/hound_colorpalette.png">
+
+    <div id="project_story">
+      <h2>Color Palette / Dark Mode</h2>
+      <p class="project_story_aside"></p>
+      <p class="project_story_content">One of our initial undertakings was to create a dark mode version of the existing style guidelines. We put together a palette with colors corresponding to our default color guide, and then made adjustments based on whether or not there was enough contrast between elements.</p>
+    </div>
+
+    <hr>
+
+    <img class="project_story_image_large" src="images/hounddesignsystem/hound_typography.png">
+
+    <div id="project_story">
+      <h2>Typography System</h2>
+      <p class="project_story_aside"></p>
+      <p class="project_story_content">Hound's typography system used the system fonts for each platform: SF Pro for iOS and Roboto for Android. We updated the system to follow a 4-point grid to maintain consistency across bodies of text. Our team also took a pass through the app to find instances of copy that didn't adhere to the guidelines, and made adjustments accordingly.</p>
+    </div>
+
+    <hr>
+
+    <img class="project_story_image_large" src="images/hounddesignsystem/hound_components.png">
+
+    <div id="project_story">
+      <h2>Component Library</h2>
+      <p class="project_story_aside"></p>
+      <p class="project_story_content">A major task we took on was to take all the existing response cards (about 3-4 years worth of designs) and organize similar aspects to expedite the design process when designing new ones. These included list items, buttons, media artwork, and internal links. We worked closely with engineering to record the assets we had used in the past, and added them to our library to avoid re-creating similar components.</p>
+    </div>
+
+    <hr>
+
+    <img class="project_story_image_large" src="images/hounddesignsystem/hound_cardscreenshots.png">
+
+    <div id="project_story">
+      <h2>Response Cards</h2>
+      <p class="project_story_aside"></p>
+      <p class="project_story_content">The vast majority of Hound's responses were accompanied with a card, specifically designed for each case. For Hound's design system, our team implemented a set of rules to keep consistency across each card design, such as organizing list components, using divider lines, consistent card titles, and adding attribution labels when applicable, among others.</p>
+    </div>
+
+    <hr>
+
+    <div id="project_story">
+      <h2>Closing Thoughts</h2>
+      <p class="project_story_content">Overall the component library and organized design system for Hound proved to be extremely beneficial for our workflow. Instead of spending time creating icons or figuring out list layouts, the flexibility in our components allowed for more plug-and-play designs. As the app was constantly adding new features and capabilities, our system continued to expand as well, though being able to look into what we had used for similar use cases created a much stronger sense of consistency within the app.</p>
+    </div>
+
+    <hr>
+  </div>
+
+
+
+
+  <div id="bottom_nav">
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>

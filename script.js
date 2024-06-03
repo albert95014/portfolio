@@ -1,17 +1,17 @@
 let pages = ["index.html",
              "soundhound.html",
+             "hounddesignsystem.html",
              "dreamfestival.html",
-             "genuary2023.html",
              "generativetype.html",
-             "citiesintheus.html",
-             "bobaintheus.html"];
-let pageNames = ["All",
+             "bobaintheus.html"
+            ];
+let pageNames = ["All Projects",
                  "SoundHound",
+                 "Hound Design System",
                  "Dream Festival",
-                 "Genuary 2023",
                  "Generative Typography",
-                 "Cities in the US",
-                 "Boba in the US"]
+                 "Boba in the US"
+                ]
 
 for (var i=0; i<pages.length; i++) {
   $("#bottom_nav").append("<a href='" + pages[i] + "'>" + pageNames[i] + "</a>");
