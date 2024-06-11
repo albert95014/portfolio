@@ -2,6 +2,7 @@ let pages = ["index.html",
              "soundhound.html",
              "hounddesignsystem.html",
              "dreamfestival.html",
+             "genuary2023.html",
              "generativetype.html",
              "bobaintheus.html"
             ];
@@ -9,6 +10,7 @@ let pageNames = ["All Projects",
                  "SoundHound",
                  "Hound Design System",
                  "Dream Festival",
+                 "Playing with TouchDesigner",
                  "Generative Typography",
                  "Boba in the US"
                 ]
