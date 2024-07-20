@@ -1,14 +1,14 @@
 @font-face {
-  font-family: "Epilogue";
-  src: url("Epilogue[wght].woff2") format("woff2-variations");
-  font-weight: 125 950;
+  font-family: "PublicSans";
+  src: url("assets/PublicSans-Variable.woff2") format("woff2-variations");
+  font-weight: 100 950;
   font-stretch: 75% 125%;
 }
 
 @font-face {
-  font-family: "Epilogue Italic";
-  src: url("Epilogue-Italic[wght].woff2") format("woff2-variations");
-  font-weight: 125 950;
+  font-family: "PublicSans Italic";
+  src: url("assets/PublicSans-VariableItalic.woff2") format("woff2-variations");
+  font-weight: 100 950;
   font-style: oblique 0 20;
 }
 
@@ -18,7 +18,7 @@ html {
 
 @media screen {
 body {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'PublicSans', sans-serif;
   --gap-size: 48px;
   --primary-text: #000;
   --secondary-text: #4a4a4a;
@@ -42,11 +42,11 @@ ul {
   display:inline-block;
   width: 120px;
   font-size: 0.9rem;
-  font-variation-settings: 'wght' 400;
+  font-variation-settings: 'wght' 300;
 }
 
 .name {
-  font-variation-settings: 'wght' 400;
+  font-variation-settings: 'wght' 600;
 }
 
 #right_nav {
@@ -67,11 +67,11 @@ ul {
   grid-column: span 3;
   font-size: 1.5rem;
   line-height: 2.5rem;
-  font-variation-settings: 'wght' 400;
+  font-variation-settings: 'wght' 200;
 }
 
 #bio span {
-  font-variation-settings: 'wght' 200;
+  font-variation-settings: 'wght' 600;
   font-style: italic;
 }
 
@@ -472,7 +472,7 @@ span.underline {
   }
 
   .work, .about, .contact {
-    font-variation-settings: 'wght' 400;
+    font-variation-settings: 'wght' 300;
   }
 
   #project_story h2, #project_story p {
