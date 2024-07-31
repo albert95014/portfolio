@@ -20,10 +20,19 @@ for (var i=0; i<pages.length; i++) {
 }
 
 
-$(document).ready(function(){
-    $('#work').css('display', 'none');
-    $('#work').fadeIn(800);
+// $(document).ready(function(){
+// window.onload = (event) => {
+//     $('#work').css('display', 'none');
+//     $('#work').fadeIn(800);
 
-    $('#project_page').css('display', 'none');
-    $('#project_page').fadeIn(800);
-});
+//     $('#project_page').css('display', 'none');
+//     $('#project_page').fadeIn(800);
+// };
+
+window.onload = (event) => {
+  $('#work').css('opacity', 0);
+  $('#work').fadeTo(800, 1);
+
+  $('#project_page').css('opacity', 0);
+  $('#project_page').fadeTo(800, 1);
+};

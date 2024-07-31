@@ -87,10 +87,12 @@ a img {
 }
 
 #work {
+  opacity: 0;
   margin: var(--page-margins);
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: var(--gap-size);
+
 }
 
 #about {
@@ -139,6 +141,7 @@ a img {
 
 /*---------PROJECT PAGES---------*/
 #project_page {
+  opacity: 0;
   margin: var(--page-margins);
   display: grid;
   grid-template-columns: repeat(6, 1fr);
