@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+
+
+  <title>Albert Yang</title>
+</head>
+
+<body>
+  <div id="loader"></div>
+
+  <div id="nav">
+    <ul>
+      <li class="navlinks name">
+        <a href="index.html">Albert Yang</a>
+      </li>
+
+      <div id="right_nav">
+        <li class="navlinks work">
+          <a href="index.html">Work</a>
+        </li>
+
+        <li class="navlinks about">
+          <a href="about.html">About</a>
+        </li>
+
+        <li class="navlinks contact">
+          <a href="resume.pdf" target="_blank">Resume</a>
+        </li>
+      </div>
+    </ul>
+  </div>
+
+
+
+  <div id="project_page">
+    <h1>Midomi</h1>
+
+    <div id="project_info">
+      <p class="project_summary">Midomi is a website used for music identification and discovery. To bring the site more in line with its successor, the SoundHound music app, I worked with a small development team to redesign the site's layout and make it responsive.</p>
+      <div id="project_supp_info">
+        <p class="project_date">2020</p>
+        <a class="project_link" href="https://www.midomi.com/" target="_blank">Website &#8594;</a>
+      </div>
+    </div>
+
+    <img class="project_story_image_large" src="images/mainimages/midomi.png">
+
+    <div id="project_context">
+      <div class="project_problem">
+        <h2>Goals</h2>
+        <p>Midomi started off as a precursor to the SoundHound app, hosting similar music identification features. As the site hadn't been updated in several years, our goal was to revamp its visual layout and update it to fit the branding guidelines we had set for SoundHound. It essentially was to act as a web version of the more well-known app, complete with music identification, search features, and music info pages.</p>
+      </div> 
+      <div class="project_audience">
+        <h2>Timeline</h2>
+        <p>This project took around two weeks from conception to design, and then around three weeks to a month for implementation. Due to the tight deadlines, we had incorporated some guidelines and assets from the Material Design library, saving time on both the design and development sides.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <img class="project_story_image_large" src="images/midomi/midomi_beforeafter.png">
+
+    <div id="project_story">
+      <h2>Before & After</h2>
+      <p class="project_story_aside">The site had gone through a visual update around 2017, but never left its beta stage.</p>
+      <p class="project_story_content">As part of the redesign, there were a few features in the original Midomi site that were to be deprecated, namely uploading song covers and user accounts. We wanted to bring more attention to the music identification feature, keeping it in line with the SoundHound app's central function.</p>
+    </div>
+
+    <hr>
+
+    <img class="project_story_image_large" src="images/midomi/midomi_styleguide.png">
+
+    <div id="project_story">
+      <h2>Style Guide</h2>
+      <p class="project_story_aside">I worked closely with the development team on creating the components to be responsive and account for each edge case, such as excessively long strings or unexpected nulls when grabbing data.</p>
+      <p class="project_story_content">To visually match Midomi with the SoundHound apxp's visual style, we followed the same color and typography guidelines used in the latter. Many of the components were created to be flexible and responsive for the designs to fit on mobile, tablet, and web screens.</p>
+    </div>
+
+    <hr>
+
+    <img class="project_story_image_large" src="images/midomi/midomi_homepage.png">
+
+    <div id="project_story">
+      <h2>Homepage</h2>
+      <p class="project_story_aside">We created our components and designed the layout following a 12-column grid, adjusting them as the screen size scaled down from web to mobile.</p>
+      <p class="project_story_content">When designing the home page for Midomi, we wanted the music discovery button to be the first thing they notice. Above the fold, there are also the most recent “Top Songs,” which followed the same data source as in the SoundHound app.</p>
+    </div>
+
+    <hr>
+
+    <img class="project_story_image_large" src="images/midomi/midomi_artistalbumpages.png">
+
+    <div id="project_story">
+      <h2>Artist & Album Pages</h2>
+      <p class="project_story_aside">The pages for artists and albums followed similar formats as one another, allowing us to save a good amount of development time.</p>
+      <p class="project_story_content">Each artist and album page consisted of a header providing supplementary info followed by sections that were suitable for the respective page types. We also provided links to both SoundHound and third-party apps in the event that the user was already part of a separate music streaming ecosystem.</p>
+    </div>
+
+    <hr>
+
+    <img class="project_story_image_large" src="images/midomi/midomi_searchresultspage.png">
+
+    <div id="project_story">
+      <h2>Search Results</h2>
+      <p class="project_story_aside">We wanted to avoid overwhelming the user with results, opting to add a button to expand each section if the user wanted to dive deeper.</p>
+      <p class="project_story_content">As our search data stemmed from the same source as in the SoundHound app, the results on Midomi followed a similar format: sections based on the song/track, artist, albums, and lyrics. For smaller devices, we lowered the number of columns in each section to prevent an over-abundance of unnecessary results.</p>
+    </div>
+
+    <hr>
+
+    <div id="project_story">
+      <h2>Closing Thoughts</h2>
+      <p class="project_story_content">Despite the compressed timeline, the website update went smoothly considering our main goals of bringing the site more in line with the SoundHound music app. The page designs are relatively straightforward in terms of layout, but I believe there are opportunities to improve the site experience (namely the playback feature, which currently opens a picture-in-picture screen, and a history section to show songs recently identified by the user).</p>
+    </div>
+
+    <hr>
+  </div>
+
+
+
+
+  <div id="bottom_nav">
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>

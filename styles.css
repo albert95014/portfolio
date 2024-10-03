@@ -26,10 +26,55 @@ body {
   --page-margins: 48px;
 }
 
+/* HTML: <div class="loader"></div> */
+#loader {
+  display: none;
+  width: 2px;
+  color: #EAEAEA;
+  aspect-ratio: 1;
+  /* border-radius: 100%; */
+  box-shadow: 
+    19px -19px 0 0px, 38px -19px 0 0px, 57px -19px 0 0px,
+    19px 0     0 5px, 38px 0     0 5px, 57px 0     0 5px,
+    19px 19px  0 0px, 38px 19px  0 0px, 57px 19px  0 0px;
+  transform: translateX(-38px);
+  animation: l26 2s infinite linear;
+
+  position: absolute;
+    top: 50%;
+    left: calc(50% - 2px);
+}
+@keyframes l26 {
+  12.5% {box-shadow: 
+    19px -19px 0 0px, 38px -19px 0 0px, 57px -19px 0 5px,
+    19px 0     0 5px, 38px 0     0 0px, 57px 0     0 5px,
+    19px 19px  0 0px, 38px 19px  0 0px, 57px 19px  0 0px}
+  25%   {box-shadow: 
+    19px -19px 0 5px, 38px -19px 0 0px, 57px -19px 0 5px,
+    19px 0     0 0px, 38px 0     0 0px, 57px 0     0 0px,
+    19px 19px  0 0px, 38px 19px  0 5px, 57px 19px  0 0px}
+  50%   {box-shadow: 
+    19px -19px 0 5px, 38px -19px 0 5px, 57px -19px 0 0px,
+    19px 0     0 0px, 38px 0     0 0px, 57px 0     0 0px,
+    19px 19px  0 0px, 38px 19px  0 0px, 57px 19px  0 5px}
+  62.5% {box-shadow: 
+    19px -19px 0 0px, 38px -19px 0 0px, 57px -19px 0 0px,
+    19px 0     0 5px, 38px 0     0 0px, 57px 0     0 0px,
+    19px 19px  0 0px, 38px 19px  0 5px, 57px 19px  0 5px}
+  75%   {box-shadow: 
+    19px -19px 0 0px, 38px -19px 0 5px, 57px -19px 0 0px,
+    19px 0     0 0px, 38px 0     0 0px, 57px 0     0 5px,
+    19px 19px  0 0px, 38px 19px  0 0px, 57px 19px  0 5px}
+  87.5% {box-shadow: 
+    19px -19px 0 0px, 38px -19px 0 5px, 57px -19px 0 0px,
+    19px 0     0 0px, 38px 0     0 5px, 57px 0     0 0px,
+    19px 19px  0 5px, 38px 19px  0 0px, 57px 19px  0 0px}
+}
+
 /*---------NAV BAR---------*/
 #nav {
   width: 100%;
-  border-bottom: 0.5px solid #000;
+  border-bottom: 1px solid #000;
 }
 
 ul {
@@ -92,16 +137,15 @@ a img {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: var(--gap-size);
-
 }
 
-#about {
+.intro_blurb {
   grid-column: span 6;
   font-size: 1.5rem;
   line-height: 2.5rem;
 }
 
-#about a, #bio a {
+.intro_blurb a, #bio a {
   font-variation-settings: 'wght' 400;
   text-decoration: underline;
 }
@@ -221,8 +265,9 @@ h2 {
 }
 
 .project_problem p, .project_audience p {
-  font-size: 0.75rem; /* 12/16 = 0.75, as html font size is 16*/
-  line-height: 1.5rem;
+  font-size: 0.875rem; /* 14/16 = 0.875, as html font size is 16*/
+  font-variation-settings: 'wght' 300;
+  line-height: 1.75rem;
   color: var(--secondary-text);
 }
 
@@ -241,8 +286,8 @@ h2 {
 .project_story_aside, .project_story_aside a {
   grid-column: 1 / 2;
   margin: 0;
-  font-size: 0.75rem; /* 12/16 = 0.75, as html font size is 16*/
-  line-height: 1.5rem;
+  font-size: 0.8125rem; /* 13/16 = 0.8175, as html font size is 16*/
+  line-height: 1.75rem;
   font-variation-settings: 'wght' 300;
   color: var(--tertiary-text);
 }
@@ -493,7 +538,7 @@ span.underline {
   }
 }
 
-a:hover, #about a:hover, #bio a:hover, a:hover p.project_title, #bottom_nav a:hover, #project_story p a:hover {
+a:hover, .intro_blurb a:hover, #bio a:hover, a:hover p.project_title, #bottom_nav a:hover, #project_story p a:hover {
   font-variation-settings: 'wght' 800;
   transition: 0.3s;
 }

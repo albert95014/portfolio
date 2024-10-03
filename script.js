@@ -1,18 +1,20 @@
 let pages = ["index.html",
              "soundhound.html",
              "hounddesignsystem.html",
+             "midomi.html",
              "dreamfestival.html",
              "genuary2023.html",
              "generativetype.html",
-             "bobaintheus.html"
+             "gridpatterns.html"
             ];
 let pageNames = ["All Projects",
                  "SoundHound",
                  "Hound Design System",
+                 "Midomi",
                  "Dream Festival",
-                 "Playing with TouchDesigner",
+                 "Genuary 2023",
                  "Generative Typography",
-                 "Boba in the US"
+                 "Grid Patterns"
                 ]
 
 for (var i=0; i<pages.length; i++) {
@@ -30,6 +32,16 @@ for (var i=0; i<pages.length; i++) {
 // };
 
 window.onload = (event) => {
+  // $('#loader').css('opacity', 1);
+  // $('#loader').fadeTo(400, 0);
+  // $('#loader').fadeTo(400, 0, function() {
+  //   $('#work').css('opacity', 0);
+  //   $('#work').fadeTo(400, 1);
+  
+  //   $('#project_page').css('opacity', 0);
+  //   $('#project_page').fadeTo(400, 1);
+  // });
+
   $('#work').css('opacity', 0);
   $('#work').fadeTo(800, 1);
 
