@@ -2,19 +2,13 @@ let pages = ["index.html",
              "soundhound.html",
              "hounddesignsystem.html",
              "midomi.html",
-             "dreamfestival.html",
-             "genuary2023.html",
-             "generativetype.html",
-             "gridpatterns.html"
+             "dreamfestival.html"
             ];
 let pageNames = ["All Projects",
                  "SoundHound",
                  "Hound Design System",
                  "Midomi",
-                 "Dream Festival",
-                 "Genuary 2023",
-                 "Generative Typography",
-                 "Grid Patterns"
+                 "Dream Festival"
                 ]
 
 for (var i=0; i<pages.length; i++) {
