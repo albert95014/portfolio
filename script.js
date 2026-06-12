@@ -1,10 +1,12 @@
 let pages = ["index.html",
+             "anvil.html",
              "soundhound.html",
              "hounddesignsystem.html",
              "midomi.html",
              "dreamfestival.html"
             ];
 let pageNames = ["All Projects",
+                 "Anvil",
                  "SoundHound",
                  "Hound Design System",
                  "Midomi",
@@ -37,8 +39,11 @@ window.onload = (event) => {
   // });
 
   $('#work').css('opacity', 0);
-  $('#work').fadeTo(800, 1);
+  $('#work').fadeTo(250, 1);
 
   $('#project_page').css('opacity', 0);
-  $('#project_page').fadeTo(800, 1);
+  $('#project_page').fadeTo(250, 1);
+
+  $('#bio').css('opacity', 0);
+  $('#bio').fadeTo(250, 1);
 };
