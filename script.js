@@ -2,15 +2,13 @@ let pages = ["index.html",
              "anvil.html",
              "soundhound.html",
              "hounddesignsystem.html",
-             "midomi.html",
-             "dreamfestival.html"
+             "midomi.html"            
             ];
 let pageNames = ["All Projects",
                  "Anvil",
                  "SoundHound",
                  "Hound Design System",
-                 "Midomi",
-                 "Dream Festival"
+                 "Midomi"
                 ]
 
 for (var i=0; i<pages.length; i++) {
